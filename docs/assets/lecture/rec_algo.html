@@ -349,6 +349,38 @@ const thebe_selector_output = ".output, .cell_output"
    MTH 180 Concepts
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module/opendsa.html">
+   OpenDSA
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/Logarithms.html">
+     Logarithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/Summations.html">
+     Summations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/RecurrenceIntro.html">
+     Recurrence Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/Proofs.html">
+     Mathematical Proof Techniques
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../gradescope.html">
    Submission Notes
@@ -786,8 +818,8 @@ Why recursion?</div>
 <div class="admonition-sum-array admonition">
 <p class="admonition-title">Sum Array</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="5851b3b7-6093-42b8-94f6-8dd4498cd30d" name="bd9a6fe3-72e6-4f37-991a-c4ccd0efea4f" type="radio">
-</input><label class="sd-tab-label" for="5851b3b7-6093-42b8-94f6-8dd4498cd30d">
+<input checked="checked" id="b6e1e5e5-efed-4a6a-8b9a-78d12356da25" name="867acc81-0246-4d15-8039-a32dec2cc013" type="radio">
+</input><label class="sd-tab-label" for="b6e1e5e5-efed-4a6a-8b9a-78d12356da25">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">sum_array</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="c1">//basecase  </span>
@@ -803,8 +835,8 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="4d72f177-5d25-4625-b65b-7643011622e9" name="bd9a6fe3-72e6-4f37-991a-c4ccd0efea4f" type="radio">
-</input><label class="sd-tab-label" for="4d72f177-5d25-4625-b65b-7643011622e9">
+<input id="c0db90e0-fc31-4a29-b4a8-0d0e6825679b" name="867acc81-0246-4d15-8039-a32dec2cc013" type="radio">
+</input><label class="sd-tab-label" for="c0db90e0-fc31-4a29-b4a8-0d0e6825679b">
 Base &amp; Recursive Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -827,8 +859,8 @@ A[n - 1], &amp; \text{if $n \gt 1$ },  &amp; \text{// recursive calls}
 <div class="admonition-largest admonition">
 <p class="admonition-title">Largest</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="4ddf607f-3525-4180-b5d0-c8bcfc608f09" name="35eef958-20b7-4e77-b2c3-4e188f876196" type="radio">
-</input><label class="sd-tab-label" for="4ddf607f-3525-4180-b5d0-c8bcfc608f09">
+<input checked="checked" id="d403192a-da5b-4812-9852-f7e97a6be3de" name="05009fb2-da21-4929-a053-d9eec02dbe55" type="radio">
+</input><label class="sd-tab-label" for="d403192a-da5b-4812-9852-f7e97a6be3de">
 Pseudocode</label><div class="sd-tab-content docutils">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>To find the largest element in list[a]...list[b]  
 
@@ -842,8 +874,8 @@ b. Compare the elements `list[a]` and `max`
 </pre></div>
 </div>
 </div>
-<input id="68f44658-43a0-4326-96b9-8f16418f2127" name="35eef958-20b7-4e77-b2c3-4e188f876196" type="radio">
-</input><label class="sd-tab-label" for="68f44658-43a0-4326-96b9-8f16418f2127">
+<input id="962ad634-05b7-4961-9bd5-d84c1991b018" name="05009fb2-da21-4929-a053-d9eec02dbe55" type="radio">
+</input><label class="sd-tab-label" for="962ad634-05b7-4961-9bd5-d84c1991b018">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">largest</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">list</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lowerIndex</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">upperIndex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">;</span><span class="w"></span>
@@ -860,8 +892,8 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="2f2c934b-b63b-4c75-9228-738e048a1009" name="35eef958-20b7-4e77-b2c3-4e188f876196" type="radio">
-</input><label class="sd-tab-label" for="2f2c934b-b63b-4c75-9228-738e048a1009">
+<input id="44fdcdf5-7074-47d9-8de3-cc0f095c64d2" name="05009fb2-da21-4929-a053-d9eec02dbe55" type="radio">
+</input><label class="sd-tab-label" for="44fdcdf5-7074-47d9-8de3-cc0f095c64d2">
 Base &amp; Recursive Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -877,8 +909,8 @@ size\ of\ list\ is\ \gt 1, &amp; \text{// recursive calls}
 <div class="admonition-serpinski-https-www-geeksforgeeks-org-sierpinski-triangle admonition">
 <p class="admonition-title"><a class="reference external" href="https://www.geeksforgeeks.org/sierpinski-triangle/">Serpinski</a></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="5cad6032-1040-4eba-97d9-77e830093f49" name="fcb5d431-3ef9-4283-a2bf-6864f5f378f7" type="radio">
-</input><label class="sd-tab-label" for="5cad6032-1040-4eba-97d9-77e830093f49">
+<input checked="checked" id="daf8d885-006b-439c-afba-d1c764e9c83e" name="3ce9a81c-4277-424d-9ead-8e0950ce9920" type="radio">
+</input><label class="sd-tab-label" for="daf8d885-006b-439c-afba-d1c764e9c83e">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">printSierpinski</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
@@ -898,22 +930,22 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="f44b50d6-bce4-4905-9782-6b8a89840b1d" name="fcb5d431-3ef9-4283-a2bf-6864f5f378f7" type="radio">
-</input><label class="sd-tab-label" for="f44b50d6-bce4-4905-9782-6b8a89840b1d">
+<input id="c57b4060-2d3a-48f8-81f9-1a222a22102a" name="3ce9a81c-4277-424d-9ead-8e0950ce9920" type="radio">
+</input><label class="sd-tab-label" for="c57b4060-2d3a-48f8-81f9-1a222a22102a">
 Visualize : Structure</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://runestone.academy/ns/books/published/pythonds/_images/stCallTree.png" src="https://runestone.academy/ns/books/published/pythonds/_images/stCallTree.png" />
 </figure>
 </div>
-<input id="7d6a60af-f5dc-4656-a9a6-6292247f5533" name="fcb5d431-3ef9-4283-a2bf-6864f5f378f7" type="radio">
-</input><label class="sd-tab-label" for="7d6a60af-f5dc-4656-a9a6-6292247f5533">
+<input id="098d1f77-f572-4e2d-95c9-944ebd0bf98b" name="3ce9a81c-4277-424d-9ead-8e0950ce9920" type="radio">
+</input><label class="sd-tab-label" for="098d1f77-f572-4e2d-95c9-944ebd0bf98b">
 Ex : Triangle</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://www.researchgate.net/profile/Askander-Kaka/publication/264872595/figure/fig4/AS:669568435494921&#64;1536648963162/First-four-steps-to-configure-Sierpinski-triangle.png" src="https://www.researchgate.net/profile/Askander-Kaka/publication/264872595/figure/fig4/AS:669568435494921&#64;1536648963162/First-four-steps-to-configure-Sierpinski-triangle.png" />
 </figure>
 </div>
-<input id="1f1d619c-7baf-49b4-8aa9-e706ed498d6e" name="fcb5d431-3ef9-4283-a2bf-6864f5f378f7" type="radio">
-</input><label class="sd-tab-label" for="1f1d619c-7baf-49b4-8aa9-e706ed498d6e">
+<input id="15d6eb06-b0ea-4fe7-816b-cd68d7478487" name="3ce9a81c-4277-424d-9ead-8e0950ce9920" type="radio">
+</input><label class="sd-tab-label" for="15d6eb06-b0ea-4fe7-816b-cd68d7478487">
 Ex : Pyramid</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sierpinski_pyramid.png" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sierpinski_pyramid.png" />

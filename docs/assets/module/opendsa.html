@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Non-Linear Structures &#8212; Data Structures &amp; Algorithms</title>
+    <title>OpenDSA &#8212; Data Structures &amp; Algorithms</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,10 +52,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Binary Search Trees" href="../lecture/bst.html" />
-    <link rel="prev" title="Quicksort" href="../lecture/qs.html" />
+    <link rel="next" title="Submission Notes" href="../../gradescope.html" />
+    <link rel="prev" title="MTH 180 Concepts" href="../../mth180.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -161,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
   Lecture Topics
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../lecture/intro.html">
    Introduction
@@ -278,11 +280,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="m05.html">
    Non-Linear Structures
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
@@ -331,7 +333,7 @@ const thebe_selector_output = ".output, .cell_output"
   Miscellaneous
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference external" href="https://www.learncpp.com">
    Learn C++
@@ -347,11 +349,11 @@ const thebe_selector_output = ".output, .cell_output"
    MTH 180 Concepts
   </a>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="opendsa.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
    OpenDSA
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
@@ -484,7 +486,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/csc-dsa/su23/issues/new?title=Issue%20on%20page%20%2Fassets/module/m05.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/csc-dsa/su23/issues/new?title=Issue%20on%20page%20%2Fassets/module/opendsa.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -512,7 +514,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/assets/module/m05.md"
+        <a href="../../_sources/assets/module/opendsa.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -572,16 +574,24 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
+  <a class="reference internal nav-link" href="#logarithms">
+   Logarithms
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#common-algorithms">
-     Common algorithms
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summations">
+   Summations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recurrence-relations">
+   Recurrence Relations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mathematical-proof-techniques">
+   Mathematical Proof Techniques
+  </a>
  </li>
 </ul>
 
@@ -592,7 +602,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Non-Linear Structures</h1>
+                <h1>OpenDSA</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -603,16 +613,24 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
+  <a class="reference internal nav-link" href="#logarithms">
+   Logarithms
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#common-algorithms">
-     Common algorithms
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summations">
+   Summations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#recurrence-relations">
+   Recurrence Relations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mathematical-proof-techniques">
+   Mathematical Proof Techniques
+  </a>
  </li>
 </ul>
 
@@ -624,59 +642,77 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="non-linear-structures">
-<h1>Non-Linear Structures<a class="headerlink" href="#non-linear-structures" title="Permalink to this headline">#</a></h1>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<img alt="image" src="https://assets.interviewbit.com/assets/skill_interview_questions/data-structure/linear-vs-non-linear-fa7a09e8f894bdb84fe15a27c5e2a5bbbc4fcad7b88396985935c6b2fb351fca.png.gz" /><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="opendsa">
+<h1>OpenDSA<a class="headerlink" href="#opendsa" title="Permalink to this headline">#</a></h1>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Non-linear data structures are data structures that do not follow a sequential or linear order, such as arrays or lists. Non-linear data structures are essential for solving complex problems and modeling real-world scenarios.</p>
-<dl class="glossary simple">
-<dt id="term-Trees">Trees<a class="headerlink" href="#term-Trees" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Trees are hierarchical data structures that consist of nodes connected by edges. Each node can have zero or more child nodes, and every node in the tree is connected to exactly one parent node, except for the root node. Trees are used in many algorithms, including search algorithms, sorting algorithms, and path-finding algorithms.</p>
-</dd>
-<dt id="term-Graphs">Graphs<a class="headerlink" href="#term-Graphs" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Graphs are a more general data structure that consists of vertices or nodes connected by edges. Graphs can be directed or undirected and can contain cycles. Graphs are used to model many real-world scenarios, including social networks, transportation systems, and computer networks.</p>
-</dd>
-<dt id="term-Hash-tables">Hash tables<a class="headerlink" href="#term-Hash-tables" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Hash tables are data structures that allow for fast insertion, deletion, and retrieval of key-value pairs. In a hash table, each key is mapped to a unique index using a hash function. Hash tables are commonly used in database management systems, caching systems, and compilers.</p>
-</dd>
-<dt id="term-Heaps">Heaps<a class="headerlink" href="#term-Heaps" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Heaps are binary trees that satisfy the heap property, where the parent node is either greater than or less than its child nodes. Heaps are used to implement priority queues, where the elements are processed in order of their priority.</p>
-</dd>
-<dt id="term-Tries">Tries<a class="headerlink" href="#term-Tries" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Tries are tree-like data structures used for efficient searching and retrieval of key-value pairs. In a trie, each node represents a prefix of one or more keys.</p>
-</dd>
-<dt id="term-Bloom-filters">Bloom filters<a class="headerlink" href="#term-Bloom-filters" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Bloom filters are probabilistic data structures used for set membership testing. Bloom filters use a hash function to map elements to a bit array, allowing for efficient insertion and query operations.</p>
-</dd>
-</dl>
+<p class="sd-card-text">More math resources in the event you need them. The following are excerpts of content from the linked pages to the left.</p>
 </div>
 </div>
-<section id="common-algorithms">
-<h3>Common algorithms<a class="headerlink" href="#common-algorithms" title="Permalink to this headline">#</a></h3>
+<section id="logarithms">
+<h2>Logarithms<a class="headerlink" href="#logarithms" title="Permalink to this headline">#</a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<dl class="glossary simple">
-<dt id="term-Tree-traversal-algorithms">Tree traversal algorithms<a class="headerlink" href="#term-Tree-traversal-algorithms" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Ex. in-order, pre-order, and post-order traversal</p>
-</dd>
-<dt id="term-Shortest-path-algorithms">Shortest path algorithms<a class="headerlink" href="#term-Shortest-path-algorithms" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Ex. Dijkstra’s algorithm and Bellman-Ford algorithm</p>
-</dd>
-<dt id="term-Minimum-spanning-tree-algorithms">Minimum spanning tree algorithms<a class="headerlink" href="#term-Minimum-spanning-tree-algorithms" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Ex. Kruskal’s algorithm and Prim’s algorithm</p>
-</dd>
-<dt id="term-Graph-search-algorithms">Graph search algorithms <a class="headerlink" href="#term-Graph-search-algorithms" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Ex. breadth-first search and depth-first search</p>
-</dd>
-<dt id="term-Hashing-algorithms">Hashing algorithms<a class="headerlink" href="#term-Hashing-algorithms" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Ex. SHA-1 and MD5</p>
-</dd>
-<dt id="term-Sorting-algorithms">Sorting algorithms<a class="headerlink" href="#term-Sorting-algorithms" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Ex. heapsort and quicksort</p>
-</dd>
-</dl>
-<p class="sd-card-text">Overall, non-linear data structures and algorithms are essential for solving complex problems in computer science. Understanding the properties, use cases, and associated algorithms of non-linear data structures is crucial for computer scientists and programmers.</p>
+<p class="sd-card-text">The logarithm of base <span class="math notranslate nohighlight">\(b\)</span> for value <span class="math notranslate nohighlight">\(y\)</span> is the power to which <span class="math notranslate nohighlight">\(b\)</span> is raised to get <span class="math notranslate nohighlight">\(y\)</span>. Normally, this is written as <span class="math notranslate nohighlight">\(log_b\ y = x\)</span>. Thus, if <span class="math notranslate nohighlight">\(log_b\ y = x\)</span> then <span class="math notranslate nohighlight">\(bx = y\)</span>, and <span class="math notranslate nohighlight">\(b\ log_b\ y = y\)</span>.</p>
+<p class="sd-card-text">In OpenDSA, nearly all logarithms used have a base of two. This is because data structures and algorithms most often divide things in half, or store codes with binary bits. Whenever you see the notation <span class="math notranslate nohighlight">\(log\ n\)</span> in OpenDSA, either <span class="math notranslate nohighlight">\(log_2\ n\)</span> is meant or else the term is being used asymptotically and so the actual base does not matter. For logarithms using any base other than two, we will show the base explicitly.</p>
+<p class="sd-card-text">Logarithms have the following properties, for any positive values of <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(n\)</span>, and <span class="math notranslate nohighlight">\(r\)</span>, and any positive integers <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[  log(nm) = log\ n + log\ m  \]</div>
+<div class="math notranslate nohighlight">
+\[  log(n/m) = log\ n − log\ m  \]</div>
+<div class="math notranslate nohighlight">
+\[  log(n^r) = r\ log\ n  \]</div>
+<div class="math notranslate nohighlight">
+\[  log_a\ n = \frac{log_b\ n}{log_b\ a}\]</div>
 </div>
 </div>
 </section>
+<section id="summations">
+<h2>Summations<a class="headerlink" href="#summations" title="Permalink to this headline">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Most programs contain loop constructs. When analyzing running time costs for programs with loops, we need to add up the costs for each time the loop is executed. This is an example of a summation. Summations are simply the sum of costs for some function applied to a range of parameter values. Summations are typically written with the following “Sigma” notation:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{i = 1}^{n} f(i)\]</div>
+<p class="sd-card-text">This notation indicates that we are summing the value of <span class="math notranslate nohighlight">\(f(i)\)</span> over some range of (integer) values. The parameter to the expression and its initial value are indicated below the <span class="math notranslate nohighlight">\(\sum\)</span> symbol. Here, the notation <span class="math notranslate nohighlight">\(i = 1\)</span> indicates that the parameter is <span class="math notranslate nohighlight">\(i\)</span> and that it begins with the value <span class="math notranslate nohighlight">\(1\)</span>. At the top of the <span class="math notranslate nohighlight">\(\sum\)</span> symbol is the expression <span class="math notranslate nohighlight">\(n\)</span>. This indicates the maximum value for the parameter i. Thus, this notation means to sum the values of <span class="math notranslate nohighlight">\(f(i)\)</span> as <span class="math notranslate nohighlight">\(i\)</span> ranges across the integers from 1 through n. This can also be written <span class="math notranslate nohighlight">\(f(1)+f(2)+ \dots +f(n−1)+f(n)\)</span>. Within a sentence, Sigma notation is typeset as <span class="math notranslate nohighlight">\(\sum_{i = 1}^{n} f(i)\)</span>.</p>
+<p class="sd-card-text">Given a summation, you often wish to replace it with an algebraic equation with the same value as the summation. This is known as a closed-form solution, and the process of replacing the summation with its closed-form solution is known as solving the summation. For example, the summation <span class="math notranslate nohighlight">\(\sum_{i = 1}^{n} 1\)</span> is simply the expression “1” summed n times (remember that <span class="math notranslate nohighlight">\(i\)</span> ranges from <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(n\)</span>). Because the sum of <span class="math notranslate nohighlight">\(n\)</span> 1s is <span class="math notranslate nohighlight">\(n\)</span>, the closed-form solution is <span class="math notranslate nohighlight">\(n\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="recurrence-relations">
+<h2>Recurrence Relations<a class="headerlink" href="#recurrence-relations" title="Permalink to this headline">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The running time for a recursive algorithm is most easily expressed by a recursive expression because the total time for the recursive algorithm includes the time to run the recursive call(s). A recurrence relation defines a function by means of an expression that includes one or more (smaller) instances of itself. A classic example is the recursive definition for the factorial function:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}n!=(n−1)!⋅n for n&gt;1;1!=0!=1$$.\\Another standard example of a recurrence is the Fibonacci sequence:\\$$Fib(n)=Fib(n−1)+Fib(n−2) for n&gt;2;Fib(1)=Fib(2)=1\end{aligned}\end{align} \]</div>
+<p class="sd-card-text">From this definition, the first seven numbers of the Fibonacci sequence are</p>
+<div class="math notranslate nohighlight">
+\[1,1,2,3,5,8,\ and\ 13\]</div>
+<p class="sd-card-text">Notice that this definition contains two parts: the general definition for <span class="math notranslate nohighlight">\(Fib(n)\)</span> and the base cases for <span class="math notranslate nohighlight">\(Fib(1)\)</span> and <span class="math notranslate nohighlight">\(Fib(2)\)</span>. Likewise, the definition for factorial contains a recursive part and base cases.</p>
+<p class="sd-card-text">Recurrence relations are often used to model the cost of recursive functions. For example, the number of multiplications required by a recursive version of the factorial function for an input of size <span class="math notranslate nohighlight">\(n\)</span> will be zero when <span class="math notranslate nohighlight">\(n = 0\)</span> or <span class="math notranslate nohighlight">\(n = 1\)</span> (the base cases), and it will be one plus the cost of calling fact on a value of <span class="math notranslate nohighlight">\(n − 1\)</span>. This can be defined using the following recurrence:</p>
+<div class="math notranslate nohighlight">
+\[ T(n) = T(n−1) + 1\ for\ n &gt; 1; \]</div>
+<div class="math notranslate nohighlight">
+\[ T(0) = T(1) = 0 \]</div>
+</div>
+</div>
+</section>
+<section id="mathematical-proof-techniques">
+<h2>Mathematical Proof Techniques<a class="headerlink" href="#mathematical-proof-techniques" title="Permalink to this headline">#</a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Solving any problem has two distinct parts: the investigation and the argument. Students are too used to seeing only the argument in their textbooks and lectures. But to be successful in school (and in life after school), one needs to be good at both, and to understand the differences between these two phases of the process. To solve the problem, you must investigate successfully. That means engaging the problem, and working through until you find a solution. Then, to give the answer to your client (whether that “client” be your instructor when writing answers on a homework assignment or exam, or a written report to your boss), you need to be able to make the argument in a way that gets the solution across clearly and succinctly. The argument phase involves good technical writing skills—the ability to make a clear, logical argument.</p>
+<p class="sd-card-text">Being conversant with standard proof techniques can help you in this process. Knowing how to write a good proof helps in many ways. First, it clarifies your thought process, which in turn clarifies your explanations. Second, if you use one of the standard proof structures such as proof by contradiction or an induction proof, then both you and your reader are working from a shared understanding of that structure. That makes for less complexity to your reader to understand your proof, because the reader need not decode the structure of your argument from scratch.</p>
+<p class="sd-card-text">This section briefly introduces three commonly used proof techniques:</p>
+<ul class="simple">
+<li><p class="sd-card-text">deduction, or direct proof;</p></li>
+<li><p class="sd-card-text">proof by contradiction and</p></li>
+<li><p class="sd-card-text">proof by mathematical induction.</p></li>
+</ul>
+<p class="sd-card-text">In general, a direct proof is just a “logical explanation”. A direct proof is sometimes referred to as an argument by deduction. This is simply an argument in terms of logic.</p>
+</div>
+</div>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -709,17 +745,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../lecture/qs.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../../mth180.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Quicksort</p>
+            <p class="prev-next-title">MTH 180 Concepts</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../lecture/bst.html" title="next page">
+    <a class='right-next' id="next-link" href="../../gradescope.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Binary Search Trees</p>
+        <p class="prev-next-title">Submission Notes</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -349,6 +349,38 @@ const thebe_selector_output = ".output, .cell_output"
    MTH 180 Concepts
   </a>
  </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module/opendsa.html">
+   OpenDSA
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/Logarithms.html">
+     Logarithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/Summations.html">
+     Summations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/RecurrenceIntro.html">
+     Recurrence Relations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/Proofs.html">
+     Mathematical Proof Techniques
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../gradescope.html">
    Submission Notes
@@ -1489,8 +1521,8 @@ T(n) &amp; = 2^nT(0) + 1 + 2 + 2^2\ + \dots\ 2^k-1 \\
 <div class="admonition-master-theorem-https-youtu-be-2h0gkdriowu admonition">
 <p class="admonition-title"><a class="reference external" href="https://youtu.be/2H0GKdrIowU">Master Theorem</a></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="48ddc7b9-41ab-4bb2-bdc8-d80e36336b13" name="8a3af992-9195-43f6-8fc9-b33e79b3099c" type="radio">
-</input><label class="sd-tab-label" for="48ddc7b9-41ab-4bb2-bdc8-d80e36336b13">
+<input checked="checked" id="2be988dd-1978-4587-8f80-134fa131af15" name="e2017891-da34-4c8a-9e50-01d2f5fe3b54" type="radio">
+</input><label class="sd-tab-label" for="2be988dd-1978-4587-8f80-134fa131af15">
 Cases</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">If <span class="math notranslate nohighlight">\(T(n) = aT(\frac{n}{b}) + O(n^d)\)</span> (for constants <span class="math notranslate nohighlight">\(a \gt 0, b \gt 1, d \ge 0\)</span>), then:</p>
 <div class="math notranslate nohighlight">
@@ -1503,8 +1535,8 @@ O(n^{log_b\ a}),  &amp; \text{$if\ d\ \lt log_b\ a$}, &amp;&amp; Case 3 \\
 \end{cases}
 \end{split}\]</div>
 </div>
-<input id="58f2681a-4a1c-47e7-832e-1f54a33d4a73" name="8a3af992-9195-43f6-8fc9-b33e79b3099c" type="radio">
-</input><label class="sd-tab-label" for="58f2681a-4a1c-47e7-832e-1f54a33d4a73">
+<input id="cd9a0b28-1ce7-42d6-96ce-074fdd1ac681" name="e2017891-da34-4c8a-9e50-01d2f5fe3b54" type="radio">
+</input><label class="sd-tab-label" for="cd9a0b28-1ce7-42d6-96ce-074fdd1ac681">
 Case 1</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 2T(\frac{n}{2}) + O(n^2)\]</div>
@@ -1517,8 +1549,8 @@ c &amp; = 2 \\
 \end{align}\end{split}\]</div>
 <p class="sd-card-text">Since <span class="math notranslate nohighlight">\(d \gt log_b\ a\)</span>, <span class="math notranslate nohighlight">\(T(n) = O(n^d) = O(n^2)\)</span></p>
 </div>
-<input id="bd3bab15-6ab2-4182-9042-39a6ca306585" name="8a3af992-9195-43f6-8fc9-b33e79b3099c" type="radio">
-</input><label class="sd-tab-label" for="bd3bab15-6ab2-4182-9042-39a6ca306585">
+<input id="8790dddb-7f15-44c5-bdd9-af3427240d0b" name="e2017891-da34-4c8a-9e50-01d2f5fe3b54" type="radio">
+</input><label class="sd-tab-label" for="8790dddb-7f15-44c5-bdd9-af3427240d0b">
 Case 2</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = T(\frac{n}{2}) + O(1)\]</div>
@@ -1537,8 +1569,8 @@ T(n) &amp; = O(n^d\ log\ n) \\
 &amp; = O(log\ n) \\
 \end{align}\end{split}\]</div>
 </div>
-<input id="b05c0f64-ac33-429f-affd-e5acd7e28ed7" name="8a3af992-9195-43f6-8fc9-b33e79b3099c" type="radio">
-</input><label class="sd-tab-label" for="b05c0f64-ac33-429f-affd-e5acd7e28ed7">
+<input id="d77652d4-5c9f-4369-952d-ed43a2edc09a" name="e2017891-da34-4c8a-9e50-01d2f5fe3b54" type="radio">
+</input><label class="sd-tab-label" for="d77652d4-5c9f-4369-952d-ed43a2edc09a">
 Case 3</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 4T(\frac{n}{2}) + O(n)\]</div>
