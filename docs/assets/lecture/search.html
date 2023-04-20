@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -58,7 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Recursive Algorithms (Analysis)" href="rec_algo.html" />
     <link rel="prev" title="Searching &amp; Sorting" href="../module/m04.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -122,6 +123,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../../schedule.html">
    Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../tips.html">
+   Tips for Success
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../faq.html">
+   FAQs
   </a>
  </li>
 </ul>
@@ -426,7 +437,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/js-uri/csc-212"
+        <a href="https://github.com/csc-dsa/su23"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -443,7 +454,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/js-uri/csc-212/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/search.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/csc-dsa/su23/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/search.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -623,18 +634,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <style>
-  .red {color:red}
-  .blue {color:#7cc7f9}
-  .dblue {color:#011636}
-  .green {color:green}
-  .orange {color:orangered}
-  .purple {color:purple}
-  .brown {color:brown}
-  iframe {width: 100%; height: 800px}
-  .fa-rocket {display: none;}
-</style>
-<section class="tex2jax_ignore mathjax_ignore" id="search-algorithms">
+  <section class="tex2jax_ignore mathjax_ignore" id="search-algorithms">
 <h1><a class="reference external" href="https://www.geeksforgeeks.org/searching-algorithms/?ref=lbp">Search Algorithms</a><a class="headerlink" href="#search-algorithms" title="Permalink to this headline">#</a></h1>
 <div class="full-width docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -778,8 +778,8 @@ Sequential Search<div class="sd-summary-down docutils">
 <h3>Pseudocode<a class="headerlink" href="#pseudocode" title="Permalink to this headline">#</a></h3>
 <div class="full-width docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="086aa9c9-0473-4bcd-be2e-d41a4c3c79cb" name="b3e33831-4bba-43b8-ace5-d2f06f3d5904" type="radio">
-</input><label class="sd-tab-label" for="086aa9c9-0473-4bcd-be2e-d41a4c3c79cb">
+<input checked="checked" id="e56bd144-2860-45f7-96fa-ad54fb353362" name="00fb8748-7198-48ef-8408-b4251e2a69f8" type="radio">
+</input><label class="sd-tab-label" for="e56bd144-2860-45f7-96fa-ad54fb353362">
 Iterative Approach</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li><p>Consider start index to be at <span class="math notranslate nohighlight">\(0\)</span> and last index to be <code class="docutils literal notranslate"><span class="pre">n-1</span></code> index at starting</p>
@@ -793,8 +793,8 @@ Iterative Approach</label><div class="sd-tab-content docutils">
 <li><p>Else check for <code class="docutils literal notranslate"><span class="pre">mid</span></code> index element with <code class="docutils literal notranslate"><span class="pre">key</span></code> if not match repeat the above steps til <code class="docutils literal notranslate"><span class="pre">start</span></code> index is less than <code class="docutils literal notranslate"><span class="pre">end</span></code> index</p></li>
 </ul>
 </div>
-<input id="fbdf0509-db60-4239-a892-ad0b349c9a15" name="b3e33831-4bba-43b8-ace5-d2f06f3d5904" type="radio">
-</input><label class="sd-tab-label" for="fbdf0509-db60-4239-a892-ad0b349c9a15">
+<input id="77cca780-86a2-41fa-9573-63684746143a" name="00fb8748-7198-48ef-8408-b4251e2a69f8" type="radio">
+</input><label class="sd-tab-label" for="77cca780-86a2-41fa-9573-63684746143a">
 Recursive Approach</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li><p>If <code class="docutils literal notranslate"><span class="pre">start</span></code> is less than <code class="docutils literal notranslate"><span class="pre">end</span></code> perform Binary search else terminate the algorithm.</p></li>
@@ -997,9 +997,9 @@ Recursive Approach</label><div class="sd-tab-content docutils">
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Jonathan Schrader<br/>
+    By Professor Jonathan Schrader<br/>
   
-      &copy; Copyright 2023.<br/>
+      &copy; Copyright 2022.<br/>
     <div class="extra_footer">
       Materials herein are a compilation under guise of 'Fair Use for Education'.<br>All rights reserved by their intellectual property owners, respectfully.
     </div>

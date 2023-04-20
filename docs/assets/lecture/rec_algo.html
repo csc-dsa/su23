@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -58,7 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Recurrences" href="recur.html" />
     <link rel="prev" title="Search Algorithms" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -122,6 +123,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../../schedule.html">
    Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../tips.html">
+   Tips for Success
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../faq.html">
+   FAQs
   </a>
  </li>
 </ul>
@@ -426,7 +437,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/js-uri/csc-212"
+        <a href="https://github.com/csc-dsa/su23"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -443,7 +454,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/js-uri/csc-212/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/rec_algo.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/csc-dsa/su23/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/rec_algo.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -637,17 +648,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <style>
-  .red {color:red}
-  .blue {color:#7cc7f9}
-  .dblue {color:#011636}
-  .green {color:green}
-  .orange {color:orangered}
-  .purple {color:purple}
-  .brown {color:brown}
-  iframe {width: 100%; height: 800px}
-</style>
-<section class="tex2jax_ignore mathjax_ignore" id="recursive-algorithms-analysis">
+  <section class="tex2jax_ignore mathjax_ignore" id="recursive-algorithms-analysis">
 <h1>Recursive Algorithms (Analysis)<a class="headerlink" href="#recursive-algorithms-analysis" title="Permalink to this headline">#</a></h1>
 <div class="full-width docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -785,8 +786,8 @@ Why recursion?</div>
 <div class="admonition-sum-array admonition">
 <p class="admonition-title">Sum Array</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="25a2a763-995f-42df-8617-ba76e255cba0" name="af7ddf0a-aa63-434e-9a58-a61e9bd29000" type="radio">
-</input><label class="sd-tab-label" for="25a2a763-995f-42df-8617-ba76e255cba0">
+<input checked="checked" id="ce1b605f-424d-436c-9bfc-b1f5e7f794ab" name="922354d2-9710-4834-9a5d-5937fe101ef8" type="radio">
+</input><label class="sd-tab-label" for="ce1b605f-424d-436c-9bfc-b1f5e7f794ab">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">sum_array</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="c1">//basecase  </span>
@@ -802,8 +803,8 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="57586ce4-4fb1-4fe4-9fcd-65268d5ba88b" name="af7ddf0a-aa63-434e-9a58-a61e9bd29000" type="radio">
-</input><label class="sd-tab-label" for="57586ce4-4fb1-4fe4-9fcd-65268d5ba88b">
+<input id="6a54ba0a-8491-4572-8d0d-5e5f20262aca" name="922354d2-9710-4834-9a5d-5937fe101ef8" type="radio">
+</input><label class="sd-tab-label" for="6a54ba0a-8491-4572-8d0d-5e5f20262aca">
 Base &amp; Recursive Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -826,8 +827,8 @@ A[n - 1], &amp; \text{if $n \gt 1$ },  &amp; \text{// recursive calls}
 <div class="admonition-largest admonition">
 <p class="admonition-title">Largest</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="13c067c3-5105-46b3-a955-c971a9433e38" name="1c101027-f826-4597-8d31-be74a9c5f393" type="radio">
-</input><label class="sd-tab-label" for="13c067c3-5105-46b3-a955-c971a9433e38">
+<input checked="checked" id="0647b97d-cb62-480d-8839-21214613739c" name="37ffe8b4-3510-4905-a5f2-8ed25f4c09b7" type="radio">
+</input><label class="sd-tab-label" for="0647b97d-cb62-480d-8839-21214613739c">
 Pseudocode</label><div class="sd-tab-content docutils">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>To find the largest element in list[a]...list[b]  
 
@@ -841,8 +842,8 @@ b. Compare the elements `list[a]` and `max`
 </pre></div>
 </div>
 </div>
-<input id="61755b0f-a95a-404a-9bd4-65b7b13d7be8" name="1c101027-f826-4597-8d31-be74a9c5f393" type="radio">
-</input><label class="sd-tab-label" for="61755b0f-a95a-404a-9bd4-65b7b13d7be8">
+<input id="fd0cd779-b335-437e-bd25-85e62c6d933c" name="37ffe8b4-3510-4905-a5f2-8ed25f4c09b7" type="radio">
+</input><label class="sd-tab-label" for="fd0cd779-b335-437e-bd25-85e62c6d933c">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">largest</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">list</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lowerIndex</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">upperIndex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">;</span><span class="w"></span>
@@ -859,8 +860,8 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="d57839d4-db2a-4423-8020-a279a75173dd" name="1c101027-f826-4597-8d31-be74a9c5f393" type="radio">
-</input><label class="sd-tab-label" for="d57839d4-db2a-4423-8020-a279a75173dd">
+<input id="6d086771-186f-4820-a1e7-f2490e5b0d6d" name="37ffe8b4-3510-4905-a5f2-8ed25f4c09b7" type="radio">
+</input><label class="sd-tab-label" for="6d086771-186f-4820-a1e7-f2490e5b0d6d">
 Base &amp; Recursive Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -876,8 +877,8 @@ size\ of\ list\ is\ \gt 1, &amp; \text{// recursive calls}
 <div class="admonition-serpinski-https-www-geeksforgeeks-org-sierpinski-triangle admonition">
 <p class="admonition-title"><a class="reference external" href="https://www.geeksforgeeks.org/sierpinski-triangle/">Serpinski</a></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="d0bae04c-5bfa-4f8f-8eb3-b35171529f90" name="c045710a-fdf6-499c-9bfb-168a66dc7f98" type="radio">
-</input><label class="sd-tab-label" for="d0bae04c-5bfa-4f8f-8eb3-b35171529f90">
+<input checked="checked" id="b801c722-9852-4cfb-9749-ddd47bca909e" name="c3b1355c-e80c-4313-ae52-1350dfbb9547" type="radio">
+</input><label class="sd-tab-label" for="b801c722-9852-4cfb-9749-ddd47bca909e">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">printSierpinski</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
@@ -897,22 +898,22 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="d99544e2-99ec-400b-b5cb-27ea30175f5c" name="c045710a-fdf6-499c-9bfb-168a66dc7f98" type="radio">
-</input><label class="sd-tab-label" for="d99544e2-99ec-400b-b5cb-27ea30175f5c">
+<input id="6976064f-9628-46f7-9229-ba0fe77588ea" name="c3b1355c-e80c-4313-ae52-1350dfbb9547" type="radio">
+</input><label class="sd-tab-label" for="6976064f-9628-46f7-9229-ba0fe77588ea">
 Visualize : Structure</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://runestone.academy/ns/books/published/pythonds/_images/stCallTree.png" src="https://runestone.academy/ns/books/published/pythonds/_images/stCallTree.png" />
 </figure>
 </div>
-<input id="a371ac82-ca93-4000-9182-a0ef2624c6ca" name="c045710a-fdf6-499c-9bfb-168a66dc7f98" type="radio">
-</input><label class="sd-tab-label" for="a371ac82-ca93-4000-9182-a0ef2624c6ca">
+<input id="d011c822-c558-47dd-81d4-21ce89d12da5" name="c3b1355c-e80c-4313-ae52-1350dfbb9547" type="radio">
+</input><label class="sd-tab-label" for="d011c822-c558-47dd-81d4-21ce89d12da5">
 Ex : Triangle</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://www.researchgate.net/profile/Askander-Kaka/publication/264872595/figure/fig4/AS:669568435494921&#64;1536648963162/First-four-steps-to-configure-Sierpinski-triangle.png" src="https://www.researchgate.net/profile/Askander-Kaka/publication/264872595/figure/fig4/AS:669568435494921&#64;1536648963162/First-four-steps-to-configure-Sierpinski-triangle.png" />
 </figure>
 </div>
-<input id="0b97f537-beb4-42cf-a905-c8eaed232f9f" name="c045710a-fdf6-499c-9bfb-168a66dc7f98" type="radio">
-</input><label class="sd-tab-label" for="0b97f537-beb4-42cf-a905-c8eaed232f9f">
+<input id="343c165d-4f5c-4e06-83c9-356eae86b8c8" name="c3b1355c-e80c-4313-ae52-1350dfbb9547" type="radio">
+</input><label class="sd-tab-label" for="343c165d-4f5c-4e06-83c9-356eae86b8c8">
 Ex : Pyramid</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sierpinski_pyramid.png" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sierpinski_pyramid.png" />
@@ -1184,9 +1185,9 @@ Various modalities </div>
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Jonathan Schrader<br/>
+    By Professor Jonathan Schrader<br/>
   
-      &copy; Copyright 2023.<br/>
+      &copy; Copyright 2022.<br/>
     <div class="extra_footer">
       Materials herein are a compilation under guise of 'Fair Use for Education'.<br>All rights reserved by their intellectual property owners, respectfully.
     </div>

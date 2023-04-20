@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -58,7 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Left-Leaning Red-Black Trees" href="llrbt.html" />
     <link rel="prev" title="Binary Search Trees" href="bst.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -122,6 +123,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../../schedule.html">
    Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../tips.html">
+   Tips for Success
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../faq.html">
+   FAQs
   </a>
  </li>
 </ul>
@@ -426,7 +437,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/js-uri/csc-212"
+        <a href="https://github.com/csc-dsa/su23"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -443,7 +454,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/js-uri/csc-212/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/2_3.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/csc-dsa/su23/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/2_3.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -633,16 +644,6 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="trees">
 <h1>2-3 Trees<a class="headerlink" href="#trees" title="Permalink to this headline">#</a></h1>
-<style>
-  .red {color:red}
-  .blue {color:#7cc7f9}
-  .dblue {color:#011636}
-  .green {color:green}
-  .orange {color:orangered}
-  .purple {color:purple}
-  .brown {color:brown}
-  iframe {width: 100%; height: 800px}
-</style>
 <div class="full-width docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -679,8 +680,8 @@ Additional Resources</div>
 <img alt="https://algorithmtutor.com/images/23TreeExample.png" src="https://algorithmtutor.com/images/23TreeExample.png" />
 </figure>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="5372165c-167c-44f6-9b02-feae4d2286ce" name="9e1e8f50-044d-441b-800b-52f571ef984c" type="radio">
-</input><label class="sd-tab-label" for="5372165c-167c-44f6-9b02-feae4d2286ce">
+<input checked="checked" id="75c9d1de-e9fe-4814-9455-256f142e6098" name="c833ce3f-6d7c-49cc-881d-f1d14b9700bd" type="radio">
+</input><label class="sd-tab-label" for="75c9d1de-e9fe-4814-9455-256f142e6098">
 Reasons</label><div class="sd-tab-content docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
@@ -742,8 +743,8 @@ Reasons</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="4d862bf0-b1b3-4366-a540-3833f9a5c408" name="9e1e8f50-044d-441b-800b-52f571ef984c" type="radio">
-</input><label class="sd-tab-label" for="4d862bf0-b1b3-4366-a540-3833f9a5c408">
+<input id="84c04eac-559b-4d26-b3d0-04a884e247aa" name="c833ce3f-6d7c-49cc-881d-f1d14b9700bd" type="radio">
+</input><label class="sd-tab-label" for="84c04eac-559b-4d26-b3d0-04a884e247aa">
 Components</label><div class="sd-tab-content docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
@@ -799,28 +800,28 @@ Components</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="d4924ddf-887c-4c00-bead-3f5985a4b29c" name="9e1e8f50-044d-441b-800b-52f571ef984c" type="radio">
-</input><label class="sd-tab-label" for="d4924ddf-887c-4c00-bead-3f5985a4b29c">
+<input id="7414b53d-59dd-4ada-8710-724387bb5243" name="c833ce3f-6d7c-49cc-881d-f1d14b9700bd" type="radio">
+</input><label class="sd-tab-label" for="7414b53d-59dd-4ada-8710-724387bb5243">
 Search</label><div class="sd-tab-content docutils">
 <iframe src="https://opendsa-server.cs.vt.edu/embed/BSTsearchCON" height="100" width="100%"></iframe>
 </div>
-<input id="0d1f53c4-0f75-41d5-a41c-1f1939890938" name="9e1e8f50-044d-441b-800b-52f571ef984c" type="radio">
-</input><label class="sd-tab-label" for="0d1f53c4-0f75-41d5-a41c-1f1939890938">
+<input id="a998e2dc-0d4a-4652-ba81-ffe94924ae67" name="c833ce3f-6d7c-49cc-881d-f1d14b9700bd" type="radio">
+</input><label class="sd-tab-label" for="a998e2dc-0d4a-4652-ba81-ffe94924ae67">
 Insert</label><div class="sd-tab-content docutils">
 <iframe src="https://opendsa-server.cs.vt.edu/embed/simpleInsertCON" height="300" width="600"></iframe>
 </div>
-<input id="68f59d5e-fb92-4697-afe2-763b52156f0d" name="9e1e8f50-044d-441b-800b-52f571ef984c" type="radio">
-</input><label class="sd-tab-label" for="68f59d5e-fb92-4697-afe2-763b52156f0d">
+<input id="c9d2f2c1-dee5-460b-88b5-037b24a21c6f" name="c833ce3f-6d7c-49cc-881d-f1d14b9700bd" type="radio">
+</input><label class="sd-tab-label" for="c9d2f2c1-dee5-460b-88b5-037b24a21c6f">
 Insert w/ Promotion</label><div class="sd-tab-content docutils">
 <iframe src="https://opendsa-server.cs.vt.edu/embed/promoteCON" height="600" width="100%"></iframe>
 </div>
-<input id="d834d251-ba2c-4c74-9bbc-5af30bb9965b" name="9e1e8f50-044d-441b-800b-52f571ef984c" type="radio">
-</input><label class="sd-tab-label" for="d834d251-ba2c-4c74-9bbc-5af30bb9965b">
+<input id="ed7ca5cd-6e12-4468-81a1-16bf73b75b1b" name="c833ce3f-6d7c-49cc-881d-f1d14b9700bd" type="radio">
+</input><label class="sd-tab-label" for="ed7ca5cd-6e12-4468-81a1-16bf73b75b1b">
 Insert w/ Split</label><div class="sd-tab-content docutils">
 <iframe src="https://opendsa-server.cs.vt.edu/embed/splitCON" height="600" width="100%"></iframe>
 </div>
-<input id="3df5686b-4077-4b2e-97ac-54138cc37abf" name="9e1e8f50-044d-441b-800b-52f571ef984c" type="radio">
-</input><label class="sd-tab-label" for="3df5686b-4077-4b2e-97ac-54138cc37abf">
+<input id="9d699d14-f388-4ef9-98ac-ae19c82c36c4" name="c833ce3f-6d7c-49cc-881d-f1d14b9700bd" type="radio">
+</input><label class="sd-tab-label" for="9d699d14-f388-4ef9-98ac-ae19c82c36c4">
 Consider</label><div class="sd-tab-content docutils">
 <iframe src="https://yongdanielliang.github.io/animation/web/24Tree.html" height="300" width="600"></iframe>
 <p>Consider : The three sets are identical minus their order… does it matter? Try them and see…</p>
@@ -1088,9 +1089,9 @@ Bottomline<div class="sd-summary-down docutils">
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Jonathan Schrader<br/>
+    By Professor Jonathan Schrader<br/>
   
-      &copy; Copyright 2023.<br/>
+      &copy; Copyright 2022.<br/>
     <div class="extra_footer">
       Materials herein are a compilation under guise of 'Fair Use for Education'.<br>All rights reserved by their intellectual property owners, respectfully.
     </div>

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -58,7 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Graphs : Depth-First Search" href="dfs.html" />
     <link rel="prev" title="Hash Tables" href="hash_tables.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -122,6 +123,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../../schedule.html">
    Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../tips.html">
+   Tips for Success
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../faq.html">
+   FAQs
   </a>
  </li>
 </ul>
@@ -426,7 +437,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/js-uri/csc-212"
+        <a href="https://github.com/csc-dsa/su23"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -443,7 +454,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/js-uri/csc-212/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/graphs.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/csc-dsa/su23/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/graphs.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -609,15 +620,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <style>
-  .red {color:red}
-  .blue {color:blue}
-  .green {color:green}
-  .orange {color:orange}
-  .purple {color:purple}
-  .brown {color:brown}
-</style>
-<section class="tex2jax_ignore mathjax_ignore" id="graphs">
+  <section class="tex2jax_ignore mathjax_ignore" id="graphs">
 <h1>Graphs<a class="headerlink" href="#graphs" title="Permalink to this headline">#</a></h1>
 <div class="full-width docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -816,15 +819,15 @@ Graph</div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="3dfbdd4f-9b13-4869-b15e-4bea8771c978" name="87d22b3f-111e-4f35-8273-0d29a5694593" type="radio">
-</input><label class="sd-tab-label" for="3dfbdd4f-9b13-4869-b15e-4bea8771c978">
+<input checked="checked" id="35cce5eb-f179-43e1-9a30-b13b186c8a30" name="4aa019f2-233e-45da-913b-4485d1f88f4a" type="radio">
+</input><label class="sd-tab-label" for="35cce5eb-f179-43e1-9a30-b13b186c8a30">
 Types</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://cdn-images-1.medium.com/max/1600/1*fYG3B8hi4O2kk6aHvFB5mg.png" src="https://cdn-images-1.medium.com/max/1600/1*fYG3B8hi4O2kk6aHvFB5mg.png" />
 </figure>
 </div>
-<input id="5e722a88-41c7-4cca-add8-0e3f230cbb01" name="87d22b3f-111e-4f35-8273-0d29a5694593" type="radio">
-</input><label class="sd-tab-label" for="5e722a88-41c7-4cca-add8-0e3f230cbb01">
+<input id="c35dd9b9-6567-4d74-b4ac-df906f4d8219" name="4aa019f2-233e-45da-913b-4485d1f88f4a" type="radio">
+</input><label class="sd-tab-label" for="c35dd9b9-6567-4d74-b4ac-df906f4d8219">
 Undirected</label><div class="sd-tab-content docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
@@ -864,8 +867,8 @@ Undirected</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="ffa3c9c0-ea48-4155-b9db-aca272c05581" name="87d22b3f-111e-4f35-8273-0d29a5694593" type="radio">
-</input><label class="sd-tab-label" for="ffa3c9c0-ea48-4155-b9db-aca272c05581">
+<input id="fe472a30-ccc6-46f2-bd98-465030fb2751" name="4aa019f2-233e-45da-913b-4485d1f88f4a" type="radio">
+</input><label class="sd-tab-label" for="fe472a30-ccc6-46f2-bd98-465030fb2751">
 Directed</label><div class="sd-tab-content docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
@@ -958,8 +961,8 @@ Directed</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="2860a7f9-c301-4753-86c7-c8de5284cdde" name="2020e496-2d0d-4f3c-8525-c7e875246cfd" type="radio">
-</input><label class="sd-tab-label" for="2860a7f9-c301-4753-86c7-c8de5284cdde">
+<input checked="checked" id="d3d35b56-0015-403b-a5e4-44dcc4871b90" name="89442e98-96d7-403c-a449-558d619cc78b" type="radio">
+</input><label class="sd-tab-label" for="d3d35b56-0015-403b-a5e4-44dcc4871b90">
 Digraph</label><div class="sd-tab-content docutils">
 <dl class="glossary simple">
 <dt id="term-Vertex-representation">Vertex representation<a class="headerlink" href="#term-Vertex-representation" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">For 0 through all positive values <span class="math notranslate nohighlight">\(V-1\)</span>
@@ -978,8 +981,8 @@ Applications: use <i class="blue">symbol table</i> to convert between names and 
 <img alt="../../_images/19_04.png" src="../../_images/19_04.png" />
 </figure>
 </div>
-<input id="db944eb9-a790-47b5-a20f-e8180ee24abd" name="2020e496-2d0d-4f3c-8525-c7e875246cfd" type="radio">
-</input><label class="sd-tab-label" for="db944eb9-a790-47b5-a20f-e8180ee24abd">
+<input id="ab5e7e30-acec-475e-b73b-c3f9b8c0cf69" name="89442e98-96d7-403c-a449-558d619cc78b" type="radio">
+</input><label class="sd-tab-label" for="ab5e7e30-acec-475e-b73b-c3f9b8c0cf69">
 Adjacency-matrix</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -993,8 +996,8 @@ Adjacency-matrix</label><div class="sd-tab-content docutils">
 <img alt="../../_images/19_05.png" src="../../_images/19_05.png" />
 </figure>
 </div>
-<input id="93c8971e-fa8e-4d5c-a59d-47e1d0ca49b6" name="2020e496-2d0d-4f3c-8525-c7e875246cfd" type="radio">
-</input><label class="sd-tab-label" for="93c8971e-fa8e-4d5c-a59d-47e1d0ca49b6">
+<input id="dd55a97c-fee9-4552-9fc7-756557bc960e" name="89442e98-96d7-403c-a449-558d619cc78b" type="radio">
+</input><label class="sd-tab-label" for="dd55a97c-fee9-4552-9fc7-756557bc960e">
 Adjacency-lists</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1005,8 +1008,8 @@ Adjacency-lists</label><div class="sd-tab-content docutils">
 <img alt="../../_images/19_06.png" src="../../_images/19_06.png" />
 </figure>
 </div>
-<input id="f07ded79-766e-4401-9a8d-0f628ce7a206" name="2020e496-2d0d-4f3c-8525-c7e875246cfd" type="radio">
-</input><label class="sd-tab-label" for="f07ded79-766e-4401-9a8d-0f628ce7a206">
+<input id="ff389bb1-074b-4ec1-b8af-1d98ca045df8" name="89442e98-96d7-403c-a449-558d619cc78b" type="radio">
+</input><label class="sd-tab-label" for="ff389bb1-074b-4ec1-b8af-1d98ca045df8">
 In practice</label><div class="sd-tab-content docutils">
 <dl class="glossary simple">
 <dt id="term-Use-adjacency-lists">Use adjacency-lists<a class="headerlink" href="#term-Use-adjacency-lists" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Algorithms based on iterating over vertices adjacent from <span class="math notranslate nohighlight">\(v\)</span><br />
@@ -1095,9 +1098,9 @@ Real-world graphs tend to be <i class="blue">sparce</i> (<span class="math notra
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Jonathan Schrader<br/>
+    By Professor Jonathan Schrader<br/>
   
-      &copy; Copyright 2023.<br/>
+      &copy; Copyright 2022.<br/>
     <div class="extra_footer">
       Materials herein are a compilation under guise of 'Fair Use for Education'.<br>All rights reserved by their intellectual property owners, respectfully.
     </div>
