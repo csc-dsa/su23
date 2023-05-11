@@ -75,7 +75,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Welcome to CSC 212!!<br>Tuesday, May 22<br>AM Section: Tyler 108 @ 10a, PM Section: Chafee Social Science Center 219 @ 3p</div>
+<div class="announcement header-item noprint">Welcome to CSC 212!!<br>Tuesday, May 22<br>Please refer to edstem for zoom: lecture / lab link</div>
 <div class="header header-item noprint"></div>
 
     
@@ -276,6 +276,21 @@ const thebe_selector_output = ".output, .cell_output"
      Quicksort
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assets/lecture/heapsort.html">
+     Heapsort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assets/lecture/timsort.html">
+     Timsort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assets/lecture/introsort.html">
+     Introsort
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -288,6 +303,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assets/lecture/tree.html">
+     Trees
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="assets/lecture/bst.html">
      Binary Search Trees
@@ -325,6 +345,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="assets/lecture/greedy.html">
+   Greedy Algorithms
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -332,6 +357,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ide.html">
+   IDE Set Up
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference external" href="https://www.learncpp.com">
    Learn C++
@@ -581,6 +611,16 @@ title="Print to PDF"
    Summer Location(s)
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fall-location-s">
+   Fall Location(s)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fall-term">
+   Fall Term
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -610,6 +650,16 @@ title="Print to PDF"
    Summer Location(s)
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fall-location-s">
+   Fall Location(s)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fall-term">
+   Fall Term
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -637,6 +687,8 @@ title="Print to PDF"
 <ul class="simple">
 <li><p class="sd-card-text"><a class="reference internal" href="#summer-calendar" id="id1">Summer Calendar</a></p></li>
 <li><p class="sd-card-text"><a class="reference internal" href="#summer-location-s" id="id2">Summer Location(s)</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#fall-location-s" id="id3">Fall Location(s)</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#fall-term" id="id4">Fall Term</a></p></li>
 </ul>
 </div>
 </div>
@@ -771,119 +823,153 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<!-- 
-## Fall Location(s)
-
-```` {div} full-width
-``` {list-table}
-* - Lecture
-  -  Swan Hall 170 <br> {octicon}`calendar;1em;sd-text-info` Tuesday & Thursday 3:30 - 4:45p
-  -
-* - Lab
-  - Section L01 <br> Library Room 166 <br> {octicon}`calendar;1em;sd-text-info` Wednesday 10:00 - 11:45a 
-  - Section L02 <br> Library Room 166 <br> {octicon}`calendar;1em;sd-text-info` Wednesday 12:00 - 1:45p
-```
-````
-
-## Fall Term
-
-````` {div} full-width
-``` {list-table}
-:header-rows: 1
-
-* - 
-  - Tuesday
-  - Thursday
-  - Lab
-  - Assignment
-  - Project
-* - Week 01
-  - []()
-  - [Introduction & Expectations](assets/lecture/intro.md)
-  - [C++ Crash Course](/assets/lab/lab.md)
-  - [A1 : Practical I](/assets/assignment/01_assign.md)
-  - []()
-* - Week 02
-  - [Analysis of Algorithms](assets/lecture/analysis.md)
-  - [Computational Cost](assets/lecture/cost.md)
-  - [Functional Runtime Timing]()
-  - [A1 : Practical I](/assets/assignment/01_assign.md)
-  - []()
-* - Week 03
-  - [Big-O](assets/lecture/big_o.md)
-  - [Dynamic Arrays](/assets/lecture/dyn_arr.md)
-  - [Dynamic Arrays]()
-  - [A1 : Practical I](/assets/assignment/01_assign.md)
-  - []()
-* - Week 04
-  - [Linked Lists](/assets/lecture/ll.md)
-  - 211 Project
-  - [Linked Lists]()
-  - [A3 : Conceptual I]()
-  - []()
-* - Week 05
-  - [Stacks & Queues](/assets/lecture/stacks_queues.md)
-  - [Priority Queues](/assets/lecture/pq.md)
-  - [Priority Queues]()
-  - [A3 : Conceptual I]()
-  - []()
-* - Week 06
-  - [Binary Trees & Heaps](/assets/lecture/bin_tree.md)
-  - [Recursive Algorithms](/assets/lecture/rec_algo.md)
-  - [Lab = (Lab + Recursion(4))]()
-  - [A3 : Conceptual I]()
-  - []()
-* - Week 07
-  - [Binary Search Trees](/assets/lecture/bst.md)
-  - [Recurrences](/assets/lecture/recur.md)
-  - [Binary Search Trees]()
-  - [A4 : Practical II]()
-  - []()
-* - Week 08
-  - [Basic Sorts](/assets/lecture/basic.md)
-  - [Mergesort](/assets/lecture/merge.md)
-  - [Backtracking]()
-  - [A4 : Practical II]()
-  - []()
-* - Week 09
-  - [Hash Tables](/assets/lecture/hash_tables.md)
-  - [Quicksort](/assets/lecture/quick.md)
-  - [Hash Tables]()
-  - [A4 : Practical II]()
-  - []()
-* - Week 10
-  - [2-3 Trees](/assets/lecture/2_3.md)
-  - [Left-leaning Red Black Trees](/assets/lecture/llrbt.md)
-  - [Balancing Act]()
-  - [A5 : Conceptual II]()
-  - []()
-* - Week 11
-  - [Graphs](/assets/lecture/graphs.md)
-  - [Depth-First & Breadth-First](/assets/lecture/dfs_bfs.md)
-  - [Graphs]()
-  - [A5 : Conceptual II]()
-  - []()
-* - Week 12
-  - Enjoy
-  - Thanksgiving
-  - Break
-  - [A5 : Conceptual II]()
-  - []()
-* - Week 13
-  - 212 Project
-  - 212 Project
-  - []()
-  - []()
-  -
-* - Week 14
-  - 212 Project Presentations
-  - 212 Project Presentations
-  - 212 Project Presentations
-  - 
-  - [DSA Project]() Submission
-
-```
-````` --></section>
+</section>
+<section id="fall-location-s">
+<h2><a class="toc-backref" href="#id3">Fall Location(s)</a><a class="headerlink" href="#fall-location-s" title="Permalink to this headline">#</a></h2>
+<div class="full-width docutils">
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Lecture</p></td>
+<td><p>Swan Hall 170 <br> <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-calendar sd-text-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg> Tuesday &amp; Thursday 3:30 - 4:45p</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Lab</p></td>
+<td><p>Section L01 <br> Library Room 166 <br> <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-calendar sd-text-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg> Wednesday 10:00 - 11:45a</p></td>
+<td><p>Section L02 <br> Library Room 166 <br> <svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-calendar sd-text-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path></svg> Wednesday 12:00 - 1:45p</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="fall-term">
+<h2><a class="toc-backref" href="#id4">Fall Term</a><a class="headerlink" href="#fall-term" title="Permalink to this headline">#</a></h2>
+<div class="full-width docutils">
+<table class="table">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>Tuesday</p></th>
+<th class="head"><p>Thursday</p></th>
+<th class="head"><p>Lab</p></th>
+<th class="head"><p>Assignment</p></th>
+<th class="head"><p>Project</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Week 01</p></td>
+<td><p><span class="xref myst"></span></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Analysis</span><br><a class="reference internal" href="assets/lecture/intro.html"><span class="doc std std-doc">Introduction</span></a></p></td>
+<td><p><span class="xref myst">C++ Crash Course</span></p></td>
+<td><p><span class="xref myst">A1 : Practical I</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Week 02</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Analysis</span><br><a class="reference internal" href="assets/lecture/analysis.html"><span class="doc std std-doc">Analysis of Algorithms</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Analysis</span><br><a class="reference internal" href="assets/lecture/cost.html"><span class="doc std std-doc">Computational Cost</span></a></p></td>
+<td><p><span class="xref myst">Functional Runtime Timing</span></p></td>
+<td><p><span class="xref myst">A1 : Practical I</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-even"><td><p>Week 03</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">Linear</span> <br> <a class="reference internal" href="assets/lecture/dyn_arr.html"><span class="doc std std-doc">Dynamic Arrays</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Analysis</span><br><a class="reference internal" href="assets/lecture/big_o.html"><span class="doc std std-doc">Big-O</span></a></p></td>
+<td><p><span class="xref myst">Dynamic Arrays</span></p></td>
+<td><p><span class="xref myst">A1 : Practical I</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Week 04</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">Linear</span> <br> <a class="reference internal" href="assets/lecture/ll.html"><span class="doc std std-doc">Linked Lists</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">Linear</span> <br> <a class="reference internal" href="assets/lecture/stacks.html"><span class="doc std std-doc">Stacks</span></a> <br> <a class="reference internal" href="assets/lecture/queues.html"><span class="doc std std-doc">Queues</span></a></p></td>
+<td><p><span class="xref myst">Linked Lists</span></p></td>
+<td><p><span class="xref myst">A3 : Conceptual I</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-even"><td><p>Week 05</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">Linear</span> <br> <a class="reference internal" href="assets/lecture/pq.html"><span class="doc std std-doc">Priority Queues</span></a></p></td>
+<td><p>211 Project</p></td>
+<td><p><span class="xref myst">Priority Queues</span></p></td>
+<td><p><span class="xref myst">A3 : Conceptual I</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Week 06</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Search &amp; Sort</span> <br> <a class="reference internal" href="assets/lecture/search.html"><span class="doc std std-doc">Search Algorithms</span></a><br><a class="reference internal" href="assets/lecture/basic.html"><span class="doc std std-doc">Basic Sorts</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Search &amp; Sort</span> <br> <a class="reference internal" href="assets/lecture/rec_algo.html"><span class="doc std std-doc">Recursive Algorithms</span></a></p></td>
+<td><p><span class="xref myst">Recursion</span></p></td>
+<td><p><span class="xref myst">A3 : Conceptual I</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-even"><td><p>Week 07</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Search &amp; Sort</span> <br> <a class="reference internal" href="assets/lecture/recur.html"><span class="doc std std-doc">Recurrences</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Search &amp; Sort</span> <br> <a class="reference internal" href="assets/lecture/qs.html"><span class="doc std std-doc">Quicksort</span></a> <br> <a class="reference internal" href="assets/lecture/merge.html"><span class="doc std std-doc">Mergesort</span></a></p></td>
+<td><p><span class="xref myst">Backtracking</span></p></td>
+<td><p><span class="xref myst">A4 : Practical II</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Week 08</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Non-Linear</span> <br> <a class="reference internal" href="assets/lecture/bst.html"><span class="doc std std-doc">Binary Search Trees</span></a> <br> <a class="reference internal" href="assets/lecture/heaps.html"><span class="doc std std-doc">Heaps</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">Search &amp; Sort</span> <br> <a class="reference internal" href="assets/lecture/heapsort.html"><span class="doc std std-doc">Heapsort</span></a> <br> <a class="reference internal" href="assets/lecture/introsort.html"><span class="doc std std-doc">Introsort</span></a></p></td>
+<td><p><span class="xref myst">Binary Search Trees</span></p></td>
+<td><p><span class="xref myst">A4 : Practical II</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-even"><td><p>Week 09</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Non-Linear</span> <br> <a class="reference internal" href="assets/lecture/set.html"><span class="doc std std-doc">Sets</span></a> <br> <a class="reference internal" href="assets/lecture/map.html"><span class="doc std std-doc">Maps</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Non-Linear</span> <br> <a class="reference internal" href="assets/lecture/hash_tables.html"><span class="doc std std-doc">Hash Tables</span></a></p></td>
+<td><p><span class="xref myst">Sets &amp; Maps</span></p></td>
+<td><p><span class="xref myst">A4 : Practical II</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Week 10</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Non-Linear</span> <br> <a class="reference internal" href="assets/lecture/2_3.html"><span class="doc std std-doc">2-3 Trees</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Non-Linear</span> <br> <a class="reference internal" href="assets/lecture/llrbt.html"><span class="doc std std-doc">Left-leaning Red Black Trees</span></a></p></td>
+<td><p><span class="xref myst">Hash Tables</span></p></td>
+<td><p><span class="xref myst">A5 : Conceptual II</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-even"><td><p>Week 11</p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Non-Linear</span> <br> <a class="reference internal" href="assets/lecture/graphs.html"><span class="doc std std-doc">Graphs</span></a><br><a class="reference internal" href="assets/lecture/dfs.html"><span class="doc std std-doc">DFS</span></a> &amp; <a class="reference internal" href="assets/lecture/bfs.html"><span class="doc std std-doc">BFS</span></a></p></td>
+<td><p><span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">Non-Linear</span> <br> <a class="reference internal" href="assets/lecture/greedy.html"><span class="doc std std-doc">Greedy Algorithms</span></a></p></td>
+<td><p><span class="xref myst">Balancing Act</span></p></td>
+<td><p><span class="xref myst">A5 : Conceptual II</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Week 12</p></td>
+<td><p>Thanksgiving</p></td>
+<td><p>Break</p></td>
+<td><p><span class="xref myst">Graphs</span></p></td>
+<td><p><span class="xref myst">A5 : Conceptual II</span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+</tr>
+<tr class="row-even"><td><p>Week 13</p></td>
+<td><p>212 Project</p></td>
+<td><p>212 Project</p></td>
+<td><p><span class="xref myst"></span></p></td>
+<td><p><span class="xref myst"></span></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Week 14</p></td>
+<td><p>212 Project Presentations</p></td>
+<td><p>212 Project Presentations</p></td>
+<td><p>212 Project Presentations</p></td>
+<td></td>
+<td><p><span class="xref myst">DSA Project</span> Submission</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
