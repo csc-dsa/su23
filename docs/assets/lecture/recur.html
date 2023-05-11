@@ -77,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Welcome to CSC 212!!<br>Tuesday, May 22<br>AM Section: Tyler 108 @ 10a, PM Section: Chafee Social Science Center 219 @ 3p</div>
+<div class="announcement header-item noprint">Welcome to CSC 212!!<br>Tuesday, May 22<br>Please refer to edstem for zoom: lecture / lab link</div>
 <div class="header header-item noprint"></div>
 
     
@@ -278,6 +278,21 @@ const thebe_selector_output = ".output, .cell_output"
      Quicksort
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="heapsort.html">
+     Heapsort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="timsort.html">
+     Timsort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introsort.html">
+     Introsort
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -290,6 +305,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tree.html">
+     Trees
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="bst.html">
      Binary Search Trees
@@ -327,6 +347,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="greedy.html">
+   Greedy Algorithms
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -334,6 +359,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ide.html">
+   IDE Set Up
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference external" href="https://www.learncpp.com">
    Learn C++
@@ -1521,8 +1551,8 @@ T(n) &amp; = 2^nT(0) + 1 + 2 + 2^2\ + \dots\ 2^k-1 \\
 <div class="admonition-master-theorem-https-youtu-be-2h0gkdriowu admonition">
 <p class="admonition-title"><a class="reference external" href="https://youtu.be/2H0GKdrIowU">Master Theorem</a></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="2be988dd-1978-4587-8f80-134fa131af15" name="e2017891-da34-4c8a-9e50-01d2f5fe3b54" type="radio">
-</input><label class="sd-tab-label" for="2be988dd-1978-4587-8f80-134fa131af15">
+<input checked="checked" id="cc0e2ca5-59dc-42a3-9eda-541215e2a777" name="615a38f5-bab5-4999-b8c0-d2f3f5bf51aa" type="radio">
+</input><label class="sd-tab-label" for="cc0e2ca5-59dc-42a3-9eda-541215e2a777">
 Cases</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">If <span class="math notranslate nohighlight">\(T(n) = aT(\frac{n}{b}) + O(n^d)\)</span> (for constants <span class="math notranslate nohighlight">\(a \gt 0, b \gt 1, d \ge 0\)</span>), then:</p>
 <div class="math notranslate nohighlight">
@@ -1535,8 +1565,8 @@ O(n^{log_b\ a}),  &amp; \text{$if\ d\ \lt log_b\ a$}, &amp;&amp; Case 3 \\
 \end{cases}
 \end{split}\]</div>
 </div>
-<input id="cd9a0b28-1ce7-42d6-96ce-074fdd1ac681" name="e2017891-da34-4c8a-9e50-01d2f5fe3b54" type="radio">
-</input><label class="sd-tab-label" for="cd9a0b28-1ce7-42d6-96ce-074fdd1ac681">
+<input id="2e92cf98-7251-41c1-8851-5e1020a66762" name="615a38f5-bab5-4999-b8c0-d2f3f5bf51aa" type="radio">
+</input><label class="sd-tab-label" for="2e92cf98-7251-41c1-8851-5e1020a66762">
 Case 1</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 2T(\frac{n}{2}) + O(n^2)\]</div>
@@ -1549,8 +1579,8 @@ c &amp; = 2 \\
 \end{align}\end{split}\]</div>
 <p class="sd-card-text">Since <span class="math notranslate nohighlight">\(d \gt log_b\ a\)</span>, <span class="math notranslate nohighlight">\(T(n) = O(n^d) = O(n^2)\)</span></p>
 </div>
-<input id="8790dddb-7f15-44c5-bdd9-af3427240d0b" name="e2017891-da34-4c8a-9e50-01d2f5fe3b54" type="radio">
-</input><label class="sd-tab-label" for="8790dddb-7f15-44c5-bdd9-af3427240d0b">
+<input id="32eb11b0-5137-412d-9de9-f6fa612412a2" name="615a38f5-bab5-4999-b8c0-d2f3f5bf51aa" type="radio">
+</input><label class="sd-tab-label" for="32eb11b0-5137-412d-9de9-f6fa612412a2">
 Case 2</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = T(\frac{n}{2}) + O(1)\]</div>
@@ -1569,8 +1599,8 @@ T(n) &amp; = O(n^d\ log\ n) \\
 &amp; = O(log\ n) \\
 \end{align}\end{split}\]</div>
 </div>
-<input id="d77652d4-5c9f-4369-952d-ed43a2edc09a" name="e2017891-da34-4c8a-9e50-01d2f5fe3b54" type="radio">
-</input><label class="sd-tab-label" for="d77652d4-5c9f-4369-952d-ed43a2edc09a">
+<input id="6055f3bb-0167-47a0-bc25-33d9317ef25a" name="615a38f5-bab5-4999-b8c0-d2f3f5bf51aa" type="radio">
+</input><label class="sd-tab-label" for="6055f3bb-0167-47a0-bc25-33d9317ef25a">
 Case 3</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 4T(\frac{n}{2}) + O(n)\]</div>

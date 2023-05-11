@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Analysis &#8212; Data Structures &amp; Algorithms</title>
+    <title>Trees &#8212; Data Structures &amp; Algorithms</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,12 +52,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Analysis of Algorithms" href="../lecture/analysis.html" />
-    <link rel="prev" title="Introduction" href="../lecture/intro.html" />
+    <link rel="next" title="Binary Search Trees" href="bst.html" />
+    <link rel="prev" title="Non-Linear Structures" href="../module/m05.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -165,39 +163,39 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../lecture/intro.html">
+  <a class="reference internal" href="intro.html">
    Introduction
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../module/m02.html">
    Analysis
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/analysis.html">
+    <a class="reference internal" href="analysis.html">
      Analysis of Algorithms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/cost.html">
+    <a class="reference internal" href="cost.html">
      Computational Cost
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/big_o.html">
+    <a class="reference internal" href="big_o.html">
      Big-O
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="m03.html">
+  <a class="reference internal" href="../module/m03.html">
    Linear Structures
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -207,39 +205,39 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/dyn_arr.html">
+    <a class="reference internal" href="dyn_arr.html">
      Dynamic Arrays
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/ll.html">
+    <a class="reference internal" href="ll.html">
      Linked Lists
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/stacks.html">
+    <a class="reference internal" href="stacks.html">
      Stacks
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/queues.html">
+    <a class="reference internal" href="queues.html">
      Queues
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/pq.html">
+    <a class="reference internal" href="pq.html">
      Priority Queues
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/heaps.html">
+    <a class="reference internal" href="heaps.html">
      Heaps
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="m04.html">
+  <a class="reference internal" href="../module/m04.html">
    Searching &amp; Sorting
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -249,106 +247,106 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/search.html">
+    <a class="reference internal" href="search.html">
      Search Algorithms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/rec_algo.html">
+    <a class="reference internal" href="rec_algo.html">
      Recursive Algorithms (Analysis)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/recur.html">
+    <a class="reference internal" href="recur.html">
      Recurrences
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/basic.html">
+    <a class="reference internal" href="basic.html">
      Basic Sorts (Analysis)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/merge.html">
+    <a class="reference internal" href="merge.html">
      Mergesort
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/qs.html">
+    <a class="reference internal" href="qs.html">
      Quicksort
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/heapsort.html">
+    <a class="reference internal" href="heapsort.html">
      Heapsort
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/timsort.html">
+    <a class="reference internal" href="timsort.html">
      Timsort
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/introsort.html">
+    <a class="reference internal" href="introsort.html">
      Introsort
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="m05.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../module/m05.html">
    Non-Linear Structures
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/tree.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Trees
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/bst.html">
+    <a class="reference internal" href="bst.html">
      Binary Search Trees
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/2_3.html">
+    <a class="reference internal" href="2_3.html">
      2-3 Trees
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/llrbt.html">
+    <a class="reference internal" href="llrbt.html">
      Left-Leaning Red-Black Trees
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/hash_tables.html">
+    <a class="reference internal" href="hash_tables.html">
      Hash Tables
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/graphs.html">
+    <a class="reference internal" href="graphs.html">
      Graphs
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/dfs.html">
+    <a class="reference internal" href="dfs.html">
      Graphs : Depth-First Search
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lecture/bfs.html">
+    <a class="reference internal" href="bfs.html">
      Graphs : Breadth-First Search
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../lecture/greedy.html">
+  <a class="reference internal" href="greedy.html">
    Greedy Algorithms
   </a>
  </li>
@@ -380,7 +378,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="opendsa.html">
+  <a class="reference internal" href="../module/opendsa.html">
    OpenDSA
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
@@ -516,7 +514,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/csc-dsa/su23/issues/new?title=Issue%20on%20page%20%2Fassets/module/m02.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/csc-dsa/su23/issues/new?title=Issue%20on%20page%20%2Fassets/lecture/tree.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -544,7 +542,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/assets/module/m02.md"
+        <a href="../../_sources/assets/lecture/tree.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -604,8 +602,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
+  <a class="reference internal nav-link" href="#what-is-a-tree">
+   What is a tree?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terminology">
+   Terminology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#properties">
+   Properties
   </a>
  </li>
 </ul>
@@ -617,7 +625,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Analysis</h1>
+                <h1>Trees</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -628,8 +636,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
+  <a class="reference internal nav-link" href="#what-is-a-tree">
+   What is a tree?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terminology">
+   Terminology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#properties">
+   Properties
   </a>
  </li>
 </ul>
@@ -642,43 +660,111 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="analysis">
-<h1>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="trees">
+<h1><a class="reference external" href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">Trees</a><a class="headerlink" href="#trees" title="Permalink to this headline">#</a></h1>
+<div class="full-width docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<img alt="image" src="https://miro.medium.com/v2/resize:fit:1380/1*_8PfaIyJC7dWJOsKxz47ow.png" /><div class="sd-summary-down docutils">
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/oSWTXtMglKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<dl class="glossary">
-<dt id="term-Algorithm-analysis">Algorithm analysis<a class="headerlink" href="#term-Algorithm-analysis" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">the process of evaluating the performance of an algorithm in terms of time and space complexity. This is essential for determining the efficiency of algorithms and data structures and is used to identify the best algorithm for a particular problem.</p>
-</dd>
-<dt id="term-Computational-cost">Computational cost<a class="headerlink" href="#term-Computational-cost" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">the resources required to execute an algorithm. These resources can include time, space, and hardware requirements, among others. The computational cost of an algorithm is generally expressed in terms of its time complexity and space complexity.</p>
-</dd>
-<dt id="term-Time-complexity">Time complexity<a class="headerlink" href="#term-Time-complexity" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">the amount of time required by an algorithm to complete its execution. It is usually expressed in terms of the number of operations performed by the algorithm as a function of the input size. Common time complexities include</p>
-<div class="math notranslate nohighlight">
-\[O(1), O(log\ n), O(n), O(n\ log\ n), O(n^2), O(2^n)\]</div>
-</dd>
-<dt id="term-Space-complexity">Space complexity<a class="headerlink" href="#term-Space-complexity" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">the amount of memory required by an algorithm to execute. It is usually expressed in terms of the amount of memory required by the algorithm as a function of the input size. Common space complexities include</p>
-<div class="math notranslate nohighlight">
-\[O(1), O(log\ n), O(n), O(n\ log\ n), O(n^2), O(2^n)\]</div>
-</dd>
-<dt id="term-Asymptotic-analysis">Asymptotic analysis<a class="headerlink" href="#term-Asymptotic-analysis" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">a method used to analyze the time and space complexity of an algorithm as the input size approaches infinity. It is a way of characterizing the growth rate of an algorithm and is usually expressed in terms of big O notation. Big O notation provides an upper bound on the growth rate of an algorithm and is commonly used to compare the efficiency of different algorithms. For example, an algorithm with a time complexity of <span class="math notranslate nohighlight">\(O(n)\)</span> is said to be less efficient than an algorithm with a time complexity of <span class="math notranslate nohighlight">\(O(log\ n)\)</span> as the input size approaches infinity.</p>
-</dd>
-</dl>
-<p class="sd-card-text">The choice of data structure can also have a significant impact on the computational cost of an algorithm. Different data structures have different time and space complexity characteristics, and the choice of data structure can greatly affect the efficiency of an algorithm. For example, using a binary search tree instead of an array for searching can greatly reduce the time complexity of the algorithm.</p>
-<p class="sd-card-text">Overall, understanding algorithm analysis, computational cost, and asymptotic analysis is essential for computer scientists and programmers, as it is crucial for developing efficient algorithms and data structures.</p>
+<div class="sd-card-title sd-font-weight-bold docutils">
+TL;DR</div>
+<p class="sd-card-text">a tree is a data structure that represents a hierarchical structure. It is composed of nodes connected by edges, with each node containing a value and zero or more child nodes. The topmost node in the tree is called the root node, while nodes that have no children are called leaf nodes.</p>
+<p class="sd-card-text">There are many different types of trees, including binary trees, AVL trees, and red-black trees, each with its own set of rules and constraints. Trees can be used to represent a variety of data structures, including file systems, abstract syntax trees, and search trees.</p>
+<p class="sd-card-text">Trees are an important data structure in computer science because they provide efficient access and manipulation of data. For example, search trees can be used to efficiently store and retrieve large amounts of data, while binary trees can be used to implement sorting algorithms such as heapsort.</p>
+<p class="sd-card-text">Overall, trees are a powerful tool for organizing and managing complex data structures in computer science.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Additional Resources</div>
+<ul class="simple">
+<li><p class="sd-card-text"><span class="xref myst"></span></p></li>
+</ul>
+</div>
+</div>
+</div>
+</details></div>
+<section id="what-is-a-tree">
+<h2>What is a tree?<a class="headerlink" href="#what-is-a-tree" title="Permalink to this headline">#</a></h2>
+<div class="full-width docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<blockquote>
+<div><p class="sd-card-text">A tree data structure is a hierarchical structure that is used to represent and organize data in a way that is easy to navigate and search. It is a collection of nodes that are connected by edges and has a hierarchical relationship between the nodes.</p>
+<p class="sd-card-text">The topmost node of the tree is called the root, and the nodes below it are called the child nodes. Each node can have multiple child nodes, and these child nodes can also have their own child nodes, forming a recursive structure.</p>
+<p class="sd-card-text">– <a class="reference external" href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">gfg</a></p>
+</div></blockquote>
+<figure class="align-default" id="id1">
+<img alt="https://media.geeksforgeeks.org/wp-content/uploads/20221124153129/Treedatastructure.png" src="https://media.geeksforgeeks.org/wp-content/uploads/20221124153129/Treedatastructure.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Anatomy of a Tree</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<div class="toctree-wrapper compound">
+<section id="terminology">
+<h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">#</a></h2>
+<div class="full-width docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<dl class="glossary simple">
+<dt id="term-Parent-Node">Parent Node<a class="headerlink" href="#term-Parent-Node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The node which is a predecessor of a node is called the parent node of that node. {B} is the parent node of {D, E}.</p>
+</dd>
+<dt id="term-Child-Node">Child Node<a class="headerlink" href="#term-Child-Node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The node which is the immediate successor of a node is called the child node of that node. Examples: {D, E} are the child nodes of {B}.</p>
+</dd>
+<dt id="term-Root-Node">Root Node<a class="headerlink" href="#term-Root-Node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The topmost node of a tree or the node which does not have any parent node is called the root node. {A} is the root node of the tree. A non-empty tree must contain exactly one root node and exactly one path from the root to all other nodes of the tree.</p>
+</dd>
+<dt id="term-Leaf-Node-or-External-Node">Leaf Node or External Node<a class="headerlink" href="#term-Leaf-Node-or-External-Node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The nodes which do not have any child nodes are called leaf nodes. {K, L, M, N, O, P} are the leaf nodes of the tree.</p>
+</dd>
+<dt id="term-Ancestor-of-a-Node">Ancestor of a Node<a class="headerlink" href="#term-Ancestor-of-a-Node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Any predecessor nodes on the path of the root to that node are called Ancestors of that node. {A,B} are the ancestor nodes of the node {E}</p>
+</dd>
+<dt id="term-Descendant">Descendant<a class="headerlink" href="#term-Descendant" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Any successor node on the path from the leaf node to that node. {E,I} are the descendants of the node {B}.</p>
+</dd>
+<dt id="term-Sibling">Sibling<a class="headerlink" href="#term-Sibling" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Children of the same parent node are called siblings. {D,E} are called siblings.</p>
+</dd>
+<dt id="term-Level-of-a-node">Level of a node<a class="headerlink" href="#term-Level-of-a-node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The count of edges on the path from the root node to that node. The root node has level 0.</p>
+</dd>
+<dt id="term-Internal-node">Internal node<a class="headerlink" href="#term-Internal-node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">A node with at least one child is called Internal Node.</p>
+</dd>
+<dt id="term-Neighbor-of-a-Node">Neighbor of a Node<a class="headerlink" href="#term-Neighbor-of-a-Node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Parent or child nodes of that node are called neighbors of that node.</p>
+</dd>
+<dt id="term-Subtree">Subtree<a class="headerlink" href="#term-Subtree" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">Any node of the tree along with its descendant.</p>
+</dd>
+</dl>
 </div>
+</div>
+</div>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">#</a></h2>
+<div class="full-width docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<dl class="glossary simple">
+<dt id="term-Number-of-edges">Number of edges<a class="headerlink" href="#term-Number-of-edges" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">An edge can be defined as the connection between two nodes. If a tree has N nodes then it will have (N-1) edges. There is only one path from each node to any other node of the tree.</p>
+</dd>
+<dt id="term-Depth-of-a-node">Depth of a node<a class="headerlink" href="#term-Depth-of-a-node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The depth of a node is defined as the length of the path from the root to that node. Each edge adds 1 unit of length to the path. So, it can also be defined as the number of edges in the path from the root of the tree to the node.</p>
+</dd>
+<dt id="term-Height-of-a-node">Height of a node<a class="headerlink" href="#term-Height-of-a-node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The height of a node can be defined as the length of the longest path from the node to a leaf node of the tree.</p>
+</dd>
+<dt id="term-Height-of-the-Tree">Height of the Tree<a class="headerlink" href="#term-Height-of-the-Tree" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The height of a tree is the length of the longest path from the root of the tree to a leaf node of the tree.</p>
+</dd>
+<dt id="term-Degree-of-a-Node">Degree of a Node<a class="headerlink" href="#term-Degree-of-a-Node" title="Permalink to this term">#</a></dt><dd><p class="sd-card-text">The total count of subtrees attached to that node is called the degree of the node. The degree of a leaf node must be 0. The degree of a tree is the maximum degree of a node among all the nodes in the tree.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -694,7 +780,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./assets/module"
+            path: "./assets/lecture"
         },
         predefinedOutput: true
     }
@@ -708,17 +794,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../lecture/intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../module/m05.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction</p>
+            <p class="prev-next-title">Non-Linear Structures</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../lecture/analysis.html" title="next page">
+    <a class='right-next' id="next-link" href="bst.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analysis of Algorithms</p>
+        <p class="prev-next-title">Binary Search Trees</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

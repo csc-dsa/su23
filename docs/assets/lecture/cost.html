@@ -77,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Welcome to CSC 212!!<br>Tuesday, May 22<br>AM Section: Tyler 108 @ 10a, PM Section: Chafee Social Science Center 219 @ 3p</div>
+<div class="announcement header-item noprint">Welcome to CSC 212!!<br>Tuesday, May 22<br>Please refer to edstem for zoom: lecture / lab link</div>
 <div class="header header-item noprint"></div>
 
     
@@ -278,6 +278,21 @@ const thebe_selector_output = ".output, .cell_output"
      Quicksort
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="heapsort.html">
+     Heapsort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="timsort.html">
+     Timsort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introsort.html">
+     Introsort
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -290,6 +305,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tree.html">
+     Trees
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="bst.html">
      Binary Search Trees
@@ -327,6 +347,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="greedy.html">
+   Greedy Algorithms
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -334,6 +359,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ide.html">
+   IDE Set Up
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference external" href="https://www.learncpp.com">
    Learn C++
@@ -801,8 +831,8 @@ Basic assumptions</div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="7a98c413-2884-4236-b0e3-c7aa6e71ee1d" name="a8cad7a9-513f-4b7a-83ab-0ecd7f943bba" type="radio">
-</input><label class="sd-tab-label" for="7a98c413-2884-4236-b0e3-c7aa6e71ee1d">
+<input checked="checked" id="a11d2da2-5ea2-4d73-8dd8-d1fc8a331477" name="621eab56-ce11-4514-8901-b5e9764b3f0a" type="radio">
+</input><label class="sd-tab-label" for="a11d2da2-5ea2-4d73-8dd8-d1fc8a331477">
 Model</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">What to count?</p>
 <ul class="simple">
@@ -855,8 +885,8 @@ Hello World !!!
 </div>
 </div>
 </div>
-<input id="7176ca08-b982-4371-9fb4-2c99287b6d41" name="a8cad7a9-513f-4b7a-83ab-0ecd7f943bba" type="radio">
-</input><label class="sd-tab-label" for="7176ca08-b982-4371-9fb4-2c99287b6d41">
+<input id="f3afded6-3468-40c3-bb3b-ab2008f109d0" name="621eab56-ce11-4514-8901-b5e9764b3f0a" type="radio">
+</input><label class="sd-tab-label" for="f3afded6-3468-40c3-bb3b-ab2008f109d0">
 Example 1</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="linenos">2</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -870,8 +900,8 @@ Example 1</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">This code has a time complexity of <span class="math notranslate nohighlight">\(O(n^2)\)</span>. This is because it has nested loops that are both iterating over <code class="docutils literal notranslate"><span class="pre">n</span></code> elements, so the total number of operations increases quadratically with the size of the input.</p>
 </div>
 </div>
-<input id="375d1d87-c9b5-47bf-8a32-6755069fb1a7" name="a8cad7a9-513f-4b7a-83ab-0ecd7f943bba" type="radio">
-</input><label class="sd-tab-label" for="375d1d87-c9b5-47bf-8a32-6755069fb1a7">
+<input id="185b212e-e790-4507-9d74-2fa6f19cc839" name="621eab56-ce11-4514-8901-b5e9764b3f0a" type="radio">
+</input><label class="sd-tab-label" for="185b212e-e790-4507-9d74-2fa6f19cc839">
 Example 2</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="linenos">2</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -885,8 +915,8 @@ Example 2</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">The time complexity of this code is <span class="math notranslate nohighlight">\(O(n^3)\)</span>. This is because there are two nested for loops, each of which has a time complexity of <span class="math notranslate nohighlight">\(O(n)\)</span>, resulting in a time complexity of <span class="math notranslate nohighlight">\(O(n^2)\)</span>. The total time complexity is <span class="math notranslate nohighlight">\(O(n^3)\)</span> because the inner loop is iterating <span class="math notranslate nohighlight">\(n * n\)</span> times.</p>
 </div>
 </div>
-<input id="acc17927-d3bd-4911-9440-6f624b8232f5" name="a8cad7a9-513f-4b7a-83ab-0ecd7f943bba" type="radio">
-</input><label class="sd-tab-label" for="acc17927-d3bd-4911-9440-6f624b8232f5">
+<input id="66ed2866-e683-468b-acfe-16dadb4cf597" name="621eab56-ce11-4514-8901-b5e9764b3f0a" type="radio">
+</input><label class="sd-tab-label" for="66ed2866-e683-468b-acfe-16dadb4cf597">
 Example 3</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="linenos">2</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -905,8 +935,8 @@ n + n-1 + n-2 + ... + 1 &amp; = n(n+1)/2 \\
 \end {align}\end{split}\]</div>
 </div>
 </div>
-<input id="ff9faf57-6183-4b08-9412-d73c5ccf8f40" name="a8cad7a9-513f-4b7a-83ab-0ecd7f943bba" type="radio">
-</input><label class="sd-tab-label" for="ff9faf57-6183-4b08-9412-d73c5ccf8f40">
+<input id="36a795a0-d91f-4bf2-84a9-1cc7dc469e58" name="621eab56-ce11-4514-8901-b5e9764b3f0a" type="radio">
+</input><label class="sd-tab-label" for="36a795a0-d91f-4bf2-84a9-1cc7dc469e58">
 Example 4</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="linenos">2</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -922,8 +952,8 @@ Example 4</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">The time complexity of this code is <span class="math notranslate nohighlight">\(O(n^3)\)</span> because there are three nested loops, each of which runs <code class="docutils literal notranslate"><span class="pre">n</span></code> times. This results in <span class="math notranslate nohighlight">\(n^3\)</span> total iterations of the innermost loop.</p>
 </div>
 </div>
-<input id="dad58542-3e25-4c39-a23e-0c09640b2bc9" name="a8cad7a9-513f-4b7a-83ab-0ecd7f943bba" type="radio">
-</input><label class="sd-tab-label" for="dad58542-3e25-4c39-a23e-0c09640b2bc9">
+<input id="4d88bca6-dc9a-4a06-8ee7-0ecc5b52ba38" name="621eab56-ce11-4514-8901-b5e9764b3f0a" type="radio">
+</input><label class="sd-tab-label" for="4d88bca6-dc9a-4a06-8ee7-0ecc5b52ba38">
 Example 5</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="linenos">2</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>

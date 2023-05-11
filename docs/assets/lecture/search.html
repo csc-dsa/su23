@@ -77,7 +77,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Welcome to CSC 212!!<br>Tuesday, May 22<br>AM Section: Tyler 108 @ 10a, PM Section: Chafee Social Science Center 219 @ 3p</div>
+<div class="announcement header-item noprint">Welcome to CSC 212!!<br>Tuesday, May 22<br>Please refer to edstem for zoom: lecture / lab link</div>
 <div class="header header-item noprint"></div>
 
     
@@ -278,6 +278,21 @@ const thebe_selector_output = ".output, .cell_output"
      Quicksort
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="heapsort.html">
+     Heapsort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="timsort.html">
+     Timsort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="introsort.html">
+     Introsort
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -290,6 +305,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tree.html">
+     Trees
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="bst.html">
      Binary Search Trees
@@ -327,6 +347,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="greedy.html">
+   Greedy Algorithms
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -334,6 +359,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ide.html">
+   IDE Set Up
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference external" href="https://www.learncpp.com">
    Learn C++
@@ -810,8 +840,8 @@ Sequential Search<div class="sd-summary-down docutils">
 <h3>Pseudocode<a class="headerlink" href="#pseudocode" title="Permalink to this headline">#</a></h3>
 <div class="full-width docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="b6d13fd0-2676-4741-b1ee-a1eabff63893" name="b7725124-7ab7-4996-a23f-8c6239369fc4" type="radio">
-</input><label class="sd-tab-label" for="b6d13fd0-2676-4741-b1ee-a1eabff63893">
+<input checked="checked" id="4dbc7b5e-47af-47b7-9da0-bfbd97bac042" name="57426959-19a8-457d-8b29-f60c4c8fad99" type="radio">
+</input><label class="sd-tab-label" for="4dbc7b5e-47af-47b7-9da0-bfbd97bac042">
 Iterative Approach</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li><p>Consider start index to be at <span class="math notranslate nohighlight">\(0\)</span> and last index to be <code class="docutils literal notranslate"><span class="pre">n-1</span></code> index at starting</p>
@@ -825,8 +855,8 @@ Iterative Approach</label><div class="sd-tab-content docutils">
 <li><p>Else check for <code class="docutils literal notranslate"><span class="pre">mid</span></code> index element with <code class="docutils literal notranslate"><span class="pre">key</span></code> if not match repeat the above steps til <code class="docutils literal notranslate"><span class="pre">start</span></code> index is less than <code class="docutils literal notranslate"><span class="pre">end</span></code> index</p></li>
 </ul>
 </div>
-<input id="c621aa96-d471-4dd3-8deb-e4e37fce2b18" name="b7725124-7ab7-4996-a23f-8c6239369fc4" type="radio">
-</input><label class="sd-tab-label" for="c621aa96-d471-4dd3-8deb-e4e37fce2b18">
+<input id="bc13a4c4-87eb-4f45-b854-c4add5fdea2c" name="57426959-19a8-457d-8b29-f60c4c8fad99" type="radio">
+</input><label class="sd-tab-label" for="bc13a4c4-87eb-4f45-b854-c4add5fdea2c">
 Recursive Approach</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li><p>If <code class="docutils literal notranslate"><span class="pre">start</span></code> is less than <code class="docutils literal notranslate"><span class="pre">end</span></code> perform Binary search else terminate the algorithm.</p></li>
