@@ -231,6 +231,16 @@ const thebe_selector_output = ".output, .cell_output"
      Priority Queues
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="map.html">
+     Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="set.html">
+     Sets
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -359,20 +369,27 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../ide.html">
    IDE Set Up
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://www.learncpp.com">
-   Learn C++
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
-   C++ Syntax Cheat Sheet
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://www.learncpp.com">
+     Learn C++
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
+     C++ Syntax Cheat Sheet
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../mth180.html">
@@ -383,8 +400,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../module/opendsa.html">
    OpenDSA
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -848,8 +865,8 @@ Why recursion?</div>
 <div class="admonition-sum-array admonition">
 <p class="admonition-title">Sum Array</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="ed65a51a-ee60-4a60-bff9-bd9cccd31ea5" name="8986f7a4-8956-4b46-b067-a4914b168b36" type="radio">
-</input><label class="sd-tab-label" for="ed65a51a-ee60-4a60-bff9-bd9cccd31ea5">
+<input checked="checked" id="f261b79c-8ac4-41cc-a38d-4dff316cf2c5" name="560c9e02-2d28-432b-9fee-8f71449cf73d" type="radio">
+</input><label class="sd-tab-label" for="f261b79c-8ac4-41cc-a38d-4dff316cf2c5">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">sum_array</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="c1">//basecase  </span>
@@ -865,8 +882,8 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="170982ea-1508-424e-96d5-11be90257afb" name="8986f7a4-8956-4b46-b067-a4914b168b36" type="radio">
-</input><label class="sd-tab-label" for="170982ea-1508-424e-96d5-11be90257afb">
+<input id="6e0723e0-49db-4ffb-b191-62851c60cab3" name="560c9e02-2d28-432b-9fee-8f71449cf73d" type="radio">
+</input><label class="sd-tab-label" for="6e0723e0-49db-4ffb-b191-62851c60cab3">
 Base &amp; Recursive Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -889,8 +906,8 @@ A[n - 1], &amp; \text{if $n \gt 1$ },  &amp; \text{// recursive calls}
 <div class="admonition-largest admonition">
 <p class="admonition-title">Largest</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="8af22a08-7b47-48d5-b1e5-40fef0744aeb" name="eb67b731-5f96-4fd3-999e-93610cee4de0" type="radio">
-</input><label class="sd-tab-label" for="8af22a08-7b47-48d5-b1e5-40fef0744aeb">
+<input checked="checked" id="065d0c82-eb56-4f68-b83e-aac38fb45e8c" name="967b81fa-a69f-46e5-8610-9cb2b54fec16" type="radio">
+</input><label class="sd-tab-label" for="065d0c82-eb56-4f68-b83e-aac38fb45e8c">
 Pseudocode</label><div class="sd-tab-content docutils">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>To find the largest element in list[a]...list[b]  
 
@@ -904,8 +921,8 @@ b. Compare the elements `list[a]` and `max`
 </pre></div>
 </div>
 </div>
-<input id="3bae0ce1-7353-4f25-aa7f-7c94ac089091" name="eb67b731-5f96-4fd3-999e-93610cee4de0" type="radio">
-</input><label class="sd-tab-label" for="3bae0ce1-7353-4f25-aa7f-7c94ac089091">
+<input id="cd9cd2b9-15c9-40e6-9fa1-70c2ab780e4a" name="967b81fa-a69f-46e5-8610-9cb2b54fec16" type="radio">
+</input><label class="sd-tab-label" for="cd9cd2b9-15c9-40e6-9fa1-70c2ab780e4a">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">largest</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">list</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lowerIndex</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">upperIndex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">;</span><span class="w"></span>
@@ -922,8 +939,8 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="d8e9010c-08a2-49d2-9646-0509e1321a65" name="eb67b731-5f96-4fd3-999e-93610cee4de0" type="radio">
-</input><label class="sd-tab-label" for="d8e9010c-08a2-49d2-9646-0509e1321a65">
+<input id="b56e8071-4d1c-47f9-9b3f-45c539fdf7ac" name="967b81fa-a69f-46e5-8610-9cb2b54fec16" type="radio">
+</input><label class="sd-tab-label" for="b56e8071-4d1c-47f9-9b3f-45c539fdf7ac">
 Base &amp; Recursive Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -939,8 +956,8 @@ size\ of\ list\ is\ \gt 1, &amp; \text{// recursive calls}
 <div class="admonition-serpinski-https-www-geeksforgeeks-org-sierpinski-triangle admonition">
 <p class="admonition-title"><a class="reference external" href="https://www.geeksforgeeks.org/sierpinski-triangle/">Serpinski</a></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="d9815be7-a203-4b60-a74e-c1d8fdddc9d7" name="37200467-0a6c-4846-87a5-ad8a651b530e" type="radio">
-</input><label class="sd-tab-label" for="d9815be7-a203-4b60-a74e-c1d8fdddc9d7">
+<input checked="checked" id="c119f510-76fa-43e0-acf2-4349629c3e59" name="9509fb06-5c21-4392-b992-672825e4bc5f" type="radio">
+</input><label class="sd-tab-label" for="c119f510-76fa-43e0-acf2-4349629c3e59">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">printSierpinski</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
@@ -960,22 +977,22 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="f2540816-91d0-4e9d-95d6-b39c3c7c0e51" name="37200467-0a6c-4846-87a5-ad8a651b530e" type="radio">
-</input><label class="sd-tab-label" for="f2540816-91d0-4e9d-95d6-b39c3c7c0e51">
+<input id="404dddf8-0be2-467f-b9c8-684c40081fd1" name="9509fb06-5c21-4392-b992-672825e4bc5f" type="radio">
+</input><label class="sd-tab-label" for="404dddf8-0be2-467f-b9c8-684c40081fd1">
 Visualize : Structure</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://runestone.academy/ns/books/published/pythonds/_images/stCallTree.png" src="https://runestone.academy/ns/books/published/pythonds/_images/stCallTree.png" />
 </figure>
 </div>
-<input id="f50b4be5-f73c-4b9a-ac9f-b8e4669fe483" name="37200467-0a6c-4846-87a5-ad8a651b530e" type="radio">
-</input><label class="sd-tab-label" for="f50b4be5-f73c-4b9a-ac9f-b8e4669fe483">
+<input id="9dc54f1c-0b0f-46e9-af67-2310c26d1665" name="9509fb06-5c21-4392-b992-672825e4bc5f" type="radio">
+</input><label class="sd-tab-label" for="9dc54f1c-0b0f-46e9-af67-2310c26d1665">
 Ex : Triangle</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://www.researchgate.net/profile/Askander-Kaka/publication/264872595/figure/fig4/AS:669568435494921&#64;1536648963162/First-four-steps-to-configure-Sierpinski-triangle.png" src="https://www.researchgate.net/profile/Askander-Kaka/publication/264872595/figure/fig4/AS:669568435494921&#64;1536648963162/First-four-steps-to-configure-Sierpinski-triangle.png" />
 </figure>
 </div>
-<input id="1ca34c7f-629c-430d-ad72-faf5b9c62a8e" name="37200467-0a6c-4846-87a5-ad8a651b530e" type="radio">
-</input><label class="sd-tab-label" for="1ca34c7f-629c-430d-ad72-faf5b9c62a8e">
+<input id="42717d41-bf10-48ef-bc51-a0455f5e5d3f" name="9509fb06-5c21-4392-b992-672825e4bc5f" type="radio">
+</input><label class="sd-tab-label" for="42717d41-bf10-48ef-bc51-a0455f5e5d3f">
 Ex : Pyramid</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sierpinski_pyramid.png" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sierpinski_pyramid.png" />

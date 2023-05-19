@@ -231,6 +231,16 @@ const thebe_selector_output = ".output, .cell_output"
      Priority Queues
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="map.html">
+     Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="set.html">
+     Sets
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -359,20 +369,27 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../ide.html">
    IDE Set Up
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://www.learncpp.com">
-   Learn C++
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
-   C++ Syntax Cheat Sheet
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://www.learncpp.com">
+     Learn C++
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
+     C++ Syntax Cheat Sheet
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../mth180.html">
@@ -383,8 +400,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../module/opendsa.html">
    OpenDSA
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -879,8 +896,8 @@ Example</div>
 <li><p class="sd-card-text">after both calls are finished, proceed to <em><em>merge</em></em> the solutions</p></li>
 </ul>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="e7d47d65-4df9-484c-b532-cea53af882f5" name="2951375c-391d-4399-9707-2ad6a2065a5d" type="radio">
-</input><label class="sd-tab-label" for="e7d47d65-4df9-484c-b532-cea53af882f5">
+<input checked="checked" id="cbc12078-ee5d-42eb-8c05-151d5dbb4a83" name="59474e69-5d1a-48ce-bee4-ac9185c4530d" type="radio">
+</input><label class="sd-tab-label" for="cbc12078-ee5d-42eb-8c05-151d5dbb4a83">
 pseudocode</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">MergeSort</span><span class="p">(</span><span class="n">arr</span><span class="p">[],</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w">  </span><span class="n">hi</span><span class="p">)</span><span class="w"></span>
 <span class="linenos"> 2</span>
@@ -901,8 +918,8 @@ pseudocode</label><div class="sd-tab-content docutils">
 </div>
 <p class="sd-card-text"><a class="reference external" href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort: pseudocode</a></p>
 </div>
-<input id="c2ca60b1-fead-42d6-a0f5-c7f9eeb4d5b8" name="2951375c-391d-4399-9707-2ad6a2065a5d" type="radio">
-</input><label class="sd-tab-label" for="c2ca60b1-fead-42d6-a0f5-c7f9eeb4d5b8">
+<input id="b9856fa8-7da5-4777-8a3a-729e93bb2d64" name="59474e69-5d1a-48ce-bee4-ac9185c4530d" type="radio">
+</input><label class="sd-tab-label" for="b9856fa8-7da5-4777-8a3a-729e93bb2d64">
 mergesort</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">mergesort</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="linenos">2</span><span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">aux</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="p">[</span><span class="n">n</span><span class="p">];</span><span class="w">  </span>
@@ -912,8 +929,8 @@ mergesort</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="23c30cdb-be76-4db6-b6eb-178576858f2e" name="2951375c-391d-4399-9707-2ad6a2065a5d" type="radio">
-</input><label class="sd-tab-label" for="23c30cdb-be76-4db6-b6eb-178576858f2e">
+<input id="55384e8f-5930-48e5-a021-f322c01de319" name="59474e69-5d1a-48ce-bee4-ac9185c4530d" type="radio">
+</input><label class="sd-tab-label" for="55384e8f-5930-48e5-a021-f322c01de319">
 r_mergesort</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kt">void</span><span class="w"> </span><span class="nf">r_mergesort</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">aux</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="linenos"> 2</span><span class="w">  </span>
@@ -933,8 +950,8 @@ r_mergesort</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="bc60b4da-b213-4ad8-87af-fb1326ffb3d5" name="2951375c-391d-4399-9707-2ad6a2065a5d" type="radio">
-</input><label class="sd-tab-label" for="bc60b4da-b213-4ad8-87af-fb1326ffb3d5">
+<input id="ac2d760b-259b-4bf7-95e7-949697f9681c" name="59474e69-5d1a-48ce-bee4-ac9185c4530d" type="radio">
+</input><label class="sd-tab-label" for="ac2d760b-259b-4bf7-95e7-949697f9681c">
 merge</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kt">void</span><span class="w"> </span><span class="nf">merge</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">aux</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="p">,</span><span class="kt">int</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="linenos"> 2</span>
@@ -991,8 +1008,8 @@ merge</label><div class="sd-tab-content docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><strong>Consider how this breaks out…</strong></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="e707da3c-0564-4d1b-8eb2-ad2e9e21aba4" name="c8903813-0394-40c1-9c76-f471ee1d1012" type="radio">
-</input><label class="sd-tab-label" for="e707da3c-0564-4d1b-8eb2-ad2e9e21aba4">
+<input checked="checked" id="04f138c6-28d1-434a-b78a-9695b25b56c3" name="9b1cf95d-ddb0-4cdd-9853-77bdacecf030" type="radio">
+</input><label class="sd-tab-label" for="04f138c6-28d1-434a-b78a-9695b25b56c3">
 Unsorted</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1005,8 +1022,8 @@ Unsorted</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="dba9239f-ba6c-445a-afad-5a8aa4f33aea" name="c8903813-0394-40c1-9c76-f471ee1d1012" type="radio">
-</input><label class="sd-tab-label" for="dba9239f-ba6c-445a-afad-5a8aa4f33aea">
+<input id="09570ccf-d843-4463-a900-5e3918615fe1" name="9b1cf95d-ddb0-4cdd-9853-77bdacecf030" type="radio">
+</input><label class="sd-tab-label" for="09570ccf-d843-4463-a900-5e3918615fe1">
 Divide</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1039,8 +1056,8 @@ Divide</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="1092f46b-14bd-4bf1-bb12-006272d15f19" name="c8903813-0394-40c1-9c76-f471ee1d1012" type="radio">
-</input><label class="sd-tab-label" for="1092f46b-14bd-4bf1-bb12-006272d15f19">
+<input id="5ac6d2b7-19a9-4ad9-b628-c26adc63eac2" name="9b1cf95d-ddb0-4cdd-9853-77bdacecf030" type="radio">
+</input><label class="sd-tab-label" for="5ac6d2b7-19a9-4ad9-b628-c26adc63eac2">
 Conquer Setup</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1050,8 +1067,8 @@ Conquer Setup</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="1bab22ed-1da9-4b47-a13b-45b828ab1223" name="c8903813-0394-40c1-9c76-f471ee1d1012" type="radio">
-</input><label class="sd-tab-label" for="1bab22ed-1da9-4b47-a13b-45b828ab1223">
+<input id="61a0bd2e-f29e-4e4c-9a8d-d876a22ff6ac" name="9b1cf95d-ddb0-4cdd-9853-77bdacecf030" type="radio">
+</input><label class="sd-tab-label" for="61a0bd2e-f29e-4e4c-9a8d-d876a22ff6ac">
 First Row</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1084,8 +1101,8 @@ First Row</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="6af5032f-307e-43c3-ae60-dc839422a2ee" name="c8903813-0394-40c1-9c76-f471ee1d1012" type="radio">
-</input><label class="sd-tab-label" for="6af5032f-307e-43c3-ae60-dc839422a2ee">
+<input id="29f47cda-9a2b-416d-a25e-62164e06c5ab" name="9b1cf95d-ddb0-4cdd-9853-77bdacecf030" type="radio">
+</input><label class="sd-tab-label" for="29f47cda-9a2b-416d-a25e-62164e06c5ab">
 Second Row</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1098,8 +1115,8 @@ Second Row</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="4efaed25-a02d-4443-92bc-609a7adf6cf2" name="c8903813-0394-40c1-9c76-f471ee1d1012" type="radio">
-</input><label class="sd-tab-label" for="4efaed25-a02d-4443-92bc-609a7adf6cf2">
+<input id="a874eeab-fcc7-4fbd-bab3-fafc892d0ce7" name="9b1cf95d-ddb0-4cdd-9853-77bdacecf030" type="radio">
+</input><label class="sd-tab-label" for="a874eeab-fcc7-4fbd-bab3-fafc892d0ce7">
 Third Row</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1122,8 +1139,8 @@ Third Row</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="77736d24-3f7f-4d98-9004-744527b1cf6e" name="c8903813-0394-40c1-9c76-f471ee1d1012" type="radio">
-</input><label class="sd-tab-label" for="77736d24-3f7f-4d98-9004-744527b1cf6e">
+<input id="6da35c0f-f1c3-4004-b602-81fb355c32e6" name="9b1cf95d-ddb0-4cdd-9853-77bdacecf030" type="radio">
+</input><label class="sd-tab-label" for="6da35c0f-f1c3-4004-b602-81fb355c32e6">
 Sorted</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1136,8 +1153,8 @@ Sorted</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="24bfd005-ffba-4ed8-ac36-c93d72cb5cc1" name="c8903813-0394-40c1-9c76-f471ee1d1012" type="radio">
-</input><label class="sd-tab-label" for="24bfd005-ffba-4ed8-ac36-c93d72cb5cc1">
+<input id="17e08132-f836-42e6-829e-36636552abb2" name="9b1cf95d-ddb0-4cdd-9853-77bdacecf030" type="radio">
+</input><label class="sd-tab-label" for="17e08132-f836-42e6-829e-36636552abb2">
 Try It!</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1457,8 +1474,8 @@ In-place?<div class="sd-summary-down docutils">
 </figure>
 </div>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="1575f2dd-74c5-4e14-abda-271dfcfdc59e" name="108ad722-9d47-4d6a-b0dc-f2b7f9baf5e2" type="radio">
-</input><label class="sd-tab-label" for="1575f2dd-74c5-4e14-abda-271dfcfdc59e">
+<input checked="checked" id="021db61d-7608-4713-8e1a-9d1ae6a28734" name="66af4a18-279a-4695-9f56-d8a48198b187" type="radio">
+</input><label class="sd-tab-label" for="021db61d-7608-4713-8e1a-9d1ae6a28734">
 Stable?</label><div class="sd-tab-content docutils">
 <div class="tip admonition">
 <p class="admonition-title">Stable?</p>
@@ -1489,8 +1506,8 @@ Stable?<div class="sd-summary-down docutils">
 </div>
 </details></div>
 </div>
-<input id="b06fa3d9-9da6-4940-a340-512f170ab38e" name="108ad722-9d47-4d6a-b0dc-f2b7f9baf5e2" type="radio">
-</input><label class="sd-tab-label" for="b06fa3d9-9da6-4940-a340-512f170ab38e">
+<input id="7457f964-290e-4e22-9cdf-9360a76e3276" name="66af4a18-279a-4695-9f56-d8a48198b187" type="radio">
+</input><label class="sd-tab-label" for="7457f964-290e-4e22-9cdf-9360a76e3276">
 Stable?</label><div class="sd-tab-content docutils">
 <div class="tip admonition">
 <p class="admonition-title">How about now?</p>
@@ -1586,8 +1603,8 @@ Is insertion sort stable?<div class="sd-summary-down docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="d63bb4da-21e6-49d7-b0d4-c4349008bca5" name="62830bbb-12bf-410b-b7f0-768946ce65cb" type="radio">
-</input><label class="sd-tab-label" for="d63bb4da-21e6-49d7-b0d4-c4349008bca5">
+<input checked="checked" id="4ccf6b8e-46fc-4206-9573-f51e9c0adda6" name="693d4a5c-222f-4afb-86b5-3700b405e15d" type="radio">
+</input><label class="sd-tab-label" for="4ccf6b8e-46fc-4206-9573-f51e9c0adda6">
 incomplete</label><div class="sd-tab-content docutils">
 <table class="table">
 <colgroup>
@@ -1632,8 +1649,8 @@ incomplete</label><div class="sd-tab-content docutils">
 </tbody>
 </table>
 </div>
-<input id="d621269f-c159-49b7-b54f-09da09234fe0" name="62830bbb-12bf-410b-b7f0-768946ce65cb" type="radio">
-</input><label class="sd-tab-label" for="d621269f-c159-49b7-b54f-09da09234fe0">
+<input id="a05f4ffc-c1cc-4bd5-b8f9-065f1b99fb86" name="693d4a5c-222f-4afb-86b5-3700b405e15d" type="radio">
+</input><label class="sd-tab-label" for="a05f4ffc-c1cc-4bd5-b8f9-065f1b99fb86">
 complete</label><div class="sd-tab-content docutils">
 <table class="table">
 <colgroup>

@@ -229,6 +229,16 @@ const thebe_selector_output = ".output, .cell_output"
      Priority Queues
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assets/lecture/map.html">
+     Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assets/lecture/set.html">
+     Sets
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -357,20 +367,27 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="ide.html">
    IDE Set Up
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://www.learncpp.com">
-   Learn C++
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
-   C++ Syntax Cheat Sheet
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://www.learncpp.com">
+     Learn C++
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
+     C++ Syntax Cheat Sheet
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="mth180.html">
@@ -381,8 +398,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="assets/module/opendsa.html">
    OpenDSA
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -677,7 +694,6 @@ title="Print to PDF"
 </figure>
 <section id="general">
 <h2>General<a class="headerlink" href="#general" title="Permalink to this headline">#</a></h2>
-<hr class="docutils" />
 <div class="dropdown admonition">
 <p class="admonition-title">Which campus is the course held on?</p>
 <p>All on-ground lectures &amp; labs are held on the Main, <a class="reference external" href="https://map.uri.edu">Kingston Campus</a>…</p>
@@ -702,7 +718,6 @@ title="Print to PDF"
 </section>
 <section id="office-hours">
 <h2>Office Hours<a class="headerlink" href="#office-hours" title="Permalink to this headline">#</a></h2>
-<hr class="docutils" />
 <div class="dropdown admonition">
 <p class="admonition-title">When and where are office hours?</p>
 <dl class="simple myst">
@@ -725,16 +740,20 @@ title="Print to PDF"
 </section>
 <section id="course-materials">
 <h2>Course Materials<a class="headerlink" href="#course-materials" title="Permalink to this headline">#</a></h2>
-<hr class="docutils" />
 <div class="dropdown admonition">
 <p class="admonition-title">Do we have a textbook?</p>
 <p>Please see the <a class="reference internal" href="syllabus.html"><span class="doc std std-doc">Syllabus</span></a> under Recommended Textbooks.</p>
 <p>These texts, amongst many other linked resources, have been used to create this course. Therefore, a given textbook is not required for this course, but may be found useful.</p>
 </div>
+<!-- `````` {admonition} 
+:class: dropdown
+``````
+`````` {admonition} 
+:class: dropdown
+`````` -->
 </section>
 <section id="projects">
 <h2>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">#</a></h2>
-<hr class="docutils" />
 <div class="dropdown admonition">
 <p class="admonition-title">What should the presentation look like?</p>
 <p>The presentation should provide:</p>
@@ -756,6 +775,14 @@ title="Print to PDF"
 <p class="admonition-title">Are we presenting in lab or lecture?</p>
 <p>Presentations will take place in Week 14. All lecture and lab periods will be utilized for presentations that week. Presentations will be held remotely through zoom. Groups tend to do best when presenting from the one location collectively.</p>
 </div>
+<!-- `````` {admonition} 
+:class: admonition tip
+
+``````
+`````` {admonition} 
+:class: admonition tip
+
+`````` -->
 </section>
 </section>
 

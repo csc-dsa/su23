@@ -231,6 +231,16 @@ const thebe_selector_output = ".output, .cell_output"
      Priority Queues
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assets/lecture/map.html">
+     Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="assets/lecture/set.html">
+     Sets
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -359,20 +369,27 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="ide.html">
    IDE Set Up
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://www.learncpp.com">
-   Learn C++
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
-   C++ Syntax Cheat Sheet
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://www.learncpp.com">
+     Learn C++
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
+     C++ Syntax Cheat Sheet
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="mth180.html">
@@ -383,8 +400,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="assets/module/opendsa.html">
    OpenDSA
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -885,7 +902,7 @@ Tools</div>
 Technology</div>
 <ul class="simple">
 <li><p class="sd-card-text">A laptop with a full OS [iOS/Android devices not recommended]</p></li>
-<li><p class="sd-card-text">JetBreains CLion [<strong>supported</strong> IDE]</p></li>
+<li><p class="sd-card-text">JetBrains CLion [<strong>supported</strong> IDE]</p></li>
 </ul>
 <p class="sd-card-text"><em>While you are free to use any IDE for working with course programming, only Clion by JetBrains will be officially supported for this course. As well, source code submitted to the autograder must compile without any errors utilizing the g++ compiler.</em></p>
 </div>
@@ -941,22 +958,22 @@ Lectures</div>
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Labs</div>
-<p class="sd-card-text">Practicum based sessions to confirm what you know and begin implemention of the material.</p>
-<p class="sd-card-text"><em>Note: to recieve credit for lab, you must attend your respective section regardless of whether you are able to complete the lab within the session window.</em></p>
+<p class="sd-card-text">Practicum based sessions to confirm what you know and begin implementation of the material.</p>
+<p class="sd-card-text"><em>Note: to receive credit for lab, you must attend your respective section regardless of whether you are able to complete the lab within the session window.</em></p>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Assignments</div>
-<p class="sd-card-text">Assignments are individual work, unless stated otherwise stated used to implement broader-scoped pracicum outcomes.</p>
+<p class="sd-card-text">Assignments are individual work, unless stated otherwise stated used to implement broader-scoped practicum outcomes.</p>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Projects</div>
-<p class="sd-card-text">Two practicum projects will be completed. The first a review of concepts necessary to successfully complete the course, and the second a wide-ranged insight piece with a unique imlementation of the data structure[s] and/or alogorithm[s] with a formal presentation to your peers.</p>
+<p class="sd-card-text">Two practicum projects will be completed. The first a review of concepts necessary to successfully complete the course, and the second a wide-ranged insight piece with a unique implementation of the data structure[s] and/or algorithm[s] with a formal presentation to your peers.</p>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
@@ -1017,7 +1034,7 @@ Exam</div>
 </table>
 </div>
 </div>
-<p><em>Final letter grades are calculated using the cutoffs below. A ‘curve’ will not be applied to final course grades. However, those who make extrodinary effort to contribute to the overall flow and learning environment of the classroom, may be given additional consideration.</em></p>
+<p><em>Final letter grades are calculated using the cutoffs below. A ‘curve’ will not be applied to final course grades. However, those who make extraordinary effort to contribute to the overall flow and learning environment of the classroom, may be given additional consideration.</em></p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <table class="table">
@@ -1076,7 +1093,7 @@ Exam</div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">All deliverables must be properly submitted through Gradescope no later than 11:59p on the respective day due.</p>
-<p class="sd-card-text">Late submissions (<strong><em>labs only</em></strong>), will be allowed through the last day of the regular term. All submissions marked as <strong>late</strong> in Gradescope will be applicable to a <strong>50% reduction</strong> in points.</p>
+<p class="sd-card-text">Late submissions (<strong><em>labs only</em></strong>), will be allowed through the last day of the term. All submissions marked as <strong>late</strong> in Gradescope will be applicable to a <strong>50% reduction</strong> in points.</p>
 <p class="sd-card-text">Late submissions (<strong><em>assignments 2 &amp; 4 only</em></strong>), will be allowed one additional week. All submissions marked as <strong>late</strong> in Gradescope will be applicable to a <strong>30% reduction</strong> in points.</p>
 <p class="sd-card-text">No further consideration with granted for extension.</p>
 </div>
@@ -1089,10 +1106,7 @@ Exam</div>
 <div class="docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong>Lecture</strong></p>
 <p class="sd-card-text">No formal attendance policy. Those who opt out tend to repeat the course…</p>
-<p class="sd-card-text"><strong>Lab &amp; Project Presentations</strong></p>
-<p class="sd-card-text">You must attend to receive credit for submission.</p>
 <!-- No formal attendance policy. Caveat: attendance will be taken and those who opt out will not be granted access to TA's and or office hours for the week.   -->
 </div>
 </div>

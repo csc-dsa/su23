@@ -231,6 +231,16 @@ const thebe_selector_output = ".output, .cell_output"
      Priority Queues
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="map.html">
+     Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="set.html">
+     Sets
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -359,20 +369,27 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../ide.html">
    IDE Set Up
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://www.learncpp.com">
-   Learn C++
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
-   C++ Syntax Cheat Sheet
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://www.learncpp.com">
+     Learn C++
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/gibsjose/cpp-cheat-sheet/blob/master/C%2B%2B%20Syntax.md">
+     C++ Syntax Cheat Sheet
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../mth180.html">
@@ -383,8 +400,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../module/opendsa.html">
    OpenDSA
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -1551,8 +1568,8 @@ T(n) &amp; = 2^nT(0) + 1 + 2 + 2^2\ + \dots\ 2^k-1 \\
 <div class="admonition-master-theorem-https-youtu-be-2h0gkdriowu admonition">
 <p class="admonition-title"><a class="reference external" href="https://youtu.be/2H0GKdrIowU">Master Theorem</a></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="a774fb59-5288-43f2-8741-d1e6f67021ec" name="c79028d2-2f97-4e24-81a8-2fcf6901d632" type="radio">
-</input><label class="sd-tab-label" for="a774fb59-5288-43f2-8741-d1e6f67021ec">
+<input checked="checked" id="d966e0ad-0f03-4354-b42b-8e2fc4e3ed57" name="524a2707-f1e5-48f3-b13e-d6a25650870d" type="radio">
+</input><label class="sd-tab-label" for="d966e0ad-0f03-4354-b42b-8e2fc4e3ed57">
 Cases</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">If <span class="math notranslate nohighlight">\(T(n) = aT(\frac{n}{b}) + O(n^d)\)</span> (for constants <span class="math notranslate nohighlight">\(a \gt 0, b \gt 1, d \ge 0\)</span>), then:</p>
 <div class="math notranslate nohighlight">
@@ -1565,8 +1582,8 @@ O(n^{log_b\ a}),  &amp; \text{$if\ d\ \lt log_b\ a$}, &amp;&amp; Case 3 \\
 \end{cases}
 \end{split}\]</div>
 </div>
-<input id="954e9403-8ce7-4afe-9120-d4a71981b7f1" name="c79028d2-2f97-4e24-81a8-2fcf6901d632" type="radio">
-</input><label class="sd-tab-label" for="954e9403-8ce7-4afe-9120-d4a71981b7f1">
+<input id="c5787aaf-53b4-4aa1-aae3-ed3c4eaa1fef" name="524a2707-f1e5-48f3-b13e-d6a25650870d" type="radio">
+</input><label class="sd-tab-label" for="c5787aaf-53b4-4aa1-aae3-ed3c4eaa1fef">
 Case 1</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 2T(\frac{n}{2}) + O(n^2)\]</div>
@@ -1579,8 +1596,8 @@ c &amp; = 2 \\
 \end{align}\end{split}\]</div>
 <p class="sd-card-text">Since <span class="math notranslate nohighlight">\(d \gt log_b\ a\)</span>, <span class="math notranslate nohighlight">\(T(n) = O(n^d) = O(n^2)\)</span></p>
 </div>
-<input id="72e4bf8a-2c77-4d5d-a3f8-d797496ad686" name="c79028d2-2f97-4e24-81a8-2fcf6901d632" type="radio">
-</input><label class="sd-tab-label" for="72e4bf8a-2c77-4d5d-a3f8-d797496ad686">
+<input id="61221c85-3b44-4f97-9bc3-5c0e25d4a200" name="524a2707-f1e5-48f3-b13e-d6a25650870d" type="radio">
+</input><label class="sd-tab-label" for="61221c85-3b44-4f97-9bc3-5c0e25d4a200">
 Case 2</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = T(\frac{n}{2}) + O(1)\]</div>
@@ -1599,8 +1616,8 @@ T(n) &amp; = O(n^d\ log\ n) \\
 &amp; = O(log\ n) \\
 \end{align}\end{split}\]</div>
 </div>
-<input id="3613b14e-64aa-4567-8603-819121ca254a" name="c79028d2-2f97-4e24-81a8-2fcf6901d632" type="radio">
-</input><label class="sd-tab-label" for="3613b14e-64aa-4567-8603-819121ca254a">
+<input id="f835837a-fef7-4608-af77-794a622318c8" name="524a2707-f1e5-48f3-b13e-d6a25650870d" type="radio">
+</input><label class="sd-tab-label" for="f835837a-fef7-4608-af77-794a622318c8">
 Case 3</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 4T(\frac{n}{2}) + O(n)\]</div>
