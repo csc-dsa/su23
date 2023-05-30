@@ -614,6 +614,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interfaces-data-structures">
+   Interfaces &amp; Data Structures
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#arrays">
    Arrays
   </a>
@@ -666,6 +671,11 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interfaces-data-structures">
+   Interfaces &amp; Data Structures
+  </a>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#arrays">
    Arrays
@@ -741,12 +751,121 @@ Additional Resources</div>
 </div>
 </div>
 </details></div>
+<section id="interfaces-data-structures">
+<h2>Interfaces &amp; Data Structures<a class="headerlink" href="#interfaces-data-structures" title="Permalink to this headline">#</a></h2>
+<div class="full-width docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<div class="admonition-interface admonition">
+<p class="admonition-title">Interface</p>
+<ul class="simple">
+<li><p class="sd-card-text">In programming, an interface is a blueprint or contract that defines a set of methods or behaviors that a class must implement.</p></li>
+<li><p class="sd-card-text">An interface specifies the method signatures (function declarations) and sometimes constants or properties that a class implementing the interface should provide.</p></li>
+<li><p class="sd-card-text">Interfaces enable polymorphism and provide a way to define common behavior that multiple classes can adhere to.</p></li>
+<li><p class="sd-card-text">In many programming languages, including Java and C#, interfaces are used to achieve abstraction and enforce a certain level of consistency and structure across related classes.</p></li>
+</ul>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Code sample<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Shape</span> <span class="p">{</span>
+    <span class="kt">double</span> <span class="nf">getArea</span><span class="p">();</span>
+    <span class="kt">double</span> <span class="nf">getPerimeter</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Circle</span> <span class="kd">implements</span> <span class="n">Shape</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">radius</span><span class="p">;</span>
+    
+    <span class="kd">public</span> <span class="nf">Circle</span><span class="p">(</span><span class="kt">double</span> <span class="n">radius</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">radius</span> <span class="o">=</span> <span class="n">radius</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getArea</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">Math</span><span class="p">.</span><span class="na">PI</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">radius</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getPerimeter</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">Math</span><span class="p">.</span><span class="na">PI</span> <span class="o">*</span> <span class="n">radius</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Rectangle</span> <span class="kd">implements</span> <span class="n">Shape</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">length</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">width</span><span class="p">;</span>
+    
+    <span class="kd">public</span> <span class="nf">Rectangle</span><span class="p">(</span><span class="kt">double</span> <span class="n">length</span><span class="p">,</span> <span class="kt">double</span> <span class="n">width</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">length</span> <span class="o">=</span> <span class="n">length</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">width</span> <span class="o">=</span> <span class="n">width</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getArea</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getPerimeter</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">length</span> <span class="o">+</span> <span class="n">width</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</details></div>
+<div class="sd-col sd-d-flex-column docutils">
+<div class="admonition-data-structure admonition">
+<p class="admonition-title">Data Structure</p>
+<ul class="simple">
+<li><p class="sd-card-text">In programming, a data structure is a way of organizing and storing data to enable efficient manipulation and access.</p></li>
+<li><p class="sd-card-text">Data structures define how data is organized, stored, and accessed in computer memory.</p></li>
+<li><p class="sd-card-text">Different data structures are designed to handle specific types of data and perform operations such as insertion, deletion, searching, and sorting.</p></li>
+<li><p class="sd-card-text">Common examples of data structures include arrays, linked lists, stacks, queues, trees, graphs, and hash tables.</p></li>
+</ul>
+<p class="sd-card-text"><br><br></p>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Code sample<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numbers</span><span class="p">;</span><span class="w">  </span><span class="c1">// Declare a dynamic array (vector)</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="n">numbers</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w">  </span><span class="c1">// Add element 10 at the end of the vector</span>
+<span class="w">    </span><span class="n">numbers</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span><span class="w">  </span><span class="c1">// Add element 20 at the end of the vector</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">;</span><span class="w">  </span><span class="c1">// Output: 10 20</span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</details></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="arrays">
 <h2>Arrays<a class="headerlink" href="#arrays" title="Permalink to this headline">#</a></h2>
 <div class="full-width docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="27645f8c-127e-4e55-be89-0acd7d4a349a" name="9ed25b9d-550a-46e7-adf5-161d529fd97d" type="radio">
-</input><label class="sd-tab-label" for="27645f8c-127e-4e55-be89-0acd7d4a349a">
+<input checked="checked" id="4865a341-77e3-402f-909e-d46a52bfbea8" name="36f8f49f-f0f3-4d44-bdd3-7b0545b10e02" type="radio">
+</input><label class="sd-tab-label" for="4865a341-77e3-402f-909e-d46a52bfbea8">
 Definition</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -772,8 +891,8 @@ Definition</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="31189d19-8aa6-42af-8afe-1062996b3a59" name="9ed25b9d-550a-46e7-adf5-161d529fd97d" type="radio">
-</input><label class="sd-tab-label" for="31189d19-8aa6-42af-8afe-1062996b3a59">
+<input id="1f62306f-e76b-41d7-afe4-067c4d1c6aa5" name="36f8f49f-f0f3-4d44-bdd3-7b0545b10e02" type="radio">
+</input><label class="sd-tab-label" for="1f62306f-e76b-41d7-afe4-067c4d1c6aa5">
 Declaration</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -829,8 +948,8 @@ Declaration</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="e840f80c-fc2e-4876-9930-6d7076a33dc6" name="619a3ead-39d5-4647-bc90-a32e17599edf" type="radio">
-</input><label class="sd-tab-label" for="e840f80c-fc2e-4876-9930-6d7076a33dc6">
+<input checked="checked" id="80d6d28c-adb8-45b1-b3d7-b82144aaf907" name="0173226a-ac21-41bd-8428-a35162c407b2" type="radio">
+</input><label class="sd-tab-label" for="80d6d28c-adb8-45b1-b3d7-b82144aaf907">
 Layout</label><div class="sd-tab-content docutils">
 <div class="tip admonition">
 <p class="admonition-title">Memory layout of C/C++ programs</p>
@@ -838,8 +957,8 @@ Layout</label><div class="sd-tab-content docutils">
 <p class="sd-card-text"><a class="reference external" href="https://www.geeksforgeeks.org/memory-layout-of-c-program/">https://www.geeksforgeeks.org/memory-layout-of-c-program/</a></p>
 </div>
 </div>
-<input id="9b42664a-77d6-4327-b9d4-a4cfdec8af83" name="619a3ead-39d5-4647-bc90-a32e17599edf" type="radio">
-</input><label class="sd-tab-label" for="9b42664a-77d6-4327-b9d4-a4cfdec8af83">
+<input id="c9769e95-6826-4d99-b58c-1be81f12e732" name="0173226a-ac21-41bd-8428-a35162c407b2" type="radio">
+</input><label class="sd-tab-label" for="c9769e95-6826-4d99-b58c-1be81f12e732">
 Background</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Memory allocation is an essential aspect of data structures and algorithms as it determines how memory is allocated and used to store data. Data structures are designed to efficiently organize and store data in memory, and algorithms use these data structures to perform operations on the data.</p>
 <p class="sd-card-text">In general, there are two types of memory allocation: static and dynamic. Static memory allocation refers to memory allocation that is fixed at compile-time and cannot be changed at runtime. This is typically used for variables that have a fixed size and do not need to be resized during program execution.</p>
@@ -848,13 +967,13 @@ Background</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Another common data structure that uses dynamic memory allocation is the dynamic array. In a dynamic array, the size of the array can be dynamically resized as needed, allowing for efficient memory usage.</p>
 <p class="sd-card-text">Memory allocation is an important consideration when designing and implementing data structures and algorithms. Efficient memory usage can greatly improve the performance of an algorithm, while inefficient memory usage can lead to performance problems or even crashes. Therefore, it is important to carefully consider the memory requirements of a data structure or algorithm and optimize memory usage wherever possible.</p>
 </div>
-<input id="a6d66c42-069d-4365-afa6-4495d9bf6b6c" name="619a3ead-39d5-4647-bc90-a32e17599edf" type="radio">
-</input><label class="sd-tab-label" for="a6d66c42-069d-4365-afa6-4495d9bf6b6c">
+<input id="1dfd37f9-ae67-4da0-956e-2c870604b67a" name="0173226a-ac21-41bd-8428-a35162c407b2" type="radio">
+</input><label class="sd-tab-label" for="1dfd37f9-ae67-4da0-956e-2c870604b67a">
 Visualization</label><div class="sd-tab-content docutils">
 <iframe width="1000" height="600" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=//%20Example%20C%2B%2B%20code%20for%20OPT%0Aint%20main%28%29%20%7B%0A%20%20float%20var1%3B%0A%20%20float%20var2%3B%0A%20%20int%20static_array%5B10%5D%3B%0A%20%20int%20*static_array_heap%20%3D%20new%20int%20%5B10%5D%3B%0A%20%20//%20...%0A%20%20//%20work%20with%20this%20array%0A%20%20//%20...%0A%20%20delete%20%5B%5D%20static_array_heap%3B%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 </div>
-<input id="340980b2-39fc-4dc6-b582-541d4819a12a" name="619a3ead-39d5-4647-bc90-a32e17599edf" type="radio">
-</input><label class="sd-tab-label" for="340980b2-39fc-4dc6-b582-541d4819a12a">
+<input id="6f140dac-de87-49d1-b0b0-b828343b9ed8" name="0173226a-ac21-41bd-8428-a35162c407b2" type="radio">
+</input><label class="sd-tab-label" for="6f140dac-de87-49d1-b0b0-b828343b9ed8">
 Notes</label><div class="sd-tab-content docutils">
 <div class="tip admonition">
 <p class="admonition-title">A few notes…</p>
@@ -878,8 +997,8 @@ Notes</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-<input id="9bc20310-0278-4193-b71f-8c1b5f6f8538" name="619a3ead-39d5-4647-bc90-a32e17599edf" type="radio">
-</input><label class="sd-tab-label" for="9bc20310-0278-4193-b71f-8c1b5f6f8538">
+<input id="02f95d51-20fa-40b5-b9de-710613631552" name="0173226a-ac21-41bd-8428-a35162c407b2" type="radio">
+</input><label class="sd-tab-label" for="02f95d51-20fa-40b5-b9de-710613631552">
 What if</label><div class="sd-tab-content docutils">
 <div class="attention admonition">
 <p class="admonition-title">What if…?</p>
@@ -953,8 +1072,8 @@ What if</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-tab-set docutils">
-<input checked="checked" id="864b097c-b32c-4e67-ae0e-457ca54cfa27" name="eba70418-7ad9-431c-b60b-b7b24a89cac6" type="radio">
-</input><label class="sd-tab-label" for="864b097c-b32c-4e67-ae0e-457ca54cfa27">
+<input checked="checked" id="118c97d0-a4a5-4164-876c-dcf595a8af18" name="2e1d1fbd-7bd6-4f2d-80d6-c088fc23d306" type="radio">
+</input><label class="sd-tab-label" for="118c97d0-a4a5-4164-876c-dcf595a8af18">
 Grow by 1</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Count array accesses (reads and writes) of adding first <span class="math notranslate nohighlight">\(n\)</span> elements</p>
 <ul class="simple">
@@ -1035,14 +1154,15 @@ Grow by 1</label><div class="sd-tab-content docutils">
 \[n + \sum_{i=0}^{n-1} i^2 = n + n^2 - n\]</div>
 <div class="math notranslate nohighlight">
 \[\Theta(n^2)\]</div>
+<p class="sd-card-text"><em>Note: think <a class="reference external" href="https://youtu.be/L3PMWMKI0YU">arithmetic sequences</a> and <a class="reference external" href="https://youtu.be/7Weu-TwS-S0">arithmetic series</a></em></p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<input id="b2f2e8d2-0e0b-4c34-911c-86cbdea3ded2" name="eba70418-7ad9-431c-b60b-b7b24a89cac6" type="radio">
-</input><label class="sd-tab-label" for="b2f2e8d2-0e0b-4c34-911c-86cbdea3ded2">
+<input id="a0eb739f-6ad9-47ee-b073-747240cde4b6" name="2e1d1fbd-7bd6-4f2d-80d6-c088fc23d306" type="radio">
+</input><label class="sd-tab-label" for="a0eb739f-6ad9-47ee-b073-747240cde4b6">
 Doubling array</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Count array accesses (reads and writes) of adding first <span class="math notranslate nohighlight">\(n = 2^i\)</span> elements</p>
 <ul class="simple">
@@ -1076,14 +1196,15 @@ Doubling array</label><div class="sd-tab-content docutils">
 \[\Theta(n)\]</div>
 <div class="math notranslate nohighlight">
 \[\sum_{i=0}^n c^i = \frac{c^{n^2 + 1} - 1}{c - 1}\]</div>
+<p class="sd-card-text"><em>Note: think <a class="reference external" href="https://youtu.be/2M9LtyHnbnk">geometric sequences</a> and <a class="reference external" href="https://youtu.be/NS-2CpFuW9Q">geometric series</a></em></p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<input id="5705d32d-e4ed-473b-a684-dba2a2a0de2a" name="eba70418-7ad9-431c-b60b-b7b24a89cac6" type="radio">
-</input><label class="sd-tab-label" for="5705d32d-e4ed-473b-a684-dba2a2a0de2a">
+<input id="14673d54-d190-4583-a217-329c23a3356c" name="2e1d1fbd-7bd6-4f2d-80d6-c088fc23d306" type="radio">
+</input><label class="sd-tab-label" for="14673d54-d190-4583-a217-329c23a3356c">
 Proof</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="../../_images/05_s20.png" src="../../_images/05_s20.png" />
@@ -1093,6 +1214,49 @@ Proof</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
+<!-- 
+### Pointers
+
+````````` {div} full-width
+````````  {card}
+```````   {tab-set}
+
+``````    {tab-item} What are they?
+> A pointer is defined as a derived data type that can store the address of other C variables or a memory location. We can access and manipulate the data stored in that memory location using pointers.
+>
+> \~ [GFG](https://www.geeksforgeeks.org/c-pointers/)
+``````
+
+``````    {tab-item} Syntax
+```
+// use the * (dereferencing operator) in pointer declaration
+//    ptr      = name of pointer
+//    datatype = type of data pointed to
+
+datatype * ptr;
+```
+``````
+
+``````    {tab-item} Using...
+
+Steps
+- Declaration
+- Initialization
+- Dereferencing
+
+```
+// use the * (dereferencing operator) in pointer declaration
+//    ptr      = name of pointer
+//    datatype = type of data pointed to
+
+datatype * ptr;
+```
+``````
+
+
+
+````````
+````````` -->
 <!-- 
 ### Worst-case and average-case
 
