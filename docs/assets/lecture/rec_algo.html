@@ -858,8 +858,8 @@ Why recursion?</div>
 <div class="admonition-sum-array admonition">
 <p class="admonition-title">Sum Array</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="2a133d02-a6d0-4f28-9c32-5ea9c5526c52" name="e48c036f-d0be-4a10-8476-602308b0cbe4" type="radio">
-</input><label class="sd-tab-label" for="2a133d02-a6d0-4f28-9c32-5ea9c5526c52">
+<input checked="checked" id="067b7e1f-913e-4147-a448-ef17966eb0f3" name="2cf26c5b-0efa-4f82-ab1a-47c8c5ad4e30" type="radio">
+</input><label class="sd-tab-label" for="067b7e1f-913e-4147-a448-ef17966eb0f3">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">sum_array</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="c1">//basecase  </span>
@@ -875,8 +875,8 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="62ed5f36-1972-4a9d-80af-4f199e057c13" name="e48c036f-d0be-4a10-8476-602308b0cbe4" type="radio">
-</input><label class="sd-tab-label" for="62ed5f36-1972-4a9d-80af-4f199e057c13">
+<input id="b4314bbf-c7c1-4fcd-bc5f-050c30954e47" name="2cf26c5b-0efa-4f82-ab1a-47c8c5ad4e30" type="radio">
+</input><label class="sd-tab-label" for="b4314bbf-c7c1-4fcd-bc5f-050c30954e47">
 Base &amp; Recursive Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -899,23 +899,19 @@ A[n - 1], &amp; \text{if $n \gt 1$ },  &amp; \text{// recursive calls}
 <div class="admonition-largest admonition">
 <p class="admonition-title">Largest</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="65208b1e-77e1-4efe-ad66-61e8e1584a2d" name="e6d175e8-2b20-4e50-8cb5-b501532fda59" type="radio">
-</input><label class="sd-tab-label" for="65208b1e-77e1-4efe-ad66-61e8e1584a2d">
+<input checked="checked" id="6b5237ea-0f9e-447a-8694-04c61ad36339" name="5087bc56-ad17-48cb-b6ab-3b36ce30b111" type="radio">
+</input><label class="sd-tab-label" for="6b5237ea-0f9e-447a-8694-04c61ad36339">
 Pseudocode</label><div class="sd-tab-content docutils">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>To find the largest element in list[a]...list[b]  
-
-a. Find the largest element in `list[a + 1]...list[b]` 
-    and call it max
-b. Compare the elements `list[a]` and `max`  
-  `if (list[a] &gt;= max)`  
-    the largest element in list[a]...list[b] is list[a]  
-  otherwise   
-    the largest element in list[a]...list[b] is max 
-</pre></div>
+<p>To find the largest element in list[a]…list[b]</p>
+<p>a. Find the largest element in <code class="docutils literal notranslate"><span class="pre">list[a</span> <span class="pre">+</span> <span class="pre">1]...list[b]</span></code> and call it <code class="docutils literal notranslate"><span class="pre">max</span></code>
+b. Compare the elements <code class="docutils literal notranslate"><span class="pre">list[a]</span></code> and <code class="docutils literal notranslate"><span class="pre">max</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(list[a]</span> <span class="pre">&gt;=</span> <span class="pre">max)</span></code> the largest element in <code class="docutils literal notranslate"><span class="pre">list[a]...list[b]</span></code> is <code class="docutils literal notranslate"><span class="pre">list[a]</span></code></p></li>
+<li><p>otherwise, the largest element in <code class="docutils literal notranslate"><span class="pre">list[a]...list[b]</span></code> is <code class="docutils literal notranslate"><span class="pre">max</span></code></p></li>
+</ul>
 </div>
-</div>
-<input id="53260151-c759-4217-97fb-ce80b9ea9366" name="e6d175e8-2b20-4e50-8cb5-b501532fda59" type="radio">
-</input><label class="sd-tab-label" for="53260151-c759-4217-97fb-ce80b9ea9366">
+<input id="a3c0ddf3-4ac3-425e-8ae0-ad3ef72a409a" name="5087bc56-ad17-48cb-b6ab-3b36ce30b111" type="radio">
+</input><label class="sd-tab-label" for="a3c0ddf3-4ac3-425e-8ae0-ad3ef72a409a">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">largest</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">list</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lowerIndex</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">upperIndex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">;</span><span class="w"></span>
@@ -932,8 +928,8 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="2ea2aa5f-c65a-4bdd-834f-c8cd1e39cdf8" name="e6d175e8-2b20-4e50-8cb5-b501532fda59" type="radio">
-</input><label class="sd-tab-label" for="2ea2aa5f-c65a-4bdd-834f-c8cd1e39cdf8">
+<input id="7389e7f4-2bce-420e-b7b2-691893616153" name="5087bc56-ad17-48cb-b6ab-3b36ce30b111" type="radio">
+</input><label class="sd-tab-label" for="7389e7f4-2bce-420e-b7b2-691893616153">
 Base &amp; Recursive Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -949,8 +945,8 @@ size\ of\ list\ is\ \gt 1, &amp; \text{// recursive calls}
 <div class="admonition-serpinski-https-www-geeksforgeeks-org-sierpinski-triangle admonition">
 <p class="admonition-title"><a class="reference external" href="https://www.geeksforgeeks.org/sierpinski-triangle/">Serpinski</a></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="b5ff7b10-faae-4c0b-a913-cdbfe5d795bd" name="760cac72-eba5-4fa2-8703-730d34f1836b" type="radio">
-</input><label class="sd-tab-label" for="b5ff7b10-faae-4c0b-a913-cdbfe5d795bd">
+<input checked="checked" id="adc30e74-2e49-4c68-b546-db27cda3fa1b" name="a4349906-01cf-4ca3-b152-b5ed81149afb" type="radio">
+</input><label class="sd-tab-label" for="adc30e74-2e49-4c68-b546-db27cda3fa1b">
 Code</label><div class="sd-tab-content docutils">
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">printSierpinski</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
@@ -970,22 +966,22 @@ Code</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="1d160e6d-e53f-49e4-bfab-2e2bb5517e80" name="760cac72-eba5-4fa2-8703-730d34f1836b" type="radio">
-</input><label class="sd-tab-label" for="1d160e6d-e53f-49e4-bfab-2e2bb5517e80">
+<input id="641fb5d5-4b7f-4087-b972-37d60fc636f0" name="a4349906-01cf-4ca3-b152-b5ed81149afb" type="radio">
+</input><label class="sd-tab-label" for="641fb5d5-4b7f-4087-b972-37d60fc636f0">
 Visualize : Structure</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://runestone.academy/ns/books/published/pythonds/_images/stCallTree.png" src="https://runestone.academy/ns/books/published/pythonds/_images/stCallTree.png" />
 </figure>
 </div>
-<input id="499ac766-df33-4171-a5a9-3e648260f688" name="760cac72-eba5-4fa2-8703-730d34f1836b" type="radio">
-</input><label class="sd-tab-label" for="499ac766-df33-4171-a5a9-3e648260f688">
+<input id="99e5e126-1738-4e8d-8f15-3c3aab643d75" name="a4349906-01cf-4ca3-b152-b5ed81149afb" type="radio">
+</input><label class="sd-tab-label" for="99e5e126-1738-4e8d-8f15-3c3aab643d75">
 Ex : Triangle</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://www.researchgate.net/profile/Askander-Kaka/publication/264872595/figure/fig4/AS:669568435494921&#64;1536648963162/First-four-steps-to-configure-Sierpinski-triangle.png" src="https://www.researchgate.net/profile/Askander-Kaka/publication/264872595/figure/fig4/AS:669568435494921&#64;1536648963162/First-four-steps-to-configure-Sierpinski-triangle.png" />
 </figure>
 </div>
-<input id="d0484f14-a27f-43b5-a787-b103c6d659f8" name="760cac72-eba5-4fa2-8703-730d34f1836b" type="radio">
-</input><label class="sd-tab-label" for="d0484f14-a27f-43b5-a787-b103c6d659f8">
+<input id="78fadbed-3fca-48ee-bb15-879c2fc9a17b" name="a4349906-01cf-4ca3-b152-b5ed81149afb" type="radio">
+</input><label class="sd-tab-label" for="78fadbed-3fca-48ee-bb15-879c2fc9a17b">
 Ex : Pyramid</label><div class="sd-tab-content docutils">
 <figure class="align-default">
 <img alt="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sierpinski_pyramid.png" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Sierpinski_pyramid.png" />
@@ -1139,15 +1135,10 @@ Various modalities </div>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<figure class="align-default">
-<img alt="../../_images/09_unimodal_strong.png" src="../../_images/09_unimodal_strong.png" />
-</figure>
-</div>
-</div>
-</div>
+<!-- ````` {grid-item-card}
+``` {figure} imgs/09_unimodal_strong.png
+```
+````` -->
 </div>
 </div>
 </div>
@@ -1191,15 +1182,11 @@ Various modalities </div>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/09_unimodal_weak.png"><img alt="../../_images/09_unimodal_weak.png" src="../../_images/09_unimodal_weak.png" style="width: 100%;" /></a>
-</figure>
-</div>
-</div>
-</div>
+<!-- ````` {grid-item-card}
+``` {figure} imgs/09_unimodal_weak.png
+:width: 100%
+```
+````` -->
 </div>
 </div>
 </div>
