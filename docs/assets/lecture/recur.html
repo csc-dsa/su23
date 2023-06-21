@@ -1215,7 +1215,17 @@ Tree Method</div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<img alt="../../_images/10_rec_bin_search_tree.png" src="../../_images/10_rec_bin_search_tree.png" />
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        T(n)
+        / \
+       1   T(n/2)
+            / \
+           1   T(n/2^2)
+                / \
+               1   T(n/2^3)
+                    / \
+                   1   T(n/2^k)
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -1319,12 +1329,12 @@ Breakdown</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin {align}
 T(n) &amp;= T(n - 1) + 1 \\
-T(n - 1) &amp;= T(n - 2) + 1 \\
-T(n - 2) &amp;= T(n - 3) + 1 \\ 
+T(n - 1) &amp;= T(n - 2) + 2 \\
+T(n - 2) &amp;= T(n - 3) + 3 \\ 
 • \\
 • \\
 • \\
-T(n - k) &amp;= T(n - k) + 1 \\
+T(n - k) &amp;= T(n - k) + k \\
 \end {align}\end{split}\]</div>
 </div>
 </div>
@@ -1460,8 +1470,8 @@ T(n) &amp;= 2^kT(1) + kn \\
 </div>
 </div>
 </div>
-<div class="admonition-recurrence-relation-tower-of-hanoi-https-youtu-be-1k9ebqjosvo admonition">
-<p class="admonition-title"><a class="reference external" href="https://youtu.be/1K9ebQJosvo">Recurrence Relation: Tower of Hanoi</a> </p>
+<div class="admonition-recurrence-relation-tower-of-hanoi-https-youtu-be-iawm82bq4ii admonition">
+<p class="admonition-title"><a class="reference external" href="https://youtu.be/IawM82BQ4II">Recurrence Relation: Tower of Hanoi</a> </p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1">// = T(n)</span>
 </span><span class="hll"><span class="linenos">2</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;/d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w">    </span><span class="c1">// = 1</span>
 </span><span class="hll"><span class="linenos">3</span><span class="w">  </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">        </span><span class="c1">// = T(n - 1)</span>
@@ -1483,9 +1493,23 @@ T(n) =
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Tree Method</div>
-<figure class="align-default">
-<img alt="../../_images/10_ex_3.png" src="../../_images/10_ex_3.png" />
-</figure>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        T(n)
+        / \
+       n   T(n-1)
+            / \
+         n-1   T(n-2)
+                / \
+             n-2   T(n-3)
+                    / \
+                 ...   ...
+                        / \
+                           T(2)
+                            / \
+                           2   T(1)
+                                / \
+                               1   T(0)
+</pre></div>
+</div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
@@ -1561,68 +1585,179 @@ T(n) &amp; = 2^nT(0) + 1 + 2 + 2^2\ + \dots\ 2^k-1 \\
 <div class="admonition-master-theorem-https-youtu-be-2h0gkdriowu admonition">
 <p class="admonition-title"><a class="reference external" href="https://youtu.be/2H0GKdrIowU">Master Theorem</a></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="3b6132f5-2f95-4313-92a4-6e41f3ca6b31" name="c5ef1ac7-546a-4fe2-83d5-e5dfe025ee12" type="radio">
-</input><label class="sd-tab-label" for="3b6132f5-2f95-4313-92a4-6e41f3ca6b31">
-Cases</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">If <span class="math notranslate nohighlight">\(T(n) = aT(\frac{n}{b}) + O(n^d)\)</span> (for constants <span class="math notranslate nohighlight">\(a \gt 0, b \gt 1, d \ge 0\)</span>), then:</p>
+<input checked="checked" id="bb0c9927-8808-4f47-b0aa-4de8b1659976" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
+</input><label class="sd-tab-label" for="bb0c9927-8808-4f47-b0aa-4de8b1659976">
+Theorem</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">The master theorem is a mathematical formula used to analyze the time complexity of divide-and-conquer algorithms. It provides a solution for recurrence relations of the form:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-T(n) =
-\begin{cases}
-O(n^d),  &amp; \text{$if\ d\ \gt log_b\ a$}, &amp;&amp; Case 1 \\[2ex]
-O(n^d\ log\ n),  &amp; \text{$if\ d\ = log_b\ a$}, &amp;&amp; Case 2 \\[2ex]
-O(n^{log_b\ a}),  &amp; \text{$if\ d\ \lt log_b\ a$}, &amp;&amp; Case 3 \\
-\end{cases}
-\end{split}\]</div>
+\[T(n) = aT(\frac{n}{b}) + f(n)\]</div>
+<p class="sd-card-text">Where:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(T(n)\)</span> represents the time complexity of the algorithm for a given input size <span class="math notranslate nohighlight">\(n\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(a\)</span> represents the number of recursive sub-problems</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{n}{b}\)</span> represents the size of each subproblem (assuming they have equal size)</p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(f(n)\)</span> represents the time complexity of the algorithm’s non-recursive part</p></li>
+</ul>
 </div>
-<input id="10445c16-88ee-4ac8-b450-9a228a655bbd" name="c5ef1ac7-546a-4fe2-83d5-e5dfe025ee12" type="radio">
-</input><label class="sd-tab-label" for="10445c16-88ee-4ac8-b450-9a228a655bbd">
+<input id="eacd43e9-12e9-423a-9b82-af0079a1cfda" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
+</input><label class="sd-tab-label" for="eacd43e9-12e9-423a-9b82-af0079a1cfda">
+Cases</label><div class="sd-tab-content docutils">
+<p class="sd-card-text">The master theorem provides three cases based on the relationship between <span class="math notranslate nohighlight">\(f(n)\)</span> and the subproblem part <span class="math notranslate nohighlight">\(\bigg(aT(\frac{n}{b}) \bigg)\)</span>.</p>
+<dl class="simple myst">
+<dt>Case 1</dt><dd><p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = O(n^c)\)</span> for some constant <span class="math notranslate nohighlight">\(c &lt; log_b(a)\)</span>, then the time complexity is dominated by the subproblem part, and the overall time complexity is given by</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[T(n) = \Theta(n^{log_b(a)})\]</div>
+<dl class="simple myst">
+<dt>Case 2</dt><dd><p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = \Theta(n^c \ log^{k(n)})\)</span> for some constants <span class="math notranslate nohighlight">\(c ≥ 0\)</span> and <span class="math notranslate nohighlight">\(k ≥ 0\)</span>, and if <span class="math notranslate nohighlight">\(aT(\frac{n}{b})\)</span> is the dominant term, then the overall time complexity is given by</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[T(n) = \Theta(n^{log_b(a)} \ log^{(k+1)(n)})\]</div>
+<dl class="simple myst">
+<dt>Case 3</dt><dd><p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = \Omega(n^c)\)</span> for some constant <span class="math notranslate nohighlight">\(c &gt; log_b(a)\)</span>, and if <span class="math notranslate nohighlight">\(f(n)\)</span> satisfies the regularity condition (<span class="math notranslate nohighlight">\(af(\frac{n}{b}) ≤ kf(n)\)</span> for some constant <span class="math notranslate nohighlight">\(k &lt; 1\)</span> and sufficiently large <span class="math notranslate nohighlight">\(n\)</span>), then the non-recursive part dominates the time complexity, and the overall time complexity is given by</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[T(n) = \Theta(f(n))\]</div>
+</div>
+<input id="0c856212-0ba7-442b-9874-337562b7f33c" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
+</input><label class="sd-tab-label" for="0c856212-0ba7-442b-9874-337562b7f33c">
 Case 1</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
-\[T(n) = 2T(\frac{n}{2}) + O(n^2)\]</div>
+\[T(n) = 4T(\frac{n}{2}) + n\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 1 : Identify the values of a, b, and f(n)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In this case,</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-a &amp; = 2 \\
-b &amp; = 2 \\
-c &amp; = 2 \\
-\\
-\end{align}\end{split}\]</div>
-<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(d \gt log_b\ a\)</span>, <span class="math notranslate nohighlight">\(T(n) = O(n^d) = O(n^2)\)</span></p>
+\[a = 4\]</div>
+<div class="math notranslate nohighlight">
+\[b = 2\]</div>
+<div class="math notranslate nohighlight">
+\[f(n) = n\]</div>
 </div>
-<input id="63afa434-514a-4c28-ae87-0cef4704e3f6" name="c5ef1ac7-546a-4fe2-83d5-e5dfe025ee12" type="radio">
-</input><label class="sd-tab-label" for="63afa434-514a-4c28-ae87-0cef4704e3f6">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 2 : Compare f(n) with n^log_b(a)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here, <span class="math notranslate nohighlight">\(f(n) = n\)</span> and <span class="math notranslate nohighlight">\(n^{log_b(a)} = n^{log_2(4)} = n^2\)</span></p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f(n) = n = n^1 &lt; n^2 = n^{log_b(a)}\)</span>, we fall into Case 1 of the master theorem.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 3 : Determine the overall time complexity<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Using Case 1, the overall time complexity is <span class="math notranslate nohighlight">\(T(n) = \Theta(n^{log_b(a)})\)</span>.</p>
+<p class="sd-card-text">In this case, T(n) = \Theta(n^log_2(4)) = \Theta(n^2).</p>
+<p class="sd-card-text">So, the overall time complexity of the algorithm in this example is <span class="math notranslate nohighlight">\(\Theta(n^2)\)</span>, which means the algorithm’s running time grows quadratically with the input size <span class="math notranslate nohighlight">\(n\)</span>.</p>
+</div>
+</details></div>
+<input id="f9b1f449-8a1f-47f8-9bf7-59020ecc1431" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
+</input><label class="sd-tab-label" for="f9b1f449-8a1f-47f8-9bf7-59020ecc1431">
 Case 2</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
-\[T(n) = T(\frac{n}{2}) + O(1)\]</div>
+\[T(n) = 9T(\frac{n}{3}) + n^2\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 1 : Identify the values of a, b, and f(n)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In this case:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-a &amp; = 1 \\
-b &amp; = 2 \\
-c &amp; = 0 \\
-\\
-\end{align}\end{split}\]</div>
-<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(d = log_b\ a\)</span>,</p>
+\[a = 9 \ \ \ (number\ of\ sub-problems)\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp; = O(n^d\ log\ n) \\
-&amp; = O(n^0\ log\ n) \\
-&amp; = O(log\ n) \\
-\end{align}\end{split}\]</div>
+\[b = 3 \ \ \ (size\ of\ each\ subproblem)\]</div>
+<div class="math notranslate nohighlight">
+\[ \ f(n) = n^2 \ \]</div>
 </div>
-<input id="04a0e07e-52bc-45cb-9b4e-6abdc0b45a81" name="c5ef1ac7-546a-4fe2-83d5-e5dfe025ee12" type="radio">
-</input><label class="sd-tab-label" for="04a0e07e-52bc-45cb-9b4e-6abdc0b45a81">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 2 : Compare f(n) with n^log_b(a)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here, <span class="math notranslate nohighlight">\(f(n) = n^2\)</span> and <span class="math notranslate nohighlight">\(n^{log_b(a)} = n^{log_3(9)} = \)</span>n^2$</p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f(n) = n^2 = n^{log_b(a)}\)</span>, we fall into Case 2 of the master theorem.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 3 : Determine the overall time complexity<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Using Case 2, the overall time complexity is</p>
+<div class="math notranslate nohighlight">
+\[T(n) = Θ(n^2 \ log(n))\]</div>
+</div>
+</details></div>
+<input id="0d269ae0-d6db-4ebe-8806-6c74941cd87c" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
+</input><label class="sd-tab-label" for="0d269ae0-d6db-4ebe-8806-6c74941cd87c">
 Case 3</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
-\[T(n) = 4T(\frac{n}{2}) + O(n)\]</div>
+\[T(n) = 2T(\frac{n}{2}) + n^3\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 1 : Identify the values of a, b, and f(n)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In this case,</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-a &amp; = 4 \\
-b &amp; = 2 \\
-c &amp; = 1 \\
-\\
-\end{align}\end{split}\]</div>
-<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(d \lt log_b\ a\)</span>, <span class="math notranslate nohighlight">\(T(n) = O(n^{log_b\ a}) = O(n^2)\)</span></p>
+\[a = 2\]</div>
+<div class="math notranslate nohighlight">
+\[b = 2\]</div>
+<div class="math notranslate nohighlight">
+\[f(n) = n^3\]</div>
 </div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 2 : Compare f(n) with n^log_b(a)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Here, <span class="math notranslate nohighlight">\(f(n) = n^3\)</span> and <span class="math notranslate nohighlight">\(n^{log_b(a)} = n^{log_2(2)} = n^1 = n\)</span></p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f(n) = n^3 &gt; n = n^{log_b(a)}\)</span>, we fall into Case 3 of the master theorem.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 3: Check if f(n) satisfies the regularity condition<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In this case, we can see that <span class="math notranslate nohighlight">\(af(\frac{n}{b}) = 2(\frac{n}{2})^3 = (\frac{1}{2})n^3 \le kn^3\)</span> for <span class="math notranslate nohighlight">\(k = \frac{1}{2}\)</span> and sufficiently large <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p class="sd-card-text">The regularity condition is satisfied.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Step 4 : Determine the overall time complexity.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Using Case 3, the overall time complexity is</p>
+<div class="math notranslate nohighlight">
+\[T(n) = Θ(n^3)\]</div>
+</div>
+</details></div>
 </div>
 </div>
 </div>
