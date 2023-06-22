@@ -978,9 +978,9 @@ In other words, the time complexity of binary search grows logarithmically with 
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align}
 T(n) &amp;= 2T \bigg(\frac{n}{2} \bigg) + n \\
-&amp;= 2[2T \bigg(\frac{n}{4} \bigg) + \frac{n}{2}] + n \\
+&amp;= 2 \bigg[2T \bigg(\frac{n}{4} \bigg) + \frac{n}{2} \bigg] + n \\
 &amp;= 4T \bigg(\frac{n}{4} \bigg) + 2n + n \\
-&amp;= 4[2T \bigg(\frac{n}{8} \bigg) + \frac{n}{4}] + 2n + n \\
+&amp;= 4 \bigg[2T \bigg(\frac{n}{8} \bigg) + \frac{n}{4} \bigg] + 2n + n \\
 &amp;= 8T \bigg(\frac{n}{8} \bigg) + 4n + 2n + n \\
 &amp;= 2^kT \bigg(\frac{n}{2^k} \bigg) + kn \\
 \end{align}\end{split}\]</div>
@@ -1047,8 +1047,8 @@ Total work &amp;= n * \frac{2^{log_2\ (n)} - 1}{2 - 1} \\
 <span class="math notranslate nohighlight">\(f(n)\)</span> is the time complexity of the remaining work done outside the recursive calls.</p>
 <p class="sd-card-text">The master theorem provides three cases based on the relationship between <span class="math notranslate nohighlight">\(f(n)\)</span> and the subproblem part <span class="math notranslate nohighlight">\(aT(\frac{n}{b})\)</span>.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="950cfc22-23a4-40ea-86a4-c9f9395cf4e6" name="e9d6659e-70eb-474e-a8fb-dc83e64d4566" type="radio">
-</input><label class="sd-tab-label" for="950cfc22-23a4-40ea-86a4-c9f9395cf4e6">
+<input checked="checked" id="daa1515d-5634-482d-81af-c487919f8be8" name="c2af7ea0-2b6d-4bd1-8a3f-6fc354d81ef6" type="radio">
+</input><label class="sd-tab-label" for="daa1515d-5634-482d-81af-c487919f8be8">
 Cases</label><div class="sd-tab-content docutils">
 <dl class="simple myst">
 <dt>Case 1</dt><dd><p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = O(n^c)\)</span> for some constant <span class="math notranslate nohighlight">\(c &lt; log_b(a)\)</span>, then the time complexity is dominated by the subproblem part, and the overall time complexity is given by</p>
@@ -1069,8 +1069,8 @@ Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = \Theta(f(n))\]</div>
 </div>
-<input id="73e5a572-b487-4f78-a72e-089084c5f501" name="e9d6659e-70eb-474e-a8fb-dc83e64d4566" type="radio">
-</input><label class="sd-tab-label" for="73e5a572-b487-4f78-a72e-089084c5f501">
+<input id="2d1ba1e1-9e79-43d0-bd91-dd21c9a812f9" name="c2af7ea0-2b6d-4bd1-8a3f-6fc354d81ef6" type="radio">
+</input><label class="sd-tab-label" for="2d1ba1e1-9e79-43d0-bd91-dd21c9a812f9">
 Case 1 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 4T \bigg(\frac{n}{2} \bigg) + n\]</div>
@@ -1111,8 +1111,8 @@ Step 3 : Determine the overall time complexity<div class="sd-summary-down docuti
 <p class="sd-card-text">So, the overall time complexity of the algorithm in this example is <span class="math notranslate nohighlight">\(\Theta(n^2)\)</span>, which means the algorithm’s running time grows quadratically with the input size <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 </details></div>
-<input id="212e78e9-e1b3-4e21-8fbd-230c158c8ed3" name="e9d6659e-70eb-474e-a8fb-dc83e64d4566" type="radio">
-</input><label class="sd-tab-label" for="212e78e9-e1b3-4e21-8fbd-230c158c8ed3">
+<input id="e59c72b9-9395-47f8-a815-39b74e53a99f" name="c2af7ea0-2b6d-4bd1-8a3f-6fc354d81ef6" type="radio">
+</input><label class="sd-tab-label" for="e59c72b9-9395-47f8-a815-39b74e53a99f">
 Case 2 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 9T \bigg(\frac{n}{3} \bigg) + n^2\]</div>
@@ -1153,8 +1153,8 @@ Step 3 : Determine the overall time complexity<div class="sd-summary-down docuti
 \[T(n) = Θ(n^2 \ log(n))\]</div>
 </div>
 </details></div>
-<input id="784e5c17-c04f-45a7-9aa9-bd086272ec48" name="e9d6659e-70eb-474e-a8fb-dc83e64d4566" type="radio">
-</input><label class="sd-tab-label" for="784e5c17-c04f-45a7-9aa9-bd086272ec48">
+<input id="bb9ce246-0e1c-45fe-b551-a07fbbcf0fa0" name="c2af7ea0-2b6d-4bd1-8a3f-6fc354d81ef6" type="radio">
+</input><label class="sd-tab-label" for="bb9ce246-0e1c-45fe-b551-a07fbbcf0fa0">
 Case 3 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 2T \bigg(\frac{n}{2} \bigg) + n^3\]</div>
@@ -1297,14 +1297,14 @@ Unrolling<div class="sd-summary-down docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align}
 Step\ 1 : \ &amp; T(n)  = T(\frac{n}{2}) + c \\
-Step\ 2 : \ &amp; T(n)  = [T(\frac{n}{4}) + c] + c \\
+Step\ 2 : \ &amp; T(n)  =  \bigg[T(\frac{n}{4}) + c \bigg] + c \\
 &amp; = T(\frac{n}{4}) + 2c \\
-Step\ 3 : \ &amp; T(n)  = [T(\frac{n}{8}) + c] + 2c \\
+Step\ 3 : \ &amp; T(n)  =  \bigg[T(\frac{n}{8}) + c \bigg] + 2c \\
 &amp;  = T(\frac{n}{8}) + 3c \\
 \end{align}\end{split}\]</div>
 <p class="sd-card-text">Continuing this process, we can unroll the recurrence relation up to k steps:</p>
 <div class="math notranslate nohighlight">
-\[ \ \ T(n) = T(\frac{n}{2^k}) + kc \ \ \]</div>
+\[ \ \ T(n) = T \bigg(\frac{n}{2^k} \bigg) + kc \ \ \]</div>
 <p class="sd-card-text">We keep unrolling until we reach the base case, which occurs when <span class="math notranslate nohighlight">\(\frac{n}{2^k} = 1\)</span>. Solving for <span class="math notranslate nohighlight">\(k\)</span>, we find that <span class="math notranslate nohighlight">\(k = log_2\ (n)\)</span>.</p>
 <p class="sd-card-text">Now, let’s substitute this value of <span class="math notranslate nohighlight">\(k\)</span> into the unrolled relation:</p>
 <div class="math notranslate nohighlight">
@@ -1333,7 +1333,7 @@ Guessing<div class="sd-summary-down docutils">
 <p class="sd-card-text">We assume that <span class="math notranslate nohighlight">\(T(k) ≤ c\ log\ (k)\)</span> for some constant <span class="math notranslate nohighlight">\(c\)</span>, where <span class="math notranslate nohighlight">\(k &lt; n\)</span>. Now, let’s substitute this assumption into the recurrence relation:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align}
-T(n) &amp;= 2T \bigg(\frac{n}{2} \bigg) + 1 \\
+T(n) &amp;= T \bigg(\frac{n}{2} \bigg) + 1 \\
 &amp;≤ c\ log\ \frac{n}{2} + 1 \\
 &amp;= c(log\ (n) - 1) + 1 \\
 &amp;= c\ log\ (n) + 1 + c \\
@@ -1349,19 +1349,21 @@ Recursion Tree<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Let’s draw a recursion tree to represent the recursive calls made in the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1\)</span>. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
-<p class="sd-card-text">The recursion tree will have <span class="math notranslate nohighlight">\(log_2\ (n)\)</span> levels since we divide the problem size by <span class="math notranslate nohighlight">\(2\)</span> at each level. At each level, the work done is <span class="math notranslate nohighlight">\(1\)</span>, and there are <span class="math notranslate nohighlight">\(2^i\)</span> nodes at level <span class="math notranslate nohighlight">\(i\)</span>. Therefore, the total work at each level is <span class="math notranslate nohighlight">\(2^i\)</span>.</p>
-<p class="sd-card-text">Summing up the work done at each level, we have:</p>
-<div class="math notranslate nohighlight">
-\[Total work = 1 + 2 + 4 + ... + 2^{log_2\ (n) - 1}\]</div>
-<p class="sd-card-text">This is a geometric series with a common ratio of <span class="math notranslate nohighlight">\(2\)</span> and the first term being <span class="math notranslate nohighlight">\(1\)</span>. The sum of this series is given by:</p>
+<p class="sd-card-text">At each level of the recursion tree, we divide the problem size by <span class="math notranslate nohighlight">\(2\)</span>, following the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1\)</span>. The work done at each level is constant, represented by the “+ 1” term.</p>
+<p class="sd-card-text">Let’s start with the initial value <span class="math notranslate nohighlight">\(T(n)\)</span> and recursively split it into smaller sub-problems until we reach the base case.</p>
+<figure class="align-default">
+<img alt="https://media.geeksforgeeks.org/wp-content/uploads/20210608091942/img1-300x141.PNG" src="https://media.geeksforgeeks.org/wp-content/uploads/20210608091942/img1-300x141.PNG" />
+</figure>
+<p class="sd-card-text">And so on…</p>
+<p class="sd-card-text">The recursion tree will have <span class="math notranslate nohighlight">\(log_2\ (n)\)</span> levels since we divide the problem size by <span class="math notranslate nohighlight">\(2\)</span> at each level. At each level, the work done is a constant “+ 1”.</p>
+<p class="sd-card-text">The total work done can be calculated by summing up the work at each level:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align}
-Total work &amp;= 1 * \frac{2^{log₂(n)} - 1}{2 - 1} \\
-&amp;= 2^{log_2\ (n)} - 1 \\
-&amp;= n - 1 \\
+Total work &amp;= 1 + 1 + 1 + ... + 1\ (log_2\ (n) times) \\
+&amp;= log_2\ (n) \\
 \end{align}\end{split}\]</div>
-<p class="sd-card-text">Therefore, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(O(n)\)</span>.</p>
+<p class="sd-card-text">Therefore, the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1, analyzed using the recursion tree method, is \)</span>O(log\ (n))$.</p>
+<p class="sd-card-text">The recursion tree method provides a direct visualization of the recursive calls and the corresponding work done at each level, allowing us to analyze the time complexity of the recurrence relation.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -1614,6 +1616,9 @@ Recursion Tree<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Let’s draw a recursion tree to represent the recursive calls made in the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span>. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="https://algorithmtutor.com/images/recursion_tree1_final.png"><img alt="https://algorithmtutor.com/images/recursion_tree1_final.png" src="https://algorithmtutor.com/images/recursion_tree1_final.png" style="width: 600px;" /></a>
+</figure>
 <p class="sd-card-text">The recursion tree will have <span class="math notranslate nohighlight">\(log_2\ (n)\)</span> levels since we divide the problem size by <span class="math notranslate nohighlight">\(2\)</span> at each level. At each level, the work done is <span class="math notranslate nohighlight">\(n\)</span>, and there are <span class="math notranslate nohighlight">\(2^i\)</span> nodes at level <span class="math notranslate nohighlight">\(i\)</span>. Therefore, the total work at each level is <span class="math notranslate nohighlight">\(n * 2^i\)</span>.</p>
 <p class="sd-card-text">Summing up the work done at each level, we have:</p>
 <div class="math notranslate nohighlight">
@@ -1780,6 +1785,9 @@ Recursion Tree<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Let’s draw a recursion tree to represent the recursive calls made in the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(n - 1) + 1\)</span>. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="https://frederick-s.github.io/Introduction-to-Algorithms-Notes/04-Divide-and-Conquer/4.4-4.png"><img alt="https://frederick-s.github.io/Introduction-to-Algorithms-Notes/04-Divide-and-Conquer/4.4-4.png" src="https://frederick-s.github.io/Introduction-to-Algorithms-Notes/04-Divide-and-Conquer/4.4-4.png" style="width: 300px;" /></a>
+</figure>
 <p class="sd-card-text">The recursion tree will have n levels since we subtract <span class="math notranslate nohighlight">\(1\)</span> from <span class="math notranslate nohighlight">\(n\)</span> at each level. At each level, the work done is <span class="math notranslate nohighlight">\(1\)</span>. Therefore, the total work at each level is <span class="math notranslate nohighlight">\(1 * 2^i\)</span>.</p>
 <p class="sd-card-text">Summing up the work done at each level, we have:</p>
 <div class="math notranslate nohighlight">
