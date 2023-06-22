@@ -619,31 +619,21 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analysis-of-binary-search">
-   Analysis of Binary Search
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#recurrence-relations">
-   Recurrence relations
+   Recurrence Relations
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-to-solve-recurrences">
-     How to solve recurrences?
+    <a class="reference internal nav-link" href="#methods-of-solving-recurrences">
+     Methods of Solving Recurrences
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#unrolling-the-binary-search-recurrence">
-     Unrolling the binary search recurrence
+    <a class="reference internal nav-link" href="#examples">
+     Examples
     </a>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Recurrence Relations
-  </a>
  </li>
 </ul>
 
@@ -670,31 +660,21 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#analysis-of-binary-search">
-   Analysis of Binary Search
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#recurrence-relations">
-   Recurrence relations
+   Recurrence Relations
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-to-solve-recurrences">
-     How to solve recurrences?
+    <a class="reference internal nav-link" href="#methods-of-solving-recurrences">
+     Methods of Solving Recurrences
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#unrolling-the-binary-search-recurrence">
-     Unrolling the binary search recurrence
+    <a class="reference internal nav-link" href="#examples">
+     Examples
     </a>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Recurrence Relations
-  </a>
  </li>
 </ul>
 
@@ -736,150 +716,6 @@ Additional Resources</div>
 :align: center
 ``` -->
 </div>
-<!-- ## MTH 180 Review
-
-### Sequences
-
-`````````` {div} full-width
-`````````  {admonition} Definition 1
-> A *sequence* is a function from a subset of the set of integers (usually either the set $\{0, 1, 2,… \}$
-or the set $\{1, 2, 3,… \}$) to a set $S$. We use the notation $a_n$ to denote the image of the integer $n$.
-We call $a_n$ a term of the sequence.
-> 
-> -- *Discrete Mathematics and Its Applications*
-
-```` {card} Example
-
-Consider the sequence $\{a_n\}$, where
-
-$$a_n = \frac{1}{n}$$
-
-The list of the terms of this sequence, beginning with $a_1$, namely, $\{a_1, a_2, a_3, a_4,… \}$
-starts with
-
-$$ 1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \dots $$
-`````````
-````````` {admonition} Definition 2
-> A *geometric progression* is a sequence of the form
-> $a, ar, ar^2, \dots, ar^n, \dots $
-where the initial term $a$ and the common ratio $r$ are real numbers.
-> 
-> -- *Discrete Mathematics and Its Applications*
-
-```` {card} Example
-The sequences
-
-$\{b_n\}$ with $b_n = (−1)^n$,  
-$\{c_n\}$ with $c^n = 2 ⋅ 5^n$,  
-$\{d_n\}$ with $d_n = 6 ⋅ (\frac{1}{3})^n$   
-
-...are geometric progressions with initial term and common ratio equal to 
-
-$1$ and $−1$,  
-$2$ and $5$,  
-$6$ and $\frac{1}{3}$
-
-If we start at $n = 0$ for the following lists of terms...what will each begin with?
-
-``` {dropdown} $b_0, b_1, b_2, b_3, b_4, \dots $
-
-$$1, −1, 1, −1, 1, \dots$$
-```
-``` {dropdown} $c_0, c_1, c_2, c_3, c_4, \dots $
-
-$$ 2, 10, 50, 250, 1250, \dots$$
-```
-``` {dropdown} $d_0, d_1, d_2, d_3, d_4, \dots$
-
-$$6, 2, \frac{2}{3}, \frac{2}{9}, \frac{2}{27}, \dots $$ 
-```
-````
-
-`````````
-````````` {admonition} Definition 
-> An *arithmetic progression* is a sequence of the form 
-> $a, a + d, a + 2d, \dots , a + nd, \dots$ 
-> where the initial term $a$ and the common difference $d$ are real numbers.
-> 
-> -- *Discrete Mathematics and Its Applications*
-
-```` {card} Example
-The sequences 
-
-$\{s_n\}$ with $s_n = −1 + 4n$  
-$\{t_n\}$ with $t_n = 7 − 3n$
-
-...are both arithmetic progressions with initial terms and common differences equal to 
-
-$−1$ and $4$  
-$7$ and $−3$
-
-If we start at $n = 0$ for the following lists of terms...what will each begin with?
-
-``` {dropdown} $s_0, s_1, s_2, s_3, \dots $
-
-$$−1, 3, 7, 11, \dots $$
-```
-``` {dropdown} $t_0, t_1, t_2, t_3, \dots $
-
-$$7, 4, 1, −2, \dots $$
-```
-````
-
-`````````
-``````````
-
-### Summation Notation
-
-`````````` {div} full-width
-````````` {admonition} Definition 
-> If $m$ and $n$ are integers and $m \le n$, the symbol $\Sigma_{k = m}^{n} a_k$  
-> read the **summation from $k$ equals $m$ to $n$ of $a_k$**, 
-> is the sum of all the terms $a_m, a_{m+1}, a_{m+2}, \dots , a_n$.
-> We say that $a_m, a_{m+1}, a_{m+2}, \dots , a_n$ is the expanded form of the sum, and
-we write
-> 
-> $$\Sigma_{k=m}^{n} a_k = a_m + a_{m+1}, a_{m+2}, \dots , a_n$$
-> 
-> We call $k$ the **index** of the summation, $m$ the **lower limit** of the summation, and $n$
-the **upper limit** of the summation.
-> 
-> -- *Discrete Mathematics with Applications, 4th*
-
-```` {card} Examples
-Let $a_1 = −2,\ a_2 = −1,\ a_3 = 0,\ a_4 = 1,\ and\ a_5 = 2$. Compute the following:
-
-``` {dropdown} $\Sigma_{k=1}^{5} a_k$
-$$\begin{align}
-\Sigma_{k=1}^{5} a_k & = a_1 + a_2 + a_3 + a_4 + a_5 \\
-& = (−2) + (−1) + 0 + 1 + 2 \\
-& = 0
-\end{align}$$
-```
-
-``` {dropdown} $\Sigma_{k=2}^{2} a_k$
-$$\begin{align}
-\Sigma_{k=2}^{2} a_k & = a_2 \\
-& = −1 \\
-\end{align}$$
-```
-
-``` {dropdown} $\Sigma_{k=1}^{2} a_{2k}$
-$$\begin{align}
-\Sigma_{k=1}^{2} a_{2k} & = a_{2*1} + a_{2*2} \\
-& = a_2 + a_4 \\
-& = -1 + 1 \\
-& = 0
-\end{align}$$
-```
-
-
-
-````
-
-`````````
-
-`````````` -->
 <section id="factorial-of-n-formula">
 <h2>Factorial of n (formula)<a class="headerlink" href="#factorial-of-n-formula" title="Permalink to this headline">#</a></h2>
 <div class="full-width docutils">
@@ -897,8 +733,6 @@ product of all the integers from <span class="math notranslate nohighlight">\(1\
 \[0! = 1\]</div>
 <p class="sd-card-text">– <em>Discrete Mathematics with Applications, 4th</em></p>
 </div></blockquote>
-</div>
-</div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
@@ -968,7 +802,9 @@ Examples</div>
 <span class="linenos">6</span><span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p><a class="reference external" href="https://www.geeksforgeeks.org/factorial-formula/">https://www.geeksforgeeks.org/factorial-formula/</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://www.geeksforgeeks.org/factorial-formula/">https://www.geeksforgeeks.org/factorial-formula/</a></p>
+</div>
+</div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1048,52 +884,79 @@ n = 50,\ r = 3...\ &amp;=\ ^{50}C_3 \\
 </div>
 </div>
 </div>
-</section>
-<section id="analysis-of-binary-search">
-<h2>Analysis of Binary Search<a class="headerlink" href="#analysis-of-binary-search" title="Permalink to this headline">#</a></h2>
-<div class="full-width docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kt">int</span><span class="w"> </span><span class="nf">bsearch</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hi</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="linenos"> 2</span><span class="w">  </span>
-<span class="linenos"> 3</span><span class="w">    </span><span class="c1">//base case</span>
-<span class="linenos"> 4</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hi</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">lo</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">NOT_FOUND</span><span class="p">;</span><span class="w"></span>
-<span class="linenos"> 5</span><span class="w">    </span>
-<span class="linenos"> 6</span><span class="w">    </span><span class="c1">// calculate mid point index</span>
-<span class="linenos"> 7</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="n">hi</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">lo</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
-<span class="linenos"> 8</span><span class="w">    </span>
-<span class="linenos"> 9</span><span class="w">    </span><span class="c1">// key found?</span>
-<span class="linenos">10</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">mid</span><span class="p">;</span><span class="w"></span>
-<span class="linenos">11</span><span class="w">    </span>
-<span class="linenos">12</span><span class="w">    </span><span class="c1">// key in upper subarray?</span>
-<span class="linenos">13</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">bsearch</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">hi</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">14</span><span class="w">    </span>
-<span class="linenos">15</span><span class="w">    </span><span class="c1">// key is in lower subarray?</span>
-<span class="linenos">16</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">bsearch</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">);</span><span class="w"></span>
-<span class="linenos">17</span><span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-cases</div>
-<div class="math notranslate nohighlight">
-\[T(n) = {1\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space\space if\ n = 1 \brace T(\frac{n}{2}) + n\space\space\space\space\space\space\space if\ n &gt; 1}\]</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<!-- ## Analysis of Binary Search
+
+`````````` {div} full-width
+``````` {card}
+```{code-block} cpp
+:lineno-start: 1
+:emphasize-lines:
+int bsearch(int *A, int lo, int hi, int k) {
+  
+    //base case
+    if (hi < lo) return NOT_FOUND;
+    
+    // calculate mid point index
+    int mid = lo + ( (hi - lo) / 2);
+    
+    // key found?
+    if (A[mid] == k) return mid;
+    
+    // key in upper subarray?
+    if (A[mid] < k) return bsearch(A, mid + 1, hi, k);
+    
+    // key is in lower subarray?
+    return bsearch(A, lo, mid - 1, k);
+}
+```
+``` {card} Cases
+
+$$
+T(n) =
+\begin{cases}
+\ 1,  & \text{$n = 1$} \ \\[2ex]
+\ T(\frac{n}{2}) + 1, & \text{$n \gt 1$} \
+\end{cases}
+$$
+
+```
+``` {dropdown} Explanation
+To analyze the time complexity of a binary search algorithm using a recurrence relation, let's consider the following scenario:
+
+Given a sorted array of size $n$, we want to find the index of a target element $x$ using binary search.
+
+The binary search algorithm works by repeatedly dividing the search range in half until the target element is found or the search range becomes empty.
+
+Let's define a recurrence relation to represent the time complexity of binary search:
+
+$$ \ T(n) = T(\frac{n}{2}) + c \ $$
+
+Here, $T(n)$ represents the time required to perform a binary search on an array of size $n$, and $c$ represents the constant time required for the comparisons and other operations within each recursive call.
+
+The recurrence relation states that the time complexity of searching an array of size $n$ is equal to the time complexity of searching an array of size $\frac{n}{2}$, plus the constant time $c$.
+
+To solve this recurrence relation, we can use the master theorem, which provides a general framework for solving such relations.
+
+However, in the case of binary search, we can also intuitively observe that at each step, we reduce the search range by half. Therefore, the number of recursive calls needed until the search range becomes empty (i.e., the base case) is approximately $log_2(n)$.
+
+Using this observation, we can conclude that the time complexity of binary search is logarithmic:
+
+$$T(n) = O(log_2(n))$$
+
+In other words, the time complexity of binary search grows logarithmically with the size of the array being searched. This is one of the reasons binary search is considered an efficient search algorithm, particularly for sorted arrays.
+```
+```````
+`````````` -->
 </section>
 <section id="recurrence-relations">
-<h2><a class="reference external" href="https://www.math.wichita.edu/discrete-book/ch_sequences.html">Recurrence relations</a><a class="headerlink" href="#recurrence-relations" title="Permalink to this headline">#</a></h2>
+<h2><a class="reference external" href="https://www.math.wichita.edu/discrete-book/ch_sequences.html">Recurrence Relations</a><a class="headerlink" href="#recurrence-relations" title="Permalink to this headline">#</a></h2>
 <div class="full-width docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">By itself, a recurrence does not describe the running time of an algorithm</p>
 <ul class="simple">
 <li><p class="sd-card-text">need a <em>closed-form</em> solution (non-recursive description)</p></li>
-<li><p class="sd-card-text">exact closed-form solution may not exist, or may be too difficult to find</p></li>
+<li><p class="sd-card-text">exact <em>closed-form</em> solution may not exist, or may be too difficult to find</p></li>
 </ul>
 <p class="sd-card-text">For most recurrences, an asymptotic solution of the form <span class="math notranslate nohighlight">\(\Theta()\)</span> is acceptable</p>
 <ul class="simple">
@@ -1102,507 +965,111 @@ cases</div>
 </div>
 </div>
 </div>
-<section id="how-to-solve-recurrences">
-<h3><a class="reference external" href="https://courses.engr.illinois.edu/cs473/sp2010/notes/99-recurrences.pdf">How to solve recurrences?</a><a class="headerlink" href="#how-to-solve-recurrences" title="Permalink to this headline">#</a></h3>
+<section id="methods-of-solving-recurrences">
+<h3><a class="reference external" href="https://courses.engr.illinois.edu/cs473/sp2010/notes/99-recurrences.pdf">Methods of Solving Recurrences</a><a class="headerlink" href="#methods-of-solving-recurrences" title="Permalink to this headline">#</a></h3>
 <div class="full-width docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Solving recurrances</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-<a class="reference external" href="https://courses.cs.washington.edu/courses/cse332/18su/handouts/unrolling.pdf">Unrolling</a></div>
-<dl class="simple myst">
-<dt>Expanding the recurrence</dt><dd><p class="sd-card-text">a.k.a. <em>iteration method</em> or repeated substitution</p>
-</dd>
-<dt>Keep unrolling the recurrence until you identify a general case</dt><dd><p class="sd-card-text">then use the base case</p>
-</dd>
-<dt>Not trivial in all cases but it is helpful to build an intuition</dt><dd><p class="sd-card-text">may need induction to prove correctness</p>
-</dd>
-</dl>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-<a class="reference external" href="https://www.geeksforgeeks.org/method-of-guessing-and-confirming/">Guessing</a></div>
-<ul class="simple">
-<li><p class="sd-card-text">the answer and proving it correct <em>by induction</em></p></li>
-</ul>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Recursion Tree</div>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-<a class="reference external" href="http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/master_theorem.pdf">Master Theorem</a></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="unrolling-the-binary-search-recurrence">
-<h3><a class="reference external" href="https://youtu.be/XcZw01FuH18">Unrolling the binary search recurrence</a><a class="headerlink" href="#unrolling-the-binary-search-recurrence" title="Permalink to this headline">#</a></h3>
-<div class="full-width docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="admonition-binary-search-recursive-method-https-youtu-be-ueuxgcc2vxm admonition">
-<p class="admonition-title"><a class="reference external" href="https://youtu.be/uEUXGcc2VXM">Binary Search Recursive Method</a></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos"> 1</span><span class="kt">void</span><span class="w"> </span><span class="nf">RBinSearch</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">h</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">                                </span><span class="c1">// = T(n)</span>
-</span><span class="hll"><span class="linenos"> 2</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">h</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">                                             </span><span class="c1">// = 1</span>
-</span><span class="linenos"> 3</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">l</span><span class="p">;</span><span class="w"></span>
-<span class="linenos"> 4</span><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="linenos"> 5</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="linenos"> 6</span><span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">                                    </span>
-<span class="hll"><span class="linenos"> 7</span><span class="w">    </span><span class="n">mid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span><span class="w">                                        </span><span class="c1">// = 1</span>
-</span><span class="hll"><span class="linenos"> 8</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">mid</span><span class="p">])</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">mid</span><span class="p">;</span><span class="w">                          </span><span class="c1">// = 1</span>
-</span><span class="hll"><span class="linenos"> 9</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">mid</span><span class="p">])</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">RBinSearch</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">mid</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">);</span><span class="w">   </span><span class="c1">// = 1</span>
-</span><span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">RBinSearch</span><span class="p">(</span><span class="n">mid</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">h</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">);</span><span class="w">                </span><span class="c1">// = T(n/2)</span>
-</span><span class="linenos">11</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="linenos">12</span><span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference external" href="https://courses.cs.washington.edu/courses/cse332/18su/handouts/unrolling.pdf">Unrolling</a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<blockquote>
+<div><p class="sd-card-text">In the unrolling method, we repeatedly substitute the recurrence relation into itself until we reach a base case. Let’s unroll the recurrence relation for a specific value of <span class="math notranslate nohighlight">\(n\)</span>:</p>
+</div></blockquote>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-T(n) =
-\begin{cases}
-1,  &amp; \text{$n = 1$}  \\[2ex]
-T(\frac{n}{2}) + 1, &amp; \text{$n \gt 1$}
-\end{cases}
-\end{split}\]</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="id1">
-<h2>Recurrence Relations<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<div class="full-width docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="admonition-recurrence-relation-dividing-function-https-youtu-be-8gt0d0iqu5w admonition">
-<p class="admonition-title"><a class="reference external" href="https://youtu.be/8gt0D0IqU5w">Recurrence Relation: Dividing Function</a></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">       </span><span class="c1">// = T(n)</span>
-</span><span class="linenos">2</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="hll"><span class="linenos">3</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;/d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w">     </span><span class="c1">// = 1</span>
-</span><span class="hll"><span class="linenos">4</span><span class="w">    </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span><span class="w">           </span><span class="c1">// = T(n/2) </span>
-</span><span class="linenos">5</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="linenos">6</span><span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
+\[\begin{split}\begin{align}
+T(n) &amp;= 2T \bigg(\frac{n}{2} \bigg) + n \\
+&amp;= 2[2T \bigg(\frac{n}{4} \bigg) + \frac{n}{2}] + n \\
+&amp;= 4T \bigg(\frac{n}{4} \bigg) + 2n + n \\
+&amp;= 4[2T \bigg(\frac{n}{8} \bigg) + \frac{n}{4}] + 2n + n \\
+&amp;= 8T \bigg(\frac{n}{8} \bigg) + 4n + 2n + n \\
+&amp;= 2^kT \bigg(\frac{n}{2^k} \bigg) + kn \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">We continue this process until we reach the base case, which occurs when <span class="math notranslate nohighlight">\(\frac{n}{2^k} = 1\)</span>. Solving for <span class="math notranslate nohighlight">\(k\)</span>, we find that <span class="math notranslate nohighlight">\(k = log_2\ (n)\)</span>. Therefore, the final unrolled expression becomes:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-T(n) =
-\begin{cases}
-1,  &amp; \text{$n = 1$}  \\[2ex]
-T(\frac{n}{2}) + 1, &amp; \text{$n \gt 1$}
-\end{cases}
-\end{split}\]</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Tree Method</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        T(n)
-        / \
-       1   T(n/2)
-            / \
-           1   T(n/2^2)
-                / \
-               1   T(n/2^3)
-                    / \
-                   1   T(n/2^k)
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
+\[ \ \ T(n) = 2^{log_2 (n)} \ T(1) + n \ log_2 \ (n) \ \ \]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(T(1)\)</span> is a constant, we can simplify the expression further:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-For \dots \frac{n}{2^k} &amp; = 1 \\
-Assume \dots n &amp; = 2^k \\
-Then \dots k &amp; = log\ n \\
-&amp; = \Theta(log\ n) \\
-\end {align} \end{split}\]</div>
+\[\begin{split}\begin{align}
+T(n) &amp;= nT(1) + n\ log_2 \ (n) \\
+&amp;= O(n\ log_2\ (n))
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Thus, the solution obtained through unrolling suggests that the time complexity of the original recurrence relation is <span class="math notranslate nohighlight">\(O(n\ log_2 (n))\)</span>.</p>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Substitution Method</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row docutils">
-<div class="sd-col sd-d-flex-row sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference external" href="https://www.geeksforgeeks.org/method-of-guessing-and-confirming/">Guessing</a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<blockquote>
+<div><p class="sd-card-text">In the guessing method, we make an educated guess or hypothesis about the form of the solution based on the recurrence relation. We then use mathematical induction or substitution to prove our guess.</p>
+</div></blockquote>
+<p class="sd-card-text">Let’s guess that the solution to the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span> is <span class="math notranslate nohighlight">\(T(n) = O(n\ log\ (n))\)</span>.</p>
+<p class="sd-card-text">We assume that <span class="math notranslate nohighlight">\(T(k) ≤ ck\ log\ (k)\)</span> for some constant <span class="math notranslate nohighlight">\(c\)</span>, where <span class="math notranslate nohighlight">\(k &lt; n\)</span>. Now we substitute this assumption into the recurrence relation:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp; = T(\frac{n}{2}) + 1 \\
-&amp; = [T(\frac{n}{n^2}) + 1] + 1 \\
-&amp; = T(\frac{n}{n^2}) + 2 \\
-&amp; = T(\frac{n}{n^3}) + 3 \\
-&amp; • \\
-&amp; • \\
-&amp; • \\
-&amp; = T(\frac{n}{n^k}) + k \\
-\end {align} \end{split}\]</div>
+\[\begin{split}\begin{align}
+T(n) &amp;= 2T \bigg(\frac{n}{2} \bigg) + n \\
+&amp;≤ 2  \Bigg(\ c \bigg( \frac{n}{2} \bigg)\ log\ \bigg(\frac{n}{2} \bigg) \Bigg) + n \\
+&amp;= cn\ log (n) - cn\ log (2) + n \\
+&amp;= cn\ log (n) - cn + n \\
+&amp;= cn\ log (n) + (n - cn) \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">To ensure that <span class="math notranslate nohighlight">\(T(n) ≤ cn\ log\ (n)\)</span> holds, we need to find a value of <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\((n - cn) ≤ 0\)</span>. By choosing <span class="math notranslate nohighlight">\(c ≥ 1\)</span>, we can guarantee that <span class="math notranslate nohighlight">\(T(n) ≤ cn\ log\ (n)\)</span>.</p>
+<p class="sd-card-text">Hence, the solution <span class="math notranslate nohighlight">\(T(n) = O(n\ log\ (n))\)</span> satisfies the recurrence relation.</p>
 </div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">What to sub in…</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference external" href="https://www.javatpoint.com/daa-recursion-tree-method">Recursion Tree</a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<blockquote>
+<div><p class="sd-card-text">In the recursion tree method, we draw a tree to represent the recursive calls made in the recurrence relation. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
+</div></blockquote>
+<p class="sd-card-text">For our example, the recursion tree for <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span> would have a root node representing <span class="math notranslate nohighlight">\(T(n)\)</span>, two child nodes representing <span class="math notranslate nohighlight">\(T(\frac{n}{2})\)</span>, and so on. Each node represents a recursive call, and the work done at each node is represented by the term n.</p>
+<p class="sd-card-text">The recursion tree will have <span class="math notranslate nohighlight">\(log_2\ (n)\)</span> levels since we divide the problem size by <span class="math notranslate nohighlight">\(2\)</span> at each level. At each level, the work done is <span class="math notranslate nohighlight">\(n\)</span>, and there are <span class="math notranslate nohighlight">\(2^i\)</span> nodes at level <span class="math notranslate nohighlight">\(i\)</span>. Therefore, the total work at each level is <span class="math notranslate nohighlight">\(2^i * n\)</span>.</p>
+<p class="sd-card-text">Summing up the work done at each level, we have:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp; = T(\frac{n}{2}) + 1 \\
-T(\frac{n}{2}) &amp; = T(\frac{n}{2^2}) + 1 \\
-\end {align} \end{split}\]</div>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
+\[ \ \ Total\ work\ = n + 2n + 4n + ... + (n * 2^{log_2\ (n)} - 1) \ \ \]</div>
+<p class="sd-card-text">This is a geometric series with a common ratio of <span class="math notranslate nohighlight">\(2\)</span> and the first term being <span class="math notranslate nohighlight">\(n\)</span>. The sum of this series is given by:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-For \dots \frac{n}{2^k} &amp; = 1 \\
-Assume \dots n &amp; = 2^k \\
-Then \dots k &amp; = log\ n \\
-\\
-T(n) &amp; = T(1) + log\ n \\
-&amp; = 1 + log\ n \\
-&amp; = \Theta(log\ n) \\
-\end {align} \end{split}\]</div>
+\[\begin{split}\begin{align}
+Total work &amp;= n * \frac{2^{log_2\ (n)} - 1}{2 - 1} \\
+&amp;= \frac{n * (n - 1)}{1} \\
+&amp;= n^2 - n \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Therefore, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(O(n^2)\)</span>.</p>
+<p class="sd-card-text">Note that in this example, the unrolling and guessing methods led to a time complexity of <span class="math notranslate nohighlight">\(O(n\ log\ (n))\)</span>, while the recursion tree method resulted in <span class="math notranslate nohighlight">\(O(n^2)\)</span>. The discrepancy arises because the recursion tree method accounts for the exact work done at each level, while the other methods provide upper bounds or estimations.</p>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="admonition-recurrence-relation-linear-https-youtu-be-4v30r3i1vli admonition">
-<p class="admonition-title"><a class="reference external" href="https://youtu.be/4V30R3I1vLI">Recurrence Relation: Linear</a></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">       </span><span class="c1">// = T(n)</span>
-</span><span class="linenos">2</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="hll"><span class="linenos">3</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;/d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w">     </span><span class="c1">// = 1</span>
-</span><span class="hll"><span class="linenos">4</span><span class="w">    </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">         </span><span class="c1">// = T(n - 1) </span>
-</span><span class="linenos">5</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="linenos">6</span><span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<a class="reference external" href="http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/master_theorem.pdf">Master Theorem</a><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<blockquote>
+<div><p class="sd-card-text">The master theorem is a mathematical formula used to analyze the time complexity of divide-and-conquer algorithms. It provides a solution for recurrence relations of the form:</p>
+</div></blockquote>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-T(n) =
-\begin{cases}
-1,  &amp; \text{$n\ = 0$}  \\[2ex]
-T(n - 1) + 1, &amp; \text{$n\ \gt 0$}
-\end{cases}
-\end{split}\]</div>
-<div class="dropdown tip admonition">
-<p class="admonition-title">Can you write (and solve) the recurrence?</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Breakdown</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp;= T(n - 1) + 1 \\
-T(n - 1) &amp;= T(n - 2) + 2 \\
-T(n - 2) &amp;= T(n - 3) + 3 \\ 
-• \\
-• \\
-• \\
-T(n - k) &amp;= T(n - k) + k \\
-\end {align}\end{split}\]</div>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Substitution <span class="math notranslate nohighlight">\(T(n - 1)\)</span></div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp;= \bigg[T(n - 2) + 1 \bigg] + 1 \\ 
-&amp;= T(n - 2) + 2 \\
-&amp;= \bigg[T(n - 3) + 1 \bigg] + 2 \\
-&amp;= T(n - 3) + 3 \\
-• \\
-• \\
-• \\
-&amp;= T(n - k) + k \\
-\end {align}\end{split}\]</div>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-For <span class="math notranslate nohighlight">\(k\)</span> times</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-\text{For : } &amp; T(n) = T(n - k) + k \\
-\text{Assume : } &amp; n\ - k\ = 0 \\
-\text{Therefore : } &amp; n\ = k \\
-\end {align}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp;= T(n - n) + n \\
-T(n) &amp;= T(0) + n \\
-• \\
-T(n) &amp;= 1 + n \\
-T(n) &amp;= \Theta(n) \\
-&amp;= \Theta(n) \\
-\end {align}\end{split}\]</div>
-</div>
-</div>
-</div>
-</div>
-<div class="admonition-recurrence-relation-divide-conquer-https-youtu-be-1k9ebqjosvo admonition">
-<p class="admonition-title"><a class="reference external" href="https://youtu.be/1K9ebQJosvo">Recurrence Relation: Divide &amp; Conquer</a></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">              </span><span class="c1">// = T(n)</span>
-</span><span class="linenos">2</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="hll"><span class="linenos">3</span><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++&gt;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">   </span><span class="c1">// = n</span>
-</span><span class="linenos">4</span><span class="w">      </span><span class="c1">// some statement</span>
-<span class="linenos">5</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="hll"><span class="linenos">6</span><span class="w">    </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span><span class="w">                  </span><span class="c1">// = T(n/2)</span>
-</span><span class="hll"><span class="linenos">7</span><span class="w">    </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span><span class="w">                  </span><span class="c1">// = T(n/2)</span>
-</span><span class="linenos">8</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="linenos">9</span><span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-T(n) =
-\begin{cases}
-1,  &amp; \text{$if\ n\ = 1$}  \\[2ex]
-2T(\frac{n}{2}) + n, &amp; \text{$if\ n\ \gt 1$}
-\end{cases}
-\end{split}\]</div>
-<div class="dropdown tip admonition">
-<p class="admonition-title">Can you write (and solve) the recurrence?</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Tree Method</div>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../../_images/10_ex_2.png"><img alt="../../_images/10_ex_2.png" src="../../_images/10_ex_2.png" style="width: 100%;" /></a>
-</figure>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-For\ k\ times\ = \frac{n}{2^k}\ \Rightarrow\ n = 2^k \\
-Hence,\ k\ = log\ n \\
-T(n) = \Theta(n\ log\ n)
-\end{split}\]</div>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Substitution Method</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row docutils">
-<div class="sd-col sd-d-flex-column docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp;= 2T(\frac{n}{2}) + n \\
-&amp;= 2\bigg[2T(\frac{n}{2^2}) + \frac{n}{2}\bigg] + n \\
-&amp;= 2^2T(\frac{n}{2^2} + n + n) \\
-&amp;= 2^2\bigg[2T(\frac{n}{2^3}) + \frac{n}{2^2}\bigg] + 2n \\
-&amp;= 2^3T(\frac{n}{2^3}) + 3n \\
-&amp;= 2^kT(\frac{n}{2^k}) + kn \\
-\end {align}\end{split}\]</div>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<p class="sd-card-text"><em>What to sub in…</em></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp;= 2T(\frac{n}{2}) + n \\
-T(\frac{n}{2}) &amp;= 2T(\frac{n}{n^2}) + \frac{n}{2^2} \\
-T(\frac{n}{2^2}) &amp;= 2T(\frac{n}{2^3}) + \frac{n}{2^2} \\
-\end {align}\end{split}\]</div>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-Assume...\ T(\frac{n}{2^k}) = T(1) \\
-\frac{n}{2^k} = 1 \\
-\end{split}\]</div>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-Therefore...\ n\ = 2^k \\
-k\ = log\ n \\
-\end{split}\]</div>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp;= 2^kT(1) + kn \\
-&amp;= n * 1 + n\ log\space n \\
-&amp;= \Theta(n\space log\space n) \\
-\end {align}\end{split}\]</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="admonition-recurrence-relation-tower-of-hanoi-https-youtu-be-iawm82bq4ii admonition">
-<p class="admonition-title"><a class="reference external" href="https://youtu.be/IawM82BQ4II">Recurrence Relation: Tower of Hanoi</a> </p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1">// = T(n)</span>
-</span><span class="hll"><span class="linenos">2</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;/d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w">    </span><span class="c1">// = 1</span>
-</span><span class="hll"><span class="linenos">3</span><span class="w">  </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">        </span><span class="c1">// = T(n - 1)</span>
-</span><span class="hll"><span class="linenos">4</span><span class="w">  </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">        </span><span class="c1">// = T(n - 1)</span>
-</span><span class="linenos">5</span><span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-T(n) =
-\begin{cases}
-1,  &amp; \text{$if\ n\ = 0$}  \\[2ex]
-2T(n - 1) + 1, &amp; \text{$if\ n\ \gt 0$}
-\end{cases}
-\end{split}\]</div>
-<div class="dropdown tip admonition">
-<p class="admonition-title">Can you write (and solve) the recurrence?</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Tree Method</div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        T(n)
-        / \
-       n   T(n-1)
-            / \
-         n-1   T(n-2)
-                / \
-             n-2   T(n-3)
-                    / \
-                 ...   ...
-                        / \
-                           T(2)
-                            / \
-                           2   T(1)
-                                / \
-                               1   T(0)
-</pre></div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Breakdown</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-1 + 2 + 2^2 + 2^3 ... + 2^k &amp; = 2^{k + 1} - 1 \\
-\\
-ar + ar + ar^2 + ar^3 ... + ar^k &amp; = \frac{a(r^{k + 1} - 1)}{r - 1} \\
-\\
-Where \dots a = 1,  r = 2,  &amp; = \frac{1(2^{k + 1}1)}{2 - 1} \\
-\\
-&amp; = 2^{k + 1} - 1
-\end {align} \end{split}\]</div>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Assume</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-if \dots n - k &amp; = 0 \\
-\\
-then \dots n &amp; = k \\
-&amp; = 2^{k + 1} - 1 =&gt; 2^{n + 1} - 1 \\
-&amp; = \Theta(2^n) \\
-\end {align}\end{split}\]</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Substitution</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row docutils">
-<div class="sd-col sd-d-flex-column docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-T(n) &amp;= 2T(n - 1) + 1 \\
-&amp; = 2\bigg[2T(n - 2) + 1 \bigg] + 1 \\
-&amp; = 2^2T(n - 2) + 2 + 1 \\
-&amp; = 2^2 \bigg[2T(n - 3) + 1 \bigg] + 2 + 1 \\
-&amp; = 2^3T(n - 3) + 2^2 + 2 + 1 \\
-&amp; • \\
-&amp; • \\
-&amp; • \\
-&amp; = 2^kT(n - k) + 2^k-1 + 2^k-2 + ... 2^2 + 2 + 1 \\
-\end {align}\end{split}\]</div>
-</div>
-<div class="sd-col sd-d-flex-column docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin {align}
-Assume \dots n - k = 0 \\
-\\
-n = k \\
-\\
-T(n) &amp; = 2^nT(0) + 1 + 2 + 2^2\ + \dots\ 2^k-1 \\
-&amp; = 2^n - 1 + 2^k - 1 \\
-&amp; = 2^n + 2^n - 1 \\
-&amp; = 2^n+1 - 1 \\
-&amp; = \Theta(2^n) \\
-\end {align}\end{split}\]</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="admonition-master-theorem-https-youtu-be-2h0gkdriowu admonition">
-<p class="admonition-title"><a class="reference external" href="https://youtu.be/2H0GKdrIowU">Master Theorem</a></p>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="bb0c9927-8808-4f47-b0aa-4de8b1659976" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
-</input><label class="sd-tab-label" for="bb0c9927-8808-4f47-b0aa-4de8b1659976">
-Theorem</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">The master theorem is a mathematical formula used to analyze the time complexity of divide-and-conquer algorithms. It provides a solution for recurrence relations of the form:</p>
-<div class="math notranslate nohighlight">
-\[T(n) = aT(\frac{n}{b}) + f(n)\]</div>
+\[T(n) = aT \bigg(\frac{n}{b} \bigg) + f(n)\]</div>
 <p class="sd-card-text">Where:</p>
-<ul class="simple">
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(T(n)\)</span> represents the time complexity of the algorithm for a given input size <span class="math notranslate nohighlight">\(n\)</span></p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(a\)</span> represents the number of recursive sub-problems</p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{n}{b}\)</span> represents the size of each subproblem (assuming they have equal size)</p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(f(n)\)</span> represents the time complexity of the algorithm’s non-recursive part</p></li>
-</ul>
-</div>
-<input id="eacd43e9-12e9-423a-9b82-af0079a1cfda" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
-</input><label class="sd-tab-label" for="eacd43e9-12e9-423a-9b82-af0079a1cfda">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(T(n)\)</span> represents the time complexity of the algorithm,
+<span class="math notranslate nohighlight">\(a\)</span> is the number of recursive subproblems,
+<span class="math notranslate nohighlight">\(\frac{n}{b}\)</span> is the size of each subproblem,
+<span class="math notranslate nohighlight">\(f(n)\)</span> is the time complexity of the remaining work done outside the recursive calls.</p>
+<p class="sd-card-text">The master theorem provides three cases based on the relationship between <span class="math notranslate nohighlight">\(f(n)\)</span> and the subproblem part <span class="math notranslate nohighlight">\(aT(\frac{n}{b})\)</span>.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="6f37a695-7ded-4c11-ad3c-5c5832862762" name="623114c6-5daf-41d0-9875-c165e6a570a0" type="radio">
+</input><label class="sd-tab-label" for="6f37a695-7ded-4c11-ad3c-5c5832862762">
 Cases</label><div class="sd-tab-content docutils">
-<p class="sd-card-text">The master theorem provides three cases based on the relationship between <span class="math notranslate nohighlight">\(f(n)\)</span> and the subproblem part <span class="math notranslate nohighlight">\(\bigg(aT(\frac{n}{b}) \bigg)\)</span>.</p>
 <dl class="simple myst">
 <dt>Case 1</dt><dd><p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = O(n^c)\)</span> for some constant <span class="math notranslate nohighlight">\(c &lt; log_b(a)\)</span>, then the time complexity is dominated by the subproblem part, and the overall time complexity is given by</p>
 </dd>
@@ -1614,7 +1081,7 @@ Cases</label><div class="sd-tab-content docutils">
 </dd>
 </dl>
 <div class="math notranslate nohighlight">
-\[T(n) = \Theta(n^{log_b(a)} \ log^{(k+1)(n)})\]</div>
+\[T(n) = \Theta(n^{log_b(a)} \ log^{(k+1)}(n))\]</div>
 <dl class="simple myst">
 <dt>Case 3</dt><dd><p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = \Omega(n^c)\)</span> for some constant <span class="math notranslate nohighlight">\(c &gt; log_b(a)\)</span>, and if <span class="math notranslate nohighlight">\(f(n)\)</span> satisfies the regularity condition (<span class="math notranslate nohighlight">\(af(\frac{n}{b}) ≤ kf(n)\)</span> for some constant <span class="math notranslate nohighlight">\(k &lt; 1\)</span> and sufficiently large <span class="math notranslate nohighlight">\(n\)</span>), then the non-recursive part dominates the time complexity, and the overall time complexity is given by</p>
 </dd>
@@ -1622,11 +1089,11 @@ Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = \Theta(f(n))\]</div>
 </div>
-<input id="0c856212-0ba7-442b-9874-337562b7f33c" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
-</input><label class="sd-tab-label" for="0c856212-0ba7-442b-9874-337562b7f33c">
-Case 1</label><div class="sd-tab-content docutils">
+<input id="fb484f0d-fb18-4ddf-8256-4b0e70df8d01" name="623114c6-5daf-41d0-9875-c165e6a570a0" type="radio">
+</input><label class="sd-tab-label" for="fb484f0d-fb18-4ddf-8256-4b0e70df8d01">
+Case 1 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
-\[T(n) = 4T(\frac{n}{2}) + n\]</div>
+\[T(n) = 4T \bigg(\frac{n}{2} \bigg) + n\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Step 1 : Identify the values of a, b, and f(n)<div class="sd-summary-down docutils">
@@ -1660,15 +1127,15 @@ Step 3 : Determine the overall time complexity<div class="sd-summary-down docuti
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Using Case 1, the overall time complexity is <span class="math notranslate nohighlight">\(T(n) = \Theta(n^{log_b(a)})\)</span>.</p>
-<p class="sd-card-text">In this case, T(n) = \Theta(n^log_2(4)) = \Theta(n^2).</p>
+<p class="sd-card-text">In this case, <span class="math notranslate nohighlight">\(T(n) = \Theta(n^{log_2\ (4)}) = \Theta(n^2)\)</span>.</p>
 <p class="sd-card-text">So, the overall time complexity of the algorithm in this example is <span class="math notranslate nohighlight">\(\Theta(n^2)\)</span>, which means the algorithm’s running time grows quadratically with the input size <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 </details></div>
-<input id="f9b1f449-8a1f-47f8-9bf7-59020ecc1431" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
-</input><label class="sd-tab-label" for="f9b1f449-8a1f-47f8-9bf7-59020ecc1431">
-Case 2</label><div class="sd-tab-content docutils">
+<input id="cf04b67e-4925-4ae3-b88d-87f0673f5767" name="623114c6-5daf-41d0-9875-c165e6a570a0" type="radio">
+</input><label class="sd-tab-label" for="cf04b67e-4925-4ae3-b88d-87f0673f5767">
+Case 2 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
-\[T(n) = 9T(\frac{n}{3}) + n^2\]</div>
+\[T(n) = 9T \bigg(\frac{n}{3} \bigg) + n^2\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Step 1 : Identify the values of a, b, and f(n)<div class="sd-summary-down docutils">
@@ -1691,7 +1158,7 @@ Step 2 : Compare f(n) with n^log_b(a)<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Here, <span class="math notranslate nohighlight">\(f(n) = n^2\)</span> and <span class="math notranslate nohighlight">\(n^{log_b(a)} = n^{log_3(9)} = \)</span>n^2$</p>
+<p class="sd-card-text">Here, <span class="math notranslate nohighlight">\(f(n) = n^2\)</span> and <span class="math notranslate nohighlight">\(n^{log_b(a)} = n^{log_3(9)} = n^2\)</span></p>
 <p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f(n) = n^2 = n^{log_b(a)}\)</span>, we fall into Case 2 of the master theorem.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -1706,11 +1173,11 @@ Step 3 : Determine the overall time complexity<div class="sd-summary-down docuti
 \[T(n) = Θ(n^2 \ log(n))\]</div>
 </div>
 </details></div>
-<input id="0d269ae0-d6db-4ebe-8806-6c74941cd87c" name="504b9c64-ddfa-4668-a707-5452a20e80e5" type="radio">
-</input><label class="sd-tab-label" for="0d269ae0-d6db-4ebe-8806-6c74941cd87c">
-Case 3</label><div class="sd-tab-content docutils">
+<input id="d7f1be11-fd18-4e74-9707-955c673f9d32" name="623114c6-5daf-41d0-9875-c165e6a570a0" type="radio">
+</input><label class="sd-tab-label" for="d7f1be11-fd18-4e74-9707-955c673f9d32">
+Case 3 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
-\[T(n) = 2T(\frac{n}{2}) + n^3\]</div>
+\[T(n) = 2T \bigg(\frac{n}{2} \bigg) + n^3\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Step 1 : Identify the values of a, b, and f(n)<div class="sd-summary-down docutils">
@@ -1759,10 +1226,679 @@ Step 4 : Determine the overall time complexity.<div class="sd-summary-down docut
 </div>
 </details></div>
 </div>
+<p class="sd-card-text">In our example, the recurrence relation is <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span>, where <span class="math notranslate nohighlight">\(a = 2\)</span>, <span class="math notranslate nohighlight">\(b = 2\)</span>, and <span class="math notranslate nohighlight">\(f(n) = n\)</span>.</p>
+<p class="sd-card-text">Now, let’s compare the function <span class="math notranslate nohighlight">\(f(n)\)</span> with <span class="math notranslate nohighlight">\(n^{log_b\ (a)}\)</span>:</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f(n) = n\)</span>, which is asymptotically smaller than <span class="math notranslate nohighlight">\(n^{log_2\ (2)} = n\)</span>.</p>
+<p class="sd-card-text"><em>According to the Master Theorem:</em></p>
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = O(n^c)\)</span> where <span class="math notranslate nohighlight">\(c &lt; log_b\ (a)\)</span>, then <span class="math notranslate nohighlight">\(T(n) = \Theta(n^{log_b\ (a)})\)</span>.
+In our case, <span class="math notranslate nohighlight">\(f(n) = O(n^1)\)</span>, and <span class="math notranslate nohighlight">\(c = 1 &lt; log_2\ (2) = 1\)</span>. Since the condition is met, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(Θ(n^{log_2\ (2)}) = \Theta(n)\)</span>.</p>
+<p class="sd-card-text">Therefore, according to the Master Theorem, the time complexity of the binary search recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span> is <span class="math notranslate nohighlight">\(\Theta(n)\)</span>, which aligns with the result obtained from the unrolling and guessing methods.</p>
+<p class="sd-card-text">It’s important to note that the Master Theorem is applicable in specific cases, and not all recurrence relations can be solved using this theorem. However, for recurrence relations that follow the prescribed form, it provides a convenient way to determine the time complexity.</p>
+</div>
+</details></div>
 </div>
 </div>
+<!-- ### [Unrolling the binary search recurrence](https://youtu.be/XcZw01FuH18)
+
+`````````` {div} full-width
+```````` {card}
+
+``````` {admonition} [Binary Search Recursive Method](https://youtu.be/uEUXGcc2VXM)
+
+``` {code-block} cpp
+:lineno-start: 1
+:emphasize-lines: 1-2,7-10
+
+void RBinSearch(l, h, key) {                                // = T(n)
+  if (l == h) {                                             // = 1
+    if (A[l] == key) return l;
+    else return 0;
+  }
+  else {                                    
+    mid = (l + h)/2;                                        // = 1
+    if (key == A[mid]) return mid;                          // = 1
+    if (key < A[mid]) return RBinSearch(l, mid - 1, key);   // = 1
+    else return RBinSearch(mid + 1, h, key);                // = T(n/2)
+  }
+}
+```
+
+```````
+``````` {card} Base Case & General Form
+$$
+T(n) =
+\begin{cases}
+1,  & \text{$n = 1$}  \\[2ex]
+T(\frac{n}{2}) + 1, & \text{$n \gt 1$}
+\end{cases}
+$$
+```````
+``````` {card} Stepwise
+
+
+
+```````
+
+
+
+````````
+`````````` -->
+</section>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h3>
+<div class="full-width docutils">
+<!-- ````````` {card} -->
+<div class="admonition-recurrence-relation-dividing-function-https-youtu-be-8gt0d0iqu5w admonition">
+<p class="admonition-title"><a class="reference external" href="https://youtu.be/8gt0D0IqU5w">Recurrence Relation: Dividing Function</a></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">       </span><span class="c1">// = T(n)</span>
+</span><span class="linenos">2</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="hll"><span class="linenos">3</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;/d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w">     </span><span class="c1">// = 1</span>
+</span><span class="hll"><span class="linenos">4</span><span class="w">    </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span><span class="w">           </span><span class="c1">// = T(n/2) </span>
+</span><span class="linenos">5</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">6</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T(n) =
+\begin{cases}
+1,  &amp; \text{$n = 1$}  \\[2ex]
+T(\frac{n}{2}) + 1, &amp; \text{$n \gt 1$}
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Unrolling<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s unroll the recurrence relation step by step:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+Step\ 1 : \ &amp; T(n)  = T(\frac{n}{2}) + c \\
+Step\ 2 : \ &amp; T(n)  = [T(\frac{n}{4}) + c] + c \\
+&amp; = T(\frac{n}{4}) + 2c \\
+Step\ 3 : \ &amp; T(n)  = [T(\frac{n}{8}) + c] + 2c \\
+&amp;  = T(\frac{n}{8}) + 3c \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Continuing this process, we can unroll the recurrence relation up to k steps:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ T(n) = T(\frac{n}{2^k}) + kc \ \ \]</div>
+<p class="sd-card-text">We keep unrolling until we reach the base case, which occurs when <span class="math notranslate nohighlight">\(\frac{n}{2^k} = 1\)</span>. Solving for <span class="math notranslate nohighlight">\(k\)</span>, we find that <span class="math notranslate nohighlight">\(k = log_2\ (n)\)</span>.</p>
+<p class="sd-card-text">Now, let’s substitute this value of <span class="math notranslate nohighlight">\(k\)</span> into the unrolled relation:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ T(n) = T(\frac{n}{2^{log_2\ (n)}}) + log_2\ (n)c \ \ \]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(\frac{n}{2^{log_2\ (n)}} = 1\)</span>, we simplify further:</p>
+<div class="math notranslate nohighlight">
+\[T(n) = T(1) + log_2\ (n)c\]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(T(1)\)</span> is a constant time complexity for the base case of a binary search, we can replace it with a constant, say <span class="math notranslate nohighlight">\(d\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[T(n) = d + log_2\ (n)c\]</div>
+<p class="sd-card-text">Finally, we can simplify this expression as:</p>
+<div class="math notranslate nohighlight">
+\[T(n) = O(log\ (n))\]</div>
+<p class="sd-card-text">Therefore, after unrolling the recurrence relation for binary search, we obtain the time complexity of <span class="math notranslate nohighlight">\(O(log\ (n))\)</span>.</p>
+<p class="sd-card-text">This analysis shows that the time complexity of a binary search algorithm is logarithmic with respect to the size of the array being searched, which aligns with the intuitive understanding of the algorithm’s efficiency.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Guessing<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s make a guess or hypothesis about the form of the solution based on the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1\)</span>.</p>
+<p class="sd-card-text">Let’s assume that <span class="math notranslate nohighlight">\(T(n) = O(log\ (n))\)</span>.</p>
+<p class="sd-card-text">We assume that <span class="math notranslate nohighlight">\(T(k) ≤ c\ log\ (k)\)</span> for some constant <span class="math notranslate nohighlight">\(c\)</span>, where <span class="math notranslate nohighlight">\(k &lt; n\)</span>. Now, let’s substitute this assumption into the recurrence relation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+T(n) &amp;= 2T \bigg(\frac{n}{2} \bigg) + 1 \\
+&amp;≤ c\ log\ \frac{n}{2} + 1 \\
+&amp;= c(log\ (n) - 1) + 1 \\
+&amp;= c\ log\ (n) + 1 + c \\
+&amp;= c\ log\ (n) + (1 - c) \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">To ensure that <span class="math notranslate nohighlight">\(T(n) ≤ c\ log\ (n)\)</span> holds, we need to find a value of <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\((1 - c) ≤ 0\)</span>. By choosing <span class="math notranslate nohighlight">\(c ≥ 1\)</span>, we can guarantee that <span class="math notranslate nohighlight">\(T(n) ≤ c\ log\ (n)\)</span>.</p>
+<p class="sd-card-text">Hence, the solution <span class="math notranslate nohighlight">\(T(n) = O(log\ (n))\)</span> satisfies the recurrence relation.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Recursion Tree<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s draw a recursion tree to represent the recursive calls made in the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1\)</span>. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
+<p class="sd-card-text">The recursion tree will have <span class="math notranslate nohighlight">\(log_2\ (n)\)</span> levels since we divide the problem size by <span class="math notranslate nohighlight">\(2\)</span> at each level. At each level, the work done is <span class="math notranslate nohighlight">\(1\)</span>, and there are <span class="math notranslate nohighlight">\(2^i\)</span> nodes at level <span class="math notranslate nohighlight">\(i\)</span>. Therefore, the total work at each level is <span class="math notranslate nohighlight">\(2^i\)</span>.</p>
+<p class="sd-card-text">Summing up the work done at each level, we have:</p>
+<div class="math notranslate nohighlight">
+\[Total work = 1 + 2 + 4 + ... + 2^{log_2\ (n) - 1}\]</div>
+<p class="sd-card-text">This is a geometric series with a common ratio of <span class="math notranslate nohighlight">\(2\)</span> and the first term being <span class="math notranslate nohighlight">\(1\)</span>. The sum of this series is given by:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+Total work &amp;= 1 * \frac{2^{log₂(n)} - 1}{2 - 1} \\
+&amp;= 2^{log_2\ (n)} - 1 \\
+&amp;= n - 1 \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Therefore, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(O(n)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Master Theorem<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The Master Theorem provides a framework for solving recurrence relations of the form <span class="math notranslate nohighlight">\(T(n) = aT(\frac{n}{b}) + f(n)\)</span>, where <span class="math notranslate nohighlight">\(a ≥ 1\)</span>, <span class="math notranslate nohighlight">\(b &gt; 1\)</span>, and <span class="math notranslate nohighlight">\(f(n)\)</span> is a function.</p>
+<p class="sd-card-text">In our case, <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1\)</span>, where <span class="math notranslate nohighlight">\(a = 1\)</span>, <span class="math notranslate nohighlight">\(b = 2\)</span>, and <span class="math notranslate nohighlight">\(f(n) = 1\)</span>.</p>
+<p class="sd-card-text">Comparing <span class="math notranslate nohighlight">\(f(n) = 1\)</span> with <span class="math notranslate nohighlight">\(n^{log_b\ (a)}\)</span>:</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f(n) = 1\)</span>, which is equal to <span class="math notranslate nohighlight">\(n^{log_2\ (1)} = n^0 = 1\)</span>.</p>
+<p class="sd-card-text">According to the Master Theorem:</p>
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = \Theta(n^{log_b\ (a)} * log^{k(n)})\)</span>, where <span class="math notranslate nohighlight">\(k ≥ 0\)</span>, then <span class="math notranslate nohighlight">\(T(n) = \Theta(n^{log_b\ (a)} * log^{k+1}\ (n))\)</span>.
+In our case, <span class="math notranslate nohighlight">\(f(n) = \Theta(1)\)</span>, which falls under the second case. Therefore, the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1\)</span> is <span class="math notranslate nohighlight">\(\Theta(n^{log_2\ (1)} * log^{0+1}\ (n)) = \Theta(log\ (n))\)</span>.</p>
+<p class="sd-card-text">Thus, according to the Master Theorem, the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1\)</span> is <span class="math notranslate nohighlight">\(\Theta(log\ (n))\)</span>, which aligns with the results obtained from unrolling, guessing, and the recursion tree.</p>
+<p class="sd-card-text">All four methods provide consistent solutions, indicating that the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(\frac{n}{2}) + 1\)</span> is <span class="math notranslate nohighlight">\(O(log\ (n))\)</span>.</p>
+</div>
+</details></div>
+<div class="admonition-recurrence-relation-linear-https-youtu-be-4v30r3i1vli admonition">
+<p class="admonition-title"><a class="reference external" href="https://youtu.be/4V30R3I1vLI">Recurrence Relation: Linear</a></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">       </span><span class="c1">// = T(n)</span>
+</span><span class="linenos">2</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="hll"><span class="linenos">3</span><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;/d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w">     </span><span class="c1">// = 1</span>
+</span><span class="hll"><span class="linenos">4</span><span class="w">    </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">         </span><span class="c1">// = T(n - 1) </span>
+</span><span class="linenos">5</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">6</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T(n) =
+\begin{cases}
+1,  &amp; \text{$n\ = 0$}  \\[2ex]
+T(n - 1) + 1, &amp; \text{$n\ \gt 0$}
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Unrolling<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s unroll the recurrence relation step by step:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+Step\ 1 : \ &amp; T(n)  = T(n - 1) + 1 \\
+Step\ 2 : \ &amp; T(n)  = [T(n - 2) + 1] + 1 \\
+&amp; = T(n - 2) + 2 \\
+Step\ 3 : \ &amp; T(n)  = [T(n - 3) + 1] + 2 \\
+&amp;  = T(n - 3) + 3 \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Continuing this process, we can unroll the recurrence relation up to k steps:</p>
+<p class="sd-card-text">Step k:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ T(n) = T(n - k) + k \ \ \]</div>
+<p class="sd-card-text">We keep unrolling until we reach the base case, which occurs when <span class="math notranslate nohighlight">\(n - k = 1\)</span>. Solving for <span class="math notranslate nohighlight">\(k\)</span>, we find that <span class="math notranslate nohighlight">\(k = n - 1\)</span>.</p>
+<p class="sd-card-text">Now, let’s substitute this value of k into the unrolled relation:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ T(n) = T(1) + (n - 1) \ \ \]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(T(1)\)</span> represents the time complexity for the base case, which is a constant, we can replace it with a constant, say <span class="math notranslate nohighlight">\(c\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ \ T(n) = c + (n - 1) \ \ \ \]</div>
+<p class="sd-card-text">Finally, we can simplify this expression as:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ T(n) = O(n) \ \ \]</div>
+<p class="sd-card-text">Therefore, the solution obtained through unrolling suggests that the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(n - 1) + 1\)</span> is <span class="math notranslate nohighlight">\(O(n)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Guessing<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s make a guess or hypothesis about the form of the solution based on the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(n - 1) + 1\)</span>.</p>
+<p class="sd-card-text">Let’s assume that <span class="math notranslate nohighlight">\(T(n) = O(n)\)</span>.</p>
+<p class="sd-card-text">We assume that <span class="math notranslate nohighlight">\(T(k) ≤ ck\)</span> for some constant <span class="math notranslate nohighlight">\(c\)</span>, where <span class="math notranslate nohighlight">\(k &lt; n\)</span>. Now, let’s substitute this assumption into the recurrence relation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+T(n) &amp; = T(n - 1) + 1 \\
+&amp; ≤ c(n - 1) + 1 \\
+&amp; = cn - c + 1 \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">To ensure that <span class="math notranslate nohighlight">\(T(n) ≤ cn\)</span> holds, we need to find a value of <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\((-c + 1) ≤ 0\)</span>. By choosing <span class="math notranslate nohighlight">\(c ≥ 1\)</span>, we can guarantee that <span class="math notranslate nohighlight">\(T(n) ≤ cn\)</span>.</p>
+<p class="sd-card-text">Hence, the solution <span class="math notranslate nohighlight">\(T(n) = O(n)\)</span> satisfies the recurrence relation.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Recursion Tree<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s draw a recursion tree to represent the recursive calls made in the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(n - 1) + 1\)</span>. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
+<p class="sd-card-text">The recursion tree will have n levels since we subtract <span class="math notranslate nohighlight">\(1\)</span> from <span class="math notranslate nohighlight">\(n\)</span> at each level. At each level, the work done is <span class="math notranslate nohighlight">\(1\)</span>, and there is only one node at each level. Therefore, the total work at each level is <span class="math notranslate nohighlight">\(1\)</span>.</p>
+<p class="sd-card-text">Summing up the work done at each level, we have:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+Total work &amp; = 1 + 1 + 1 + ... + 1\ (n times) \\
+&amp; = n \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Therefore, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(O(n)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Master Theorem<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The Master Theorem is not applicable to the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(n - 1) + 1\)</span> because it is not in the required form of <span class="math notranslate nohighlight">\(T(n) = aT(\frac{n}{b}) + f(n)\)</span>.</p>
+<p class="sd-card-text">Therefore, the Master Theorem cannot be directly used to solve this recurrence relation.</p>
+<p class="sd-card-text">To summarize, the analysis using unrolling, guessing, recursion tree, and the Master Theorem (where applicable) all yield a time complexity of <span class="math notranslate nohighlight">\(O(n)\)</span> for the recurrence relation <span class="math notranslate nohighlight">\(T(n) = T(n - 1) + 1\)</span>.</p>
+</div>
+</details><!-- ```` {admonition} Can you write (and solve) the recurrence?
+:class: dropdown, tip
+
+``` {card} Breakdown
+$$\begin {align}
+T(n) &= T(n - 1) + 1 \\
+T(n - 1) &= T(n - 2) + 2 \\
+T(n - 2) &= T(n - 3) + 3 \\ 
+• \\
+• \\
+• \\
+T(n - k) &= T(n - k) + k \\
+\end {align}$$
+```
+
+``` {card} Substitution $T(n - 1)$
+$$\begin {align}
+T(n) &= \bigg[T(n - 2) + 1 \bigg] + 1 \\ 
+&= T(n - 2) + 2 \\
+&= \bigg[T(n - 3) + 1 \bigg] + 2 \\
+&= T(n - 3) + 3 \\
+• \\
+• \\
+• \\
+&= T(n - k) + k \\
+\end {align}$$ 
+```
+
+``` {card} For $k$ times
+
+$$\begin {align}
+\text{For : } & T(n) = T(n - k) + k \\
+\text{Assume : } & n\ - k\ = 0 \\
+\text{Therefore : } & n\ = k \\
+\end {align}$$ 
+
+$$\begin {align}
+T(n) &= T(n - n) + n \\
+T(n) &= T(0) + n \\
+• \\
+T(n) &= 1 + n \\
+T(n) &= \Theta(n) \\
+&= \Theta(n) \\
+\end {align}$$
+
+```
+
+```` -->
+</div>
+<div class="admonition-recurrence-relation-divide-conquer-https-youtu-be-1k9ebqjosvo admonition">
+<p class="admonition-title"><a class="reference external" href="https://youtu.be/1K9ebQJosvo">Recurrence Relation: Divide &amp; Conquer</a></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">              </span><span class="c1">// = T(n)</span>
+</span><span class="linenos">2</span><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="hll"><span class="linenos">3</span><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++&gt;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">   </span><span class="c1">// = n</span>
+</span><span class="linenos">4</span><span class="w">      </span><span class="c1">// some statement</span>
+<span class="linenos">5</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="hll"><span class="linenos">6</span><span class="w">    </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span><span class="w">                  </span><span class="c1">// = T(n/2)</span>
+</span><span class="hll"><span class="linenos">7</span><span class="w">    </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">);</span><span class="w">                  </span><span class="c1">// = T(n/2)</span>
+</span><span class="linenos">8</span><span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">9</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T(n) =
+\begin{cases}
+1,  &amp; \text{$if\ n\ = 1$}  \\[2ex]
+2T(\frac{n}{2}) + n, &amp; \text{$if\ n\ \gt 1$}
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Unrolling<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s unroll the recurrence relation step by step:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+Step\ 1 : \ &amp; T(n)  = 2T \bigg(\frac{n}{2} \bigg) + n \\
+Step\ 2 : \ &amp; T(n)  = 2[2T \bigg(\frac{n}{4} \bigg) + \frac{n}{2}] + n \\
+&amp; = 4T \bigg(\frac{n}{4} \bigg) + 2n \\
+Step\ 3 : \  T(n) &amp; = [T \bigg(\frac{n}{8} \bigg) + \frac{n}{4} + \frac{n}{2}] + 4n \\
+&amp;  = 8T \bigg(\frac{n}{8} \bigg) + 4n \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Continuing this process, we can unroll the recurrence relation up to k steps:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+Step\ k : \ &amp; T(n) = 2^{k}\ T \bigg( \frac{n}{2^k} \bigg) + kn \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">We keep unrolling until we reach the base case, which occurs when <span class="math notranslate nohighlight">\( \frac{n}{2^k} = 1 \)</span>. Solving for <span class="math notranslate nohighlight">\(k\)</span>, we find that <span class="math notranslate nohighlight">\(k = log_2\ (n)\)</span>.</p>
+<p class="sd-card-text">Now, let’s substitute this value of k into the unrolled relation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+T(n) &amp;= 2^{log_2\ (n)}\ T \bigg(\frac{n}{2^{log_2\ (n)}} \bigg) + n\ log_2\ (n) \\
+&amp;= nT(1) + n\ log_2\ (n) \\
+&amp;= n + n\ log_2\ (n) \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(T(1)\)</span> represents the time complexity for the base case, which is a constant, we can replace it with a constant, say <span class="math notranslate nohighlight">\(c\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ T(n) = c + n + n\ log_2\ (n) \ \ \]</div>
+<p class="sd-card-text">Finally, we can simplify this expression as:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ T(n) = O(n\ log\ (n)) \ \ \]</div>
+<p class="sd-card-text">Therefore, the solution obtained through unrolling suggests that the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span> is <span class="math notranslate nohighlight">\(O(n\ log\ (n))\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Guessing<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s make a guess or hypothesis about the form of the solution based on the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span>.</p>
+<p class="sd-card-text">Let’s assume that <span class="math notranslate nohighlight">\(T(n) = O(n\ log\ (n))\)</span>.</p>
+<p class="sd-card-text">We assume that <span class="math notranslate nohighlight">\(T(k) ≤ ck\ log\ (k)\)</span> for some constant <span class="math notranslate nohighlight">\(c\)</span>, where <span class="math notranslate nohighlight">\(k &lt; n\)</span>. Now, let’s substitute this assumption into the recurrence relation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+T(n) &amp;= 2T \bigg(\frac{n}{2} \bigg) + n \\
+&amp;≤ 2c \bigg(\frac{n}{2} \bigg)\ log\ \bigg(\frac{n}{2} \bigg) + n \\
+&amp;= cn\ log\ \bigg(\frac{n}{2} \bigg) + n \\
+&amp;= cn\ log\ (n) - cn\ log\ (2) + n \\
+&amp;= cn\ log\ (n) - cn + n \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">To ensure that <span class="math notranslate nohighlight">\(T(n) ≤ cn\ log\ (n)\)</span> holds, we need to find a value of <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\((-cn + n) ≤ 0\)</span>. By choosing <span class="math notranslate nohighlight">\(c ≥ 1\)</span>, we can guarantee that <span class="math notranslate nohighlight">\(T(n) ≤ cn\ log\ (n)\)</span>.</p>
+<p class="sd-card-text">Hence, the solution <span class="math notranslate nohighlight">\(T(n) = O(n\ log\ (n))\)</span> satisfies the recurrence relation.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Recursion Tree<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s draw a recursion tree to represent the recursive calls made in the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span>. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
+<p class="sd-card-text">The recursion tree will have <span class="math notranslate nohighlight">\(log_2\ (n)\)</span> levels since we divide the problem size by <span class="math notranslate nohighlight">\(2\)</span> at each level. At each level, the work done is <span class="math notranslate nohighlight">\(n\)</span>, and there are <span class="math notranslate nohighlight">\(2^i\)</span> nodes at level <span class="math notranslate nohighlight">\(i\)</span>. Therefore, the total work at each level is <span class="math notranslate nohighlight">\(n * 2^i\)</span>.</p>
+<p class="sd-card-text">Summing up the work done at each level, we have:</p>
+<div class="math notranslate nohighlight">
+\[Total work = n + 2n + 4n + ... + (2^{log_2\ (n) - 1}\ n) \ \ \]</div>
+<p class="sd-card-text">This is a geometric series with a common ratio of 2 and the first term being n. The sum of this series is given by:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+Total work &amp;= n * \frac{2^{log_2\ (n)}\ - 1}{2 - 1} \\
+&amp;= n * {2^{log₂(n)}\ - 1} \\
+&amp;= n * (n - 1) \\
+&amp;= n^2 - n \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Therefore, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(O(n^2)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Master Theorem<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The Master Theorem is applicable to the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span>. We can express it in the form <span class="math notranslate nohighlight">\(T(n) = aT(\frac{n}{b}) + f(n)\)</span> with <span class="math notranslate nohighlight">\(a = 2\)</span>, <span class="math notranslate nohighlight">\(b = 2\)</span>, and <span class="math notranslate nohighlight">\(f(n) = n\)</span>.</p>
+<p class="sd-card-text">Comparing <span class="math notranslate nohighlight">\(f(n) = n\)</span> with n^{log_b\ (a)}:</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f(n) = n\)</span>, which is smaller than <span class="math notranslate nohighlight">\(n^{log_2\ (2)} = n\)</span>.</p>
+<p class="sd-card-text">According to the Master Theorem:</p>
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = O(n^c)\)</span> for some constant <span class="math notranslate nohighlight">\(c &lt; log_b\ (a)\)</span>, then <span class="math notranslate nohighlight">\(T(n) = Θ(n^{log_b\ (a)})\)</span>.
+In our case, <span class="math notranslate nohighlight">\(f(n) = O(n^1) = O(n)\)</span>, which falls under the first case. Therefore, the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span> is <span class="math notranslate nohighlight">\(\Theta(n^{log_2\ (2)}) = \Theta(n)\)</span>.</p>
+<p class="sd-card-text">Thus, according to the Master Theorem, the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span> is <span class="math notranslate nohighlight">\(\Theta(n)\)</span>, which aligns with the results obtained from unrolling, guessing, and the recursion tree.</p>
+<p class="sd-card-text">All four methods provide consistent solutions, indicating that the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span> is <span class="math notranslate nohighlight">\(O(n\ log\ (n))\)</span>.</p>
+</div>
+</details><!-- ````` {admonition} Can you write (and solve) the recurrence?
+:class: dropdown, tip
+
+```` {card} Tree Method
+``` {figure} imgs/10_ex_2.png
+:width: 100%
+```
+
+$$
+For\ k\ times\ = \frac{n}{2^k}\ \Rightarrow\ n = 2^k \\
+Hence,\ k\ = log\ n \\
+T(n) = \Theta(n\ log\ n)
+$$
+````
+
+````` {card} Substitution Method
+
+```` {grid}
+``` {grid-item}
+$$\begin {align}
+T(n) &= 2T(\frac{n}{2}) + n \\
+&= 2\bigg[2T(\frac{n}{2^2}) + \frac{n}{2}\bigg] + n \\
+&= 2^2T(\frac{n}{2^2} + n + n) \\
+&= 2^2\bigg[2T(\frac{n}{2^3}) + \frac{n}{2^2}\bigg] + 2n \\
+&= 2^3T(\frac{n}{2^3}) + 3n \\
+&= 2^kT(\frac{n}{2^k}) + kn \\
+\end {align}$$
+```
+``` {grid-item}
+*What to sub in...*
+
+$$\begin {align}
+T(n) &= 2T(\frac{n}{2}) + n \\
+T(\frac{n}{2}) &= 2T(\frac{n}{n^2}) + \frac{n}{2^2} \\
+T(\frac{n}{2^2}) &= 2T(\frac{n}{2^3}) + \frac{n}{2^2} \\
+\end {align}$$
+```
+``` {grid-item}
+$$
+Assume...\ T(\frac{n}{2^k}) = T(1) \\
+\frac{n}{2^k} = 1 \\
+$$
+```
+``` {grid-item}
+$$
+Therefore...\ n\ = 2^k \\
+k\ = log\ n \\
+$$
+```
+``` {grid-item}
+$$\begin {align}
+T(n) &= 2^kT(1) + kn \\
+&= n * 1 + n\ log\space n \\
+&= \Theta(n\space log\space n) \\
+\end {align}$$
+```
+
+````
+
+````` -->
+</div>
+<div class="admonition-recurrence-relation-tower-of-hanoi-https-youtu-be-iawm82bq4ii admonition">
+<p class="admonition-title"><a class="reference external" href="https://youtu.be/IawM82BQ4II">Recurrence Relation: Tower of Hanoi</a> </p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="kt">void</span><span class="w"> </span><span class="nf">Test</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">    </span><span class="c1">// = T(n)</span>
+</span><span class="hll"><span class="linenos">2</span><span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;/d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w">    </span><span class="c1">// = 1</span>
+</span><span class="hll"><span class="linenos">3</span><span class="w">  </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">        </span><span class="c1">// = T(n - 1)</span>
+</span><span class="hll"><span class="linenos">4</span><span class="w">  </span><span class="n">Test</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">        </span><span class="c1">// = T(n - 1)</span>
+</span><span class="linenos">5</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T(n) =
+\begin{cases}
+1,  &amp; \text{$if\ n\ = 0$}  \\[2ex]
+2T(n - 1) + 1, &amp; \text{$if\ n\ \gt 0$}
+\end{cases}
+\end{split}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Unrolling<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s unroll the recurrence relation step by step:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+Step\ 1 : \ &amp; T(n)  = 2T(n - 1) + 1 \\
+Step\ 2 : \ &amp; T(n)  = 2[2T(n - 2) + 1] + 1 \\
+&amp; = 4T(n - 2) + 3 \\
+Step\ 3 : \ &amp; T(n)  = 2[2[2T(n - 3) + 1] + 1] + 1 \\
+&amp;  = 8T(n - 3) + 7 \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Continuing this process, we can unroll the recurrence relation up to k steps:</p>
+<div class="math notranslate nohighlight">
+\[\begin{align}
+Step k: &amp;  T(n) = 2^{k}\ T(n - k) + (2^k - 1)
+\end{align}\]</div>
+<p class="sd-card-text">We keep unrolling until we reach the base case, which occurs when <span class="math notranslate nohighlight">\(n - k = 1\)</span>. Solving for <span class="math notranslate nohighlight">\(k\)</span>, we find that <span class="math notranslate nohighlight">\(k = n - 1\)</span>.</p>
+<p class="sd-card-text">Now, let’s substitute this value of <span class="math notranslate nohighlight">\(k\)</span> into the unrolled relation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+T(n) &amp;= 2^{n - 1}\ T(1) + (2^{n - 1} - 1) \\
+&amp;= 2^{n - 1} + (2^{n - 1} - 1) \\
+&amp;= 2^n - 1 \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">Therefore, the solution obtained through unrolling suggests that the time complexity of the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(n - 1) + 1\)</span> is <span class="math notranslate nohighlight">\(O(2^n)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Guessing<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s make a guess or hypothesis about the form of the solution based on the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(n - 1) + 1\)</span>.</p>
+<p class="sd-card-text">Let’s assume that <span class="math notranslate nohighlight">\(T(n) = O(2^n)\)</span>.</p>
+<p class="sd-card-text">We assume that <span class="math notranslate nohighlight">\(T(k) ≤ c * 2^k\)</span> for some constant <span class="math notranslate nohighlight">\(c\)</span>, where <span class="math notranslate nohighlight">\(k &lt; n\)</span>. Now, let’s substitute this assumption into the recurrence relation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+T(n) &amp;= 2T(n - 1) + 1 \\
+&amp;≤ 2(c * 2^(n - 1)) + 1 \\
+&amp;= c * 2^n + 1 \\
+\end{align}\end{split}\]</div>
+<p class="sd-card-text">To ensure that <span class="math notranslate nohighlight">\(T(n) ≤ c * 2^n\)</span> holds, we need to find a value of <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\((c + 1) ≤ c\)</span>. This is not possible, so our assumption is incorrect.</p>
+<p class="sd-card-text">Hence, we cannot prove the solution <span class="math notranslate nohighlight">\(T(n) = O(2^n)\)</span> using the guessing method.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Recursion Tree<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Let’s draw a recursion tree to represent the recursive calls made in the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(n - 1) + 1\)</span>. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
+<p class="sd-card-text">The recursion tree will have n levels since we subtract <span class="math notranslate nohighlight">\(1\)</span> from <span class="math notranslate nohighlight">\(n\)</span> at each level. At each level, the work done is <span class="math notranslate nohighlight">\(1\)</span>. Therefore, the total work at each level is <span class="math notranslate nohighlight">\(1 * 2^i\)</span>.</p>
+<p class="sd-card-text">Summing up the work done at each level, we have:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ Total work = 1 + 2 + 4 + ... + 2^{n - 1} \ \ \]</div>
+<p class="sd-card-text">This is a geometric series with a common ratio of {2} and the first term being {1}. The sum of this series is given by:</p>
+<div class="math notranslate nohighlight">
+\[ \ \ Total work = 2^n - 1 \ \ \]</div>
+<p class="sd-card-text">Therefore, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(O(2^n)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Master Theorem<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The Master Theorem is not directly applicable to the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(n - 1) + 1\)</span> because it is not in the required form of <span class="math notranslate nohighlight">\(T(n) = aT(\frac{n}{b}) + f(n)\)</span>.</p>
+<p class="sd-card-text">Therefore, the Master Theorem cannot be used to directly solve this recurrence relation.</p>
+<p class="sd-card-text">To summarize, the analysis using unrolling, guessing, recursion tree, and the Master Theorem (where applicable) all yield a time complexity of <span class="math notranslate nohighlight">\(O(2^n)\)</span> for the recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(n - 1) + 1\)</span>.</p>
+</div>
+</details><!-- `````` {admonition} Can you write (and solve) the recurrence?
+:class: dropdown, tip
+
+````` {card} Tree Method
+
+            T(n)
+            / \
+           n   T(n-1)
+                / \
+             n-1   T(n-2)
+                    / \
+                 n-2   T(n-3)
+                        / \
+                     ...   ...
+                            / \
+                               T(2)
+                                / \
+                               2   T(1)
+                                    / \
+                                   1   T(0)
+                                  
+```` {card} Breakdown
+$$\begin {align}
+1 + 2 + 2^2 + 2^3 ... + 2^k & = 2^{k + 1} - 1 \\
+\\
+ar + ar + ar^2 + ar^3 ... + ar^k & = \frac{a(r^{k + 1} - 1)}{r - 1} \\
+\\
+Where \dots a = 1,  r = 2,  & = \frac{1(2^{k + 1}1)}{2 - 1} \\
+\\
+& = 2^{k + 1} - 1
+\end {align} $$
+````
+
+```` {card} Assume
+$$\begin {align}
+if \dots n - k & = 0 \\
+\\
+then \dots n & = k \\
+& = 2^{k + 1} - 1 => 2^{n + 1} - 1 \\
+& = \Theta(2^n) \\
+\end {align}$$
+````
+
+`````
+
+````` {card} Substitution
+```` {grid} 
+``` {grid-item}
+$$\begin {align}
+T(n) &= 2T(n - 1) + 1 \\
+& = 2\bigg[2T(n - 2) + 1 \bigg] + 1 \\
+& = 2^2T(n - 2) + 2 + 1 \\
+& = 2^2 \bigg[2T(n - 3) + 1 \bigg] + 2 + 1 \\
+& = 2^3T(n - 3) + 2^2 + 2 + 1 \\
+& • \\
+& • \\
+& • \\
+& = 2^kT(n - k) + 2^k-1 + 2^k-2 + ... 2^2 + 2 + 1 \\
+\end {align}$$
+```
+``` {grid-item}
+$$\begin {align}
+Assume \dots n - k = 0 \\
+\\
+n = k \\
+\\
+T(n) & = 2^nT(0) + 1 + 2 + 2^2\ + \dots\ 2^k-1 \\
+& = 2^n - 1 + 2^k - 1 \\
+& = 2^n + 2^n - 1 \\
+& = 2^n+1 - 1 \\
+& = \Theta(2^n) \\
+\end {align}$$
+```
+````
+````` -->
+<!-- ``````` -->
 </div>
 </div>
+</section>
 </section>
 </section>
 
