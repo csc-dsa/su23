@@ -970,13 +970,8 @@ In other words, the time complexity of binary search grows logarithmically with 
 <div class="full-width docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<a class="reference external" href="https://courses.cs.washington.edu/courses/cse332/18su/handouts/unrolling.pdf">Unrolling</a><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://courses.cs.washington.edu/courses/cse332/18su/handouts/unrolling.pdf">Unrolling</a></p>
 <blockquote>
 <div><p class="sd-card-text">In the unrolling method, we repeatedly substitute the recurrence relation into itself until we reach a base case. Let’s unroll the recurrence relation for a specific value of <span class="math notranslate nohighlight">\(n\)</span>:</p>
 </div></blockquote>
@@ -1000,13 +995,8 @@ T(n) &amp;= nT(1) + n\ log_2 \ (n) \\
 \end{align}\end{split}\]</div>
 <p class="sd-card-text">Thus, the solution obtained through unrolling suggests that the time complexity of the original recurrence relation is <span class="math notranslate nohighlight">\(O(n\ log_2 (n))\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<a class="reference external" href="https://www.geeksforgeeks.org/method-of-guessing-and-confirming/">Guessing</a><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.geeksforgeeks.org/method-of-guessing-and-confirming/">Guessing</a></p>
 <blockquote>
 <div><p class="sd-card-text">In the guessing method, we make an educated guess or hypothesis about the form of the solution based on the recurrence relation. We then use mathematical induction or substitution to prove our guess.</p>
 </div></blockquote>
@@ -1023,13 +1013,8 @@ T(n) &amp;= 2T \bigg(\frac{n}{2} \bigg) + n \\
 <p class="sd-card-text">To ensure that <span class="math notranslate nohighlight">\(T(n) ≤ cn\ log\ (n)\)</span> holds, we need to find a value of <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\((n - cn) ≤ 0\)</span>. By choosing <span class="math notranslate nohighlight">\(c ≥ 1\)</span>, we can guarantee that <span class="math notranslate nohighlight">\(T(n) ≤ cn\ log\ (n)\)</span>.</p>
 <p class="sd-card-text">Hence, the solution <span class="math notranslate nohighlight">\(T(n) = O(n\ log\ (n))\)</span> satisfies the recurrence relation.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<a class="reference external" href="https://www.javatpoint.com/daa-recursion-tree-method">Recursion Tree</a><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="https://www.javatpoint.com/daa-recursion-tree-method">Recursion Tree</a></p>
 <blockquote>
 <div><p class="sd-card-text">In the recursion tree method, we draw a tree to represent the recursive calls made in the recurrence relation. Each level of the tree corresponds to a recursive call, and we analyze the work done at each level.</p>
 </div></blockquote>
@@ -1048,13 +1033,8 @@ Total work &amp;= n * \frac{2^{log_2\ (n)} - 1}{2 - 1} \\
 <p class="sd-card-text">Therefore, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(O(n^2)\)</span>.</p>
 <p class="sd-card-text">Note that in this example, the unrolling and guessing methods led to a time complexity of <span class="math notranslate nohighlight">\(O(n\ log\ (n))\)</span>, while the recursion tree method resulted in <span class="math notranslate nohighlight">\(O(n^2)\)</span>. The discrepancy arises because the recursion tree method accounts for the exact work done at each level, while the other methods provide upper bounds or estimations.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<a class="reference external" href="http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/master_theorem.pdf">Master Theorem</a><div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="tip admonition">
+<p class="admonition-title"><a class="reference external" href="http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/master_theorem.pdf">Master Theorem</a></p>
 <blockquote>
 <div><p class="sd-card-text">The master theorem is a mathematical formula used to analyze the time complexity of divide-and-conquer algorithms. It provides a solution for recurrence relations of the form:</p>
 </div></blockquote>
@@ -1067,8 +1047,8 @@ Total work &amp;= n * \frac{2^{log_2\ (n)} - 1}{2 - 1} \\
 <span class="math notranslate nohighlight">\(f(n)\)</span> is the time complexity of the remaining work done outside the recursive calls.</p>
 <p class="sd-card-text">The master theorem provides three cases based on the relationship between <span class="math notranslate nohighlight">\(f(n)\)</span> and the subproblem part <span class="math notranslate nohighlight">\(aT(\frac{n}{b})\)</span>.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="6f37a695-7ded-4c11-ad3c-5c5832862762" name="623114c6-5daf-41d0-9875-c165e6a570a0" type="radio">
-</input><label class="sd-tab-label" for="6f37a695-7ded-4c11-ad3c-5c5832862762">
+<input checked="checked" id="950cfc22-23a4-40ea-86a4-c9f9395cf4e6" name="e9d6659e-70eb-474e-a8fb-dc83e64d4566" type="radio">
+</input><label class="sd-tab-label" for="950cfc22-23a4-40ea-86a4-c9f9395cf4e6">
 Cases</label><div class="sd-tab-content docutils">
 <dl class="simple myst">
 <dt>Case 1</dt><dd><p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = O(n^c)\)</span> for some constant <span class="math notranslate nohighlight">\(c &lt; log_b(a)\)</span>, then the time complexity is dominated by the subproblem part, and the overall time complexity is given by</p>
@@ -1089,8 +1069,8 @@ Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = \Theta(f(n))\]</div>
 </div>
-<input id="fb484f0d-fb18-4ddf-8256-4b0e70df8d01" name="623114c6-5daf-41d0-9875-c165e6a570a0" type="radio">
-</input><label class="sd-tab-label" for="fb484f0d-fb18-4ddf-8256-4b0e70df8d01">
+<input id="73e5a572-b487-4f78-a72e-089084c5f501" name="e9d6659e-70eb-474e-a8fb-dc83e64d4566" type="radio">
+</input><label class="sd-tab-label" for="73e5a572-b487-4f78-a72e-089084c5f501">
 Case 1 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 4T \bigg(\frac{n}{2} \bigg) + n\]</div>
@@ -1131,8 +1111,8 @@ Step 3 : Determine the overall time complexity<div class="sd-summary-down docuti
 <p class="sd-card-text">So, the overall time complexity of the algorithm in this example is <span class="math notranslate nohighlight">\(\Theta(n^2)\)</span>, which means the algorithm’s running time grows quadratically with the input size <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 </details></div>
-<input id="cf04b67e-4925-4ae3-b88d-87f0673f5767" name="623114c6-5daf-41d0-9875-c165e6a570a0" type="radio">
-</input><label class="sd-tab-label" for="cf04b67e-4925-4ae3-b88d-87f0673f5767">
+<input id="212e78e9-e1b3-4e21-8fbd-230c158c8ed3" name="e9d6659e-70eb-474e-a8fb-dc83e64d4566" type="radio">
+</input><label class="sd-tab-label" for="212e78e9-e1b3-4e21-8fbd-230c158c8ed3">
 Case 2 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 9T \bigg(\frac{n}{3} \bigg) + n^2\]</div>
@@ -1173,8 +1153,8 @@ Step 3 : Determine the overall time complexity<div class="sd-summary-down docuti
 \[T(n) = Θ(n^2 \ log(n))\]</div>
 </div>
 </details></div>
-<input id="d7f1be11-fd18-4e74-9707-955c673f9d32" name="623114c6-5daf-41d0-9875-c165e6a570a0" type="radio">
-</input><label class="sd-tab-label" for="d7f1be11-fd18-4e74-9707-955c673f9d32">
+<input id="784e5c17-c04f-45a7-9aa9-bd086272ec48" name="e9d6659e-70eb-474e-a8fb-dc83e64d4566" type="radio">
+</input><label class="sd-tab-label" for="784e5c17-c04f-45a7-9aa9-bd086272ec48">
 Case 3 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 2T \bigg(\frac{n}{2} \bigg) + n^3\]</div>
@@ -1235,7 +1215,7 @@ In our case, <span class="math notranslate nohighlight">\(f(n) = O(n^1)\)</span>
 <p class="sd-card-text">Therefore, according to the Master Theorem, the time complexity of the binary search recurrence relation <span class="math notranslate nohighlight">\(T(n) = 2T(\frac{n}{2}) + n\)</span> is <span class="math notranslate nohighlight">\(\Theta(n)\)</span>, which aligns with the result obtained from the unrolling and guessing methods.</p>
 <p class="sd-card-text">It’s important to note that the Master Theorem is applicable in specific cases, and not all recurrence relations can be solved using this theorem. However, for recurrence relations that follow the prescribed form, it provides a convenient way to determine the time complexity.</p>
 </div>
-</details></div>
+</div>
 </div>
 </div>
 <!-- ### [Unrolling the binary search recurrence](https://youtu.be/XcZw01FuH18)
