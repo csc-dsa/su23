@@ -1047,8 +1047,8 @@ Total work &amp;= n * \frac{2^{log_2\ (n)} - 1}{2 - 1} \\
 <span class="math notranslate nohighlight">\(f(n)\)</span> is the time complexity of the remaining work done outside the recursive calls.</p>
 <p class="sd-card-text">The master theorem provides three cases based on the relationship between <span class="math notranslate nohighlight">\(f(n)\)</span> and the subproblem part <span class="math notranslate nohighlight">\(aT(\frac{n}{b})\)</span>.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="daa1515d-5634-482d-81af-c487919f8be8" name="c2af7ea0-2b6d-4bd1-8a3f-6fc354d81ef6" type="radio">
-</input><label class="sd-tab-label" for="daa1515d-5634-482d-81af-c487919f8be8">
+<input checked="checked" id="411ef922-5ed6-44f1-b0d6-61a0e9599e22" name="06563e1b-53f7-453f-8e8b-ee0a2ab30fd2" type="radio">
+</input><label class="sd-tab-label" for="411ef922-5ed6-44f1-b0d6-61a0e9599e22">
 Cases</label><div class="sd-tab-content docutils">
 <dl class="simple myst">
 <dt>Case 1</dt><dd><p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(n) = O(n^c)\)</span> for some constant <span class="math notranslate nohighlight">\(c &lt; log_b(a)\)</span>, then the time complexity is dominated by the subproblem part, and the overall time complexity is given by</p>
@@ -1069,8 +1069,8 @@ Cases</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = \Theta(f(n))\]</div>
 </div>
-<input id="2d1ba1e1-9e79-43d0-bd91-dd21c9a812f9" name="c2af7ea0-2b6d-4bd1-8a3f-6fc354d81ef6" type="radio">
-</input><label class="sd-tab-label" for="2d1ba1e1-9e79-43d0-bd91-dd21c9a812f9">
+<input id="7fbfeee8-9926-4559-a50d-82e07a6d7239" name="06563e1b-53f7-453f-8e8b-ee0a2ab30fd2" type="radio">
+</input><label class="sd-tab-label" for="7fbfeee8-9926-4559-a50d-82e07a6d7239">
 Case 1 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 4T \bigg(\frac{n}{2} \bigg) + n\]</div>
@@ -1111,8 +1111,8 @@ Step 3 : Determine the overall time complexity<div class="sd-summary-down docuti
 <p class="sd-card-text">So, the overall time complexity of the algorithm in this example is <span class="math notranslate nohighlight">\(\Theta(n^2)\)</span>, which means the algorithm’s running time grows quadratically with the input size <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 </details></div>
-<input id="e59c72b9-9395-47f8-a815-39b74e53a99f" name="c2af7ea0-2b6d-4bd1-8a3f-6fc354d81ef6" type="radio">
-</input><label class="sd-tab-label" for="e59c72b9-9395-47f8-a815-39b74e53a99f">
+<input id="eb0f9d10-dcfa-483c-ba55-1e040d1c083d" name="06563e1b-53f7-453f-8e8b-ee0a2ab30fd2" type="radio">
+</input><label class="sd-tab-label" for="eb0f9d10-dcfa-483c-ba55-1e040d1c083d">
 Case 2 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 9T \bigg(\frac{n}{3} \bigg) + n^2\]</div>
@@ -1153,8 +1153,8 @@ Step 3 : Determine the overall time complexity<div class="sd-summary-down docuti
 \[T(n) = Θ(n^2 \ log(n))\]</div>
 </div>
 </details></div>
-<input id="bb9ce246-0e1c-45fe-b551-a07fbbcf0fa0" name="c2af7ea0-2b6d-4bd1-8a3f-6fc354d81ef6" type="radio">
-</input><label class="sd-tab-label" for="bb9ce246-0e1c-45fe-b551-a07fbbcf0fa0">
+<input id="4d15fd6f-f481-498c-845a-5245a16a805c" name="06563e1b-53f7-453f-8e8b-ee0a2ab30fd2" type="radio">
+</input><label class="sd-tab-label" for="4d15fd6f-f481-498c-845a-5245a16a805c">
 Case 3 Ex</label><div class="sd-tab-content docutils">
 <div class="math notranslate nohighlight">
 \[T(n) = 2T \bigg(\frac{n}{2} \bigg) + n^3\]</div>
@@ -1464,7 +1464,7 @@ Recursion Tree<div class="sd-summary-down docutils">
 <p class="sd-card-text">Summing up the work done at each level, we have:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{align}
-Total work &amp; = 1 + 1 + 1 + ... + 1\ (n times) \\
+Total work &amp; = 1 + 1 + 1 + ... + 1\ (n\ times) \\
 &amp; = n \\
 \end{align}\end{split}\]</div>
 <p class="sd-card-text">Therefore, the time complexity of the recurrence relation is <span class="math notranslate nohighlight">\(O(n)\)</span>.</p>
@@ -1546,8 +1546,8 @@ T(n) &= \Theta(n) \\
 \[\begin{split}
 T(n) =
 \begin{cases}
-1,  &amp; \text{$if\ n\ = 1$}  \\[2ex]
-2T(\frac{n}{2}) + n, &amp; \text{$if\ n\ \gt 1$}
+1,  &amp; \text{$n\ = 1$}  \\[2ex]
+2T(\frac{n}{2}) + n, &amp; \text{$n\ \gt 1$}
 \end{cases}
 \end{split}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -1723,8 +1723,8 @@ T(n) &= 2^kT(1) + kn \\
 \[\begin{split}
 T(n) =
 \begin{cases}
-1,  &amp; \text{$if\ n\ = 0$}  \\[2ex]
-2T(n - 1) + 1, &amp; \text{$if\ n\ \gt 0$}
+1,  &amp; \text{$n\ = 0$}  \\[2ex]
+2T(n - 1) + 1, &amp; \text{$n\ \gt 0$}
 \end{cases}
 \end{split}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
